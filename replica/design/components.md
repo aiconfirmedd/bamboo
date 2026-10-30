@@ -1,7 +1,7 @@
 # Bamboo component specs
 
 Every component from the recon list, plus the primitives they are built from.
-Tokens refer to `tokens.json` roles — never raw hex. Observed evidence is enumerated in design-audit.md and design-audit-2.md; design-audit-3.md governs current live assets. Required states are implementation requirements, not screenshot proof. Keyboard and screen-reader behaviour is part of each spec.
+Tokens refer to `tokens.json` roles — never raw hex. Observed evidence is enumerated in design-audit.md and design-audit-2.md; design-audit-4.md governs live-tour assets; audit 3 governs the older live-demo gate files. Required states are implementation requirements, not screenshot proof. Keyboard and screen-reader behaviour is part of each spec.
 
 ## Primitives
 
@@ -86,12 +86,12 @@ Skeleton
 
 ```
 GlobalNav / MobileTabBar
-  web       no full application shell is visible in these marketing crops; web nav position/order and role gating remain unverified
+  web       horizontal logo + Home, My Info, People, Hiring, Reports, Files; packet editor adds Payroll; search/inbox/help/settings/account right. Hiring/People active observed; role visibility unverified (audit 4)
   mobile    bottom order Home, My Info, People, Files; iOS white background with active accent icon/text; Android solid accent with white icons/text
   header    mobile accent bar, centred iOS title / left Android title; back/close at left on detail screens; contextual actions right
   states    active tab observed; drawer, condensed-on-scroll and role gating unobserved
   a11y      nav landmark, aria-current=page, labelled icons, skip link
-  used on   S32; web shell remains a requirement
+  used on   S08, S12, S13, S15, S17, S20, S36, S32 mobile
 
 WidgetCard
   variants  welcome, celebrations, company-links, whos-out, my-stuff, whats-happening, insights-metric
@@ -101,7 +101,7 @@ WidgetCard
   used on   S02, S03
 
 DataTable
-  states    empty (required, unobserved), filled (observed), loading skeleton, sorted, filtered, selected rows, permission-masked cells
+  states    empty and filled (observed S13), filled S12 and mixed empty/filled S08 section tables; selected status filter observed; sorted/selected rows/loading/permission-masked cells required, unobserved
   tokens    row height, border-b border, header font xs/600 text-muted, hover surface
   a11y      <table> with caption, th scope, sort buttons with aria-sort, row action menu
   used on   S06, S12, S23
@@ -117,14 +117,14 @@ TabbedRecordPage
   used on   S08, S15
 
 PipelineBoard
-  states    empty column (required), filled column (required; no pipeline screenshot), drag-over, collapsed column, stage count
+  states    empty column (required), filled column (required; audit 4 shows a candidate table, no Kanban screenshot), drag-over, collapsed column, stage count
   tokens    column bg surface, card bg bg + shadow card, radius md
   a11y      columns as lists with headings; drag has keyboard alternative (move-to menu)
   used on   S13
 
 TaskList / TaskTile
   states    todo, done (strikethrough + check), overdue (warning), assigned-to-me, assigned-to-other
-  tokens    tile bg surface-raised, border, radius md; done styling unobserved; unchecked tasks are observed
+  tokens    flat grouped list, internal-task-row-height; checked + strike + attribution observed, HR completion tint internal-completed; unchecked rows and neutral completed background-check row observed; overdue styling unproven
   a11y      checkbox per task, assignee in text, progress announced
   used on   S19, S20
 
@@ -197,7 +197,7 @@ GoalCard / MilestoneList
 frames, arrows, stars, phone hardware and promotional headlines are presentation,
 not application components. Never ship source assets/copy/branding. Sizes in this older marketing section are implementation estimates unless explicitly called raster coordinates; later live careers measurements are scoped separately.
 
-- Typography: web record titles and section/chart headings use a bold serif;
+- Typography (historical marketing only; internal live tour uses sans): record titles and section/chart headings use a bold serif;
   controls, labels and body use sans. Use `font.heading` for that job; never infer
   the proprietary face from a raster. Mobile uses sans throughout the app.
 - Buttons: observed web save/next actions are full-width pills at the bottom of a
@@ -220,8 +220,7 @@ not application components. Never ship source assets/copy/branding. Sizes in thi
   list right. Toolbar separate from divided feed rows; thumbnail, title, byline,
   metadata, reaction/view controls. Not independent large cards for each post.
 - Tasks (mkt-10): single white list panel; heading left, Add Task and gear right;
-  category labels then unchecked rows; assignee and due date right. No evidence
-  of completed/overdue semantics, tile grid or green completed background.
+  category labels then unchecked rows; assignee and due date right. Audit 4 adds checked/struck rows and green HR completion block; overdue and tile grid remain unobserved.
 - Signature (mkt-07): document review plus Add Signature editor with Draw/Type,
   drawn mark, clear/cancel and save/apply control. No visible receipt/hash/expiry.
 - Analytics (mkt-02,08,12,16): bar/donut panels; KPI strip and horizontal funnel;
@@ -238,7 +237,7 @@ not application components. Never ship source assets/copy/branding. Sizes in thi
 Geometry policy: `space` remains the proposed 4px rhythm; field radius ~6 raster
 pixels in mkt-01; its inner form corners ~12px. Large composite panels elsewhere
 have ~24–32 raster-pixel corners. `md=12`, `lg=24` are estimates for separate panel
-sizes, not evidence of one CSS scale. Admin header 56, row 44, sidebar widths, type sizes,
+sizes, not evidence of one CSS scale. Generic header 56, row 44, sidebar widths, type sizes,
 shadows, breakpoint values and motion are defaults awaiting a live app check.
 
 ## Live careers corrections (2026-10-30)
@@ -246,8 +245,8 @@ shadows, breakpoint values and motion are defaults awaiting a live app check.
 These scoped specs override generic geometry for S33–S35 only. The 17 simulator
 captures do not establish the logged-in app shell: all 17 show the personalization gate. Audit 2's invitation observation is superseded by current pixels. Never use its dark left rail, top chapters, hints,
 video, font zoom or Auto mode as application nav or permission evidence.
-Admin nav position/order/role visibility, header, table and pipeline remain unproven.
-No live completed/current product wizard steps are shown; prior marketing evidence
+Historical absence claim superseded for live-tour assets by audit 4: horizontal header/nav and tables observed; role visibility and Kanban board remain unproven.
+For these older files no live completed/current product wizard steps are shown; prior marketing evidence
 for S14/S25 remains valid. Simulator current/expanded steps belong to demo chrome.
 
 PublicCareersShell (S33–S35)
@@ -311,14 +310,14 @@ ValidationSummary / InlineValidation (S35 validation variant)
   icon/text prevents colour-only signaling. Successful correction/focus unproven.
 
 Token scope: added careers layout roles are native raster measurements, not universal
-CSS dimensions. Keep existing admin header/row/sidebar defaults pending real evidence.
-Border-input retains accessible #838b95 rather than copying faint source borders.
+CSS dimensions. Generic header/row/sidebar defaults remain separate from audit 4 internal raster tokens.
+Border-input retains accessible #7c848e rather than copying faint source borders.
 No source shadows, proprietary fonts, role gating or responsive behaviour recovered.
 
-## Audit 3 overrides — current assets (2026-10-30)
+## Audit 3 overrides — older live-demo assets (2026-10-30)
 
-All 17 demo captures show Get Started > Personalize, including sat-enps. No
-invitation or internal shell is currently evidenced. Gate email `na@` in perf is
+All 17 older live-demo captures show Get Started > Personalize, including sat-enps. No
+invitation or internal shell is evidenced by those older files; audit 4 adds shell evidence from 38 live-tour files. Gate email `na@` in perf is
 partial input, not a product validation state; Auto mode on in sat-report is
 simulator state. Current/expanded simulator chapters are not product steppers.
 See design-audit-3.md for every filename and exact duplicate group.
@@ -338,3 +337,117 @@ Panel padding20 and detail inset46 are native raster measures scoped to careers;
 list inner inset32 remains separate. Source divider is decorative; border-input
 is the accessible control boundary. Public type sizes are approximate raster
 estimates, not measured font CSS. No new internal component dimensions inferred.
+
+
+## Audit 4 — live internal application overrides
+
+These supersede historical/generic specs where contradicted. All dimensions are
+raster measurements at the anchor scale documented in design-audit-4.md. Required
+interaction/accessibility behaviours above are not claimed observed. Source-green
+UI is optional likeness; use accessible semantic tokens for implementation.
+
+InternalShell / RecordHeader (S08, S12, S13, S15, S17, S20, S36)
+  60px header, logo left, horizontal nav then right search/inbox/help/gear/account.
+  Nav order Home/My Info/People/Hiring/Reports/Files; packet editor adds Payroll.
+  Active item has pale background + bold coloured text, thin lime header rule.
+  Header position/order observed; admin-only gating unproven. No left global nav.
+  Serif heading default is NOT applied internally: page/name/section titles sans.
+  Green gradient identity band ~145px, white raised small-radius active tab.
+  Employee circular ~147px photo overlaps band and 178px vitals/manager rail;
+  main ~793px with gap24. Request a Change/gear and record pager upper-right.
+  Candidate fallback round icon smaller; main746, right contact rail296, gap26;
+  overlapping rating/status card209. Exact source gradient/fonts unproven.
+  Employee tabs vary: emprec Personal/Job/Time Off/Benefits/Training/Documents/
+  Notes/Performance/More; onboarding variant adds Assets/Emergency. Do not freeze
+  marketing tab order or infer hidden tabs from permissions.
+
+InternalButton / InternalField / InternalTab
+  Controls rectangular ~0–3px radius, compact ~24–26px capture height; search pill.
+  Filled green Save/Send; outlined green contextual actions; Cancel blue text.
+  40px pill controls and radius24 cards are generic/public defaults, not internal
+  likeness. Do not reduce required accessible hit areas to match raster height.
+  White fields, thin grey border, label above, compact date icon/select arrow;
+  field widths vary, not equal columns everywhere. Blank/filled, checked/unchecked,
+  select closed/open observed; no internal validation/disabled behaviour proven.
+  Demo hint outlines are excluded from app focus state. Source faint borders are
+  decorative; accessible border-input remains implementation boundary role.
+
+OpeningTable / CandidateTable (S12/S13)
+  Openings heading/tabs strip above white content. Add Job Opening left;
+  Draft & Open filter plus small export-like action right. Header33, rows~56.
+  Columns Candidates/Job Opening/Hiring Lead/Created On/Status, divided rows.
+  Detail has overview + share rail, edit/collaborators left and lead/status right.
+  Candidate toolbar count/New Candidate left, Still in the Running filter right;
+  columns Candidate Info/Status/Rating/Applied/Last Email. 0-result illustration
+  and one New filled row observed. Pale row tint is not checkbox selection.
+  PipelineBoard remains a separate required, unobserved layout.
+
+CollaboratorDialog (S13)
+  Title/close; creator row; collaboration-view select; Add People text area with
+  query then one/two removable collaborator chips; Notify people via email unchecked.
+  Done transitions to Share/Cancel state. Footer action left under green rule.
+  No permission denial or saved-share result captured. Dialog often450px wide;
+  source backdrop opacity/focus trap unproven, implement accessible dialog pattern.
+
+StarRating / CandidateStatusMenu (S15)
+  Five-star 0/5, 4/5, later3/5 observed; gold filled/grey unfilled. Expose numeric
+  label and keyboard-operable radio choices; colour alone insufficient.
+  Status select/searchable open list, group labels, lifecycle options, Create
+  Offer Letter/Hire actions. New and Schedule Phone Screen selected, Offer Sent
+  after sending. Exact option set differs by step; no universal enum inferred.
+  Optional comment box with Save Comment/No Comment observed after status change.
+
+CandidateNotes / EmailComposer (S15)
+  Candidate Info/Notes/Emails raised active tabs; Notes has Comments/History/All
+  subnav, empty input and illustrated empty comments. Emails empty illustration
+  plus New Email; filled state Emails(1), then(2), sent row with delivery text.
+  Composer replaces shell: title/close, template dropdown, Attach Files/formatting,
+  subject/body, placeholder list/filter right; Send Email/Cancel bottom-left.
+  No Template blank and Phone Screen Request filled states observed; do not treat
+  email templates as evidence for offer template administration.
+
+OfferEditor / OfferPreview / OfferTracker (S17)
+  Candidate/email header; ~222px details form left, letter editor right, gap~17.
+  Blank dates/job/pay + highlighted merge placeholders; then populated details/
+  merged prose. PDF tile includes e-sign switch enabled. Preview dark header with
+  recipient/avatar, Edit Offer/Send Offer Letter upper-right and paper body.
+  Tracker tab Offer prepends Candidate Info/Notes/Emails; Revise/View left,
+  Cancel Offer right, Hire action beside Sent/Viewed/Signed connected steps.
+  Sent then Viewed complete/date-stamped, Signed pending. No signed receipt.
+  Offer-template picker/library remains unobserved. Hire confirmation S18 has
+  checked close-opening control and Add New Employee/Don’t Hire actions; no form.
+
+PacketBuilder (S36; administrator setup, distinct from S19 recipient/preview)
+  New Hire Packet heading, Customize Fields right; employee/email, template
+  unset + empty prompt then dropdown open; filled arrival/contact/instructions.
+  Checked introduction email option, audience select, question rows with handles,
+  required/remove controls, Add Question; unchecked payroll reference options.
+  Source captures do not prove drag/drop, custom-field editor or payroll behaviour.
+  Preview S19 uses dark recipient header, Edit/Send upper-right; When & Where /
+  New Employee Info(current) / Get Introduced / Tasks to Complete steps; mixed
+  filled/blank information and Add Photo placeholder. Sending action observed,
+  recipient submission and delivery unproven.
+
+PacketProgress / OnboardingTaskList (S20)
+  Initial five neutral circles, Create New Hire Packet/Skip; task panel empty
+  clipboard + Import From Template/Add a Task. Filled progress first4 checked
+  and dated; final New Hire Tasks Completed pending. View Packet/Resend/Cancel
+  above progress right. Grouped checkbox list, Add Task/gear upper-right, rows~36.
+  New Hire Paperwork/Manager/IT/Culture Orientation/HR groups; checked/strike/
+  completion attribution and trash action; HR completed block pale green, completed
+  background-check row neutral. Office Tour unchecked→checked in steps61→62.
+  No overdue state or fully completed packet; do not infer all-done from tour rail.
+
+RecordSectionTable / EmploymentStatusDialog (S08)
+  Job: Employment Status empty→filled Full Time/W2; Job Information/Compensation/
+  Bonus populated, update links right. Dialog employee strip, effective date,
+  status/tax selects, comment, Save/Cancel; searchable status open with Full Time
+  highlight. Benefits empty plans/dependents + add links; change-group dialog
+  unset select. Benefits reference only, excluded from build scope.
+  Personal mixed filled/blank and masked fields; Documents still unobserved.
+
+Internal colour roles: internal-nav #e8e8e8, internal-surface #f2f2f2,
+internal-completed #e3ebd9, internal-heading #486f00; panels white. Source light
+rule #e0e0e0 decorative only. Source gradient endpoints, stars' exact gold, text
+antialiasing and source control boundary contrast not recovered. See audit 4 for
+measurement provenance; geometry and font defaults elsewhere are not source CSS.

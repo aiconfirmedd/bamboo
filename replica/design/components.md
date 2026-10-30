@@ -1,7 +1,7 @@
 # Bamboo component specs
 
 Every component from the recon list, plus the primitives they are built from.
-Tokens refer to `tokens.json` roles — never raw hex. Observed evidence is enumerated in design-audit.md and design-audit-2.md; design-audit-4.md governs live-tour assets; audit 3 governs the older live-demo gate files; design-audit-5.md governs public prospect S37/S38. Required states are implementation requirements, not screenshot proof. Keyboard and screen-reader behaviour is part of each spec.
+Tokens refer to `tokens.json` roles — never raw hex. Observed evidence is enumerated in design-audit.md and design-audit-2.md; design-audit-4.md governs live-tour assets; audit 3 governs the older live-demo gate files; design-audit-5.md governs public prospect S37/S38. design-audit-6.md governs the current logged-in trial theme (left nav/serif). Historical tour specs below are scoped to audit4 and must not override audit6. Required states are implementation requirements, not screenshot proof. Keyboard and screen-reader behaviour is part of each spec.
 
 ## Primitives
 
@@ -86,10 +86,10 @@ Skeleton
 
 ```
 GlobalNav / MobileTabBar
-  web       horizontal logo + Home, My Info, People, Hiring, Reports, Files; packet editor adds Payroll; search/inbox/help/settings/account right. Hiring/People active observed; role visibility unverified (audit 4)
+  web       current: left nav and trial/sample bar (Audit6 specs below); logo/search/inbox/Ask header. Historical audit4 tour: horizontal Home/My Info/People/Hiring/Reports/Files, packet Payroll; search/help/settings/account right. Role visibility unverified
   mobile    bottom order Home, My Info, People, Files; iOS white background with active accent icon/text; Android solid accent with white icons/text
   header    mobile accent bar, centred iOS title / left Android title; back/close at left on detail screens; contextual actions right
-  states    active tab observed; drawer, condensed-on-scroll and role gating unobserved
+  states    active nav/tabs observed; Collapse action visible in current sidebar, collapsed result/drawer/scroll behaviour/role gating unobserved
   a11y      nav landmark, aria-current=page, labelled icons, skip link
   used on   S08, S12, S13, S15, S17, S20, S36, S32 mobile
 
@@ -197,7 +197,7 @@ GoalCard / MilestoneList
 frames, arrows, stars, phone hardware and promotional headlines are presentation,
 not application components. Never ship source assets/copy/branding. Sizes in this older marketing section are implementation estimates unless explicitly called raster coordinates; later live careers measurements are scoped separately.
 
-- Typography (historical marketing only; internal live tour uses sans): record titles and section/chart headings use a bold serif;
+- Typography (marketing and current audit6 trial serif; historical audit4 tour uses sans): record titles and section/chart headings use a bold serif;
   controls, labels and body use sans. Use `font.heading` for that job; never infer
   the proprietary face from a raster. Mobile uses sans throughout the app.
 - Buttons: observed web save/next actions are full-width pills at the bottom of a
@@ -446,7 +446,7 @@ RecordSectionTable / EmploymentStatusDialog (S08)
   unset select. Benefits reference only, excluded from build scope.
   Personal mixed filled/blank and masked fields; Documents still unobserved.
 
-Internal colour roles: internal-nav #e8e8e8, internal-surface #f2f2f2,
+Historical tour colour roles: internal-nav #e8e8e8, internal-surface #f2f2f2,
 internal-completed #e3ebd9, internal-heading #486f00; panels white. Source light
 rule #e0e0e0 decorative only. Source gradient endpoints, stars' exact gold, text
 antialiasing and source control boundary contrast not recovered. See audit 4 for
@@ -511,3 +511,159 @@ ProspectMarketingShell (S38)
   CTA band and legal footer. Accordion interaction and CTA destination unproven.
   Images of app/checklist are promotional, not additional observed product screens.
   Use original assets/copy. No mobile layout or sticky/fixed behaviour established.
+
+
+## Audit 6 — current logged-in trial components (overrides generic/current-web claims)
+
+Source: all20 supplied captures; exact S-ID/state ledger and measurement caveats in
+[design-audit-6.md](design-audit-6.md). Audit4 section is historical tour evidence:
+its horizontal nav, sans headings, circular photo, gradient and compact rectangular
+controls do not specify this current theme. Public careers/prospect/mobile remain
+separately scoped. Blank, loading, error, focus and disabled behaviours below are
+requirements unless explicitly called observed.
+
+TrialShell / TrialSampleBanner (S02/S04/S06–08/S11–14/S18/S21–23/S28/S39)
+  parts     full-width dark countdown/signup bar; right eye + Viewing sample data;
+            white left global nav and header logo/search/inbox24/Ask. Nav order:
+            Home, My Info, People, Hiring, Reports, Files, Payroll, Compensation,
+            Time & Attendance, Benefits, Recognition, Ecosystem, Global Employment;
+            lower Resources, Settings, My Account, Collapse. Excluded modules reference only.
+  states    active pale rounded nav row/green label; Settings lower-left, not header gear.
+            Sample strip is trial product chrome, not simulator guidance. Orgchart404
+            is shell-less; other three404 captures retain shell. No role-switch proof.
+  tokens    trial-sidebar-width224, trial-banner-height48, trial-header-height75,
+            trial-page-inset32; bg/trial-surface/trial-banner/on-trial-banner.
+            Inter body15/400; serif trial-page42/700, trial-title34/700, section24/600.
+            Source Fields is provenance only; use font.trial-heading serif fallback.
+  a11y      nav landmark/current page/skip link; label sample-data state in text;
+            do not make clearing sample data an unconfirmed implicit navigation effect.
+            Fixed/sticky chrome and responsive collapse are unproved.
+
+TrialButton / TrialField / TrialTabs / TrialPanel
+  observed  filled/outlined pill actions, rounded white cards, small-radius form
+            controls; tabs underlined for directory/chart/hiring/recognition, raised
+            Job tab on profile. Generic or historical-tour dimensions are not universal.
+            Blank/filled fields, closed selects, mixed checkboxes and selected tiles.
+  tokens    accent/on-accent for white-label actions; trial-button14/600 measured;
+            search selector187×35/padding8 (enclosing pill distinct). Border-input
+            retained for3:1 boundaries; radius/shadow defaults remain estimates.
+            Offscreen first-button42×32/radius100 is not a page action measurement.
+  a11y      labelled native controls, required markers/semantics, focus-ring and
+            aria-selected/current; observed green outline does not prove keyboard focus.
+
+TrialDashboard (S02)
+  observed  greeting/fallback + New/Edit; tour and invite cards; narrow summaries /
+            wide activity list; Direct Reports current photo grid; lower three-column
+            widget cards including goals, out, links, recognition, onboarding, charts,
+            training/holidays/counts. Filled and section-level no-scheduled/no-overdue states.
+  tokens    surface-raised, trial-surface, text, trial-heading; trial body/title roles.
+  a11y      headings per widget, lists/table alternatives for charts; no data solely
+            in color. Widget rearrangement/edit/persistence and New menu unproved.
+
+DirectoryTable / OrgChartWorkspace (S06/S07)
+  observed  List selected in people-empty:91 employees, Active/All Employees filters,
+            filled photo/number/name/title/location/status rows, page1/1–50 of91.
+            No empty result despite URL query. people: Org Chart current (90), executive
+            and two subordinate nodes, links/counts, depth1/jump/zoom/export controls.
+  states    photos/fallbacks, local tab selected, unselected row controls; node
+            expansion/export/search-no-results/filter changes not demonstrated.
+  a11y      real table with scoped headings/sort labels and pagination; chart tree
+            with labelled expand/zoom, keyboard alternative and accessible hierarchy.
+            A visible control alone does not establish keyboard/drag behaviour.
+
+TrialRecord / JobSectionTables (S08)
+  observed  solid dark identity band, large rounded-square fallback, white serif name;
+            Request a Change/overflow/pager; Personal→Job(current)→Time Off→Documents→More.
+            Vitals/manager/direct reports left; main stacked white Job sections.
+            Mixed fields/veteran checks; populated historical employment/job/pay,
+            Commission/Equity rows, Potential Bonus10%/blank amount, Bonus section empty.
+            Customize Layout/Add Entry visible; no field-save or Documents content.
+  tokens    trial-identity/on-accent, trial-title, trial-surface/text/border-input.
+  a11y      labelled tabs/fields/check groups; histories as tables, caption per section;
+            empty Bonus text if implemented, not an empty-record illustration.
+
+TrialHiringList / CandidateTable / JobWizard (S12/S13/S14)
+  observed  Job Openings current, search blank, Draft & Open; six filled openings,
+            five Open/one Draft, counts/new counts. Candidate detail Candidates current,
+            four filled rows, Still in the Running, unchecked selections, varied stars/
+            status/last-email Received and Reply Now; applied sort arrow. No board.
+            Wizard four steps: Job Information current; Application Details, Job Pipeline,
+            Automated Emails pending. Blank title/lead/type, Draft default, unset selects,
+            unselected location tiles, blank rich description/internal code; Next Step,
+            Save & Finish Later/Cancel. Job Boards fifth step belongs to older evidence.
+  a11y      table selection/sort labels, numeric star alternatives, step list/current,
+            required fields/fieldset location choices, editor toolbar names; retain input
+            on validation. Post-next/post-save and validation states remain unproved.
+
+NewEmployeeForm / SampleDataWarning (S18)
+  observed  actual sectioned Personal/Address/Compensation/Contact/Job/Employment Status/
+            Job Information form, country United States, packet unchecked, No Access
+            selected beside Allow Access. Integration install is excluded reference.
+            Heads Up modal overlays/dims form: sample-data-clearing loss warning;
+            close, Hold Off and Add Anyway. Cancel/Save behind modal. Stitched full-page
+            crop does not prove footer position. This is not permission-denied.
+  tokens    bg/trial-surface/text/trial-heading/accent/on-accent, shadow pop as default;
+            source backdrop opacity and dialog CSS dimensions not measured.
+  a11y      alertdialog, named title/description, focus containment/return and labelled
+            close; safe cancel path and explicit proceed. Do not discard validation or
+            warn only after saving. No click outcome, saved employee or persistence proof.
+
+ReportsLibrary / ReportFieldChooser (S23 variants)
+  observed  Recent selected in secondary nav; Favorites tiles + grouped filled report
+            table. New Report empty name/search; Browse Fields collapsed categories and
+            Selected Fields Last name/First name. Lower filter section, name A–Z sorting,
+            Group by None; Cancel/Save bar. No dataset picker/result/export shown.
+  tokens    trial-surface/surface-raised/text/link/trial heading/type, border-input.
+  a11y      labelled report name/search, expand buttons with expanded state, keyboard
+            field-add/remove/reorder alternatives if implemented; labels for sort/filter.
+            Saved, run, exported, dirty/error/loading and expanded group states unproved.
+
+SettingsAccount / AccessLevelListing (S21/S22)
+  observed  Settings lower nav active. Long settings menu Account or Access Levels current;
+            account/trial/subscription/allowance/upgrades cards. Access page adds purple
+            dismissible former-employee notice/setup action, Levels rail All91 selected,
+            admin/regional employee/manager counts, add dropdown and search; filled users
+            Name/Level/Last Login, name ascending,1–25 of91, right overflow/clipping.
+  a11y      distinct navigation labels for global/settings/levels, accessible horizontal
+            overflow and table headers; notice dismiss has name. Purple is observational,
+            not a new semantic success/error role. Editor matrix, changed grants and
+            Preview-as-user are unproved; listing must not be described as editor proof.
+
+SignatureTemplateFiles (S11)
+  observed  Signature Templates current beside All Files/folders/counts; nine PDF rows,
+            unchecked selection/select-all, Name A–Z, attribution/size, page1/1–9 of9;
+            Upload File and icon actions. No picker/upload/download/sign outcome.
+  a11y      checkbox labels include filename; file type and size in text, named icon
+            actions, selection count and pagination; no checkbox implied checked by tint.
+
+AnnouncementAdministration (S39; separate from S31 feed)
+  observed  Back/New Announcement above six-row Title/Author/Status/Date table;
+            draft/published, author blank/filled. No composer/audience/publish outcome.
+  tokens    trial heading/body, bg/trial-surface/text/link.
+  a11y      table caption/scoped headers, meaningful title links/status text; composer
+            validation/focus/loading/publish feedback required only if implemented.
+
+RecognitionWorkspace (S28)
+  observed  All current (Received/Given inactive), My Points100/Points to Give50,
+            Redeem/Give Recognition, unset Division/Department/Location filters;
+            filled feed sender→recipients/date/10-point badge/serif message/core-value
+            tags, reaction counts/avatar stacks/comments/images. Suggestions rail has
+            AI-labelled message boxes, Edit/Send/dismiss and Thought-Starters.
+  a11y      article headings/named recipients, point/status text, image alternatives,
+            labelled reaction/count and comment actions; distinguish AI suggestion.
+            Composer, sending, redemption, comments expanded and reaction changes unproved.
+
+GlobalSearchResults (S04 over S02)
+  observed  query a, dropdown Employees (five results, first grey-highlighted),
+            Job Openings (four/status+age), Reports (one); photo/fallback. Anchored to
+            header search over dashboard, not a modal employee snapshot card.
+  a11y      combobox/listbox/group semantics with labelled options and active descendant,
+            arrow/Enter/Esc support, results announcement; keyboard operation unverified.
+            Employee detail preview, zero results and navigation result unproved.
+
+RouteNotFound (S07/S20/S24/S29 attempted destinations)
+  observed  red Page Not Found404 strip, neutral illustration/panel, Go Home;
+            orgchart shell-less, others with trial shell. No permission-denied state.
+  tokens    danger/on-accent for alert, bg/trial-surface/text for panel; original art.
+  a11y      error heading + alert text and real home link; do not conflate404 with403
+            or claim entitlement/role denial. Recovery navigation untested.

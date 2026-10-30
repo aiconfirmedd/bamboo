@@ -1,8 +1,9 @@
-# BambooHR Clone Reference
+# Bamboo
 
-A clean-room recon of BambooHR's HR portal — captured so the product can be
-rebuilt 1:1 on features and layout, then rebranded and filled with your own
-content. Built by **AI Confirmed**.
+**AI Confirmed white-label HR portal** — clean-room rebuild reference of
+BambooHR's intake, onboarding, recruiting, and retention flows. Captured so the
+product can be rebuilt 1:1 on features and layout, then rebranded and filled
+with your own content.
 
 > Not affiliated with BambooHR. Screenshots are reference captures of public
 > pages. Everything here was gathered from public sources only: marketing

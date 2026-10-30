@@ -1,6 +1,6 @@
 # bamboo-clone — tasks
 
-Reference repo: https://github.com/aiconfirmedd/bamboohr-clone-reference
+Reference repo: https://github.com/aiconfirmedd/bamboo
 
 ## Done
 - [x] Scope locked (5 modules, own agency, web)

@@ -1,0 +1,83 @@
+/* Bamboo design tokens — generated from tokens.json. Do not hand-edit hex values;
+   change tokens.json, re-run contrast.py, then regenerate. */
+
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #f6f6f4;
+  --color-surface-raised: #ffffff;
+  --color-border: #e3e6ea;
+  --color-border-input: #868e98;
+  --color-text: #14171c;
+  --color-text-muted: #5b6470;
+  --color-accent: #477f10;
+  --color-accent-hover: #3a6a0c;
+  --color-accent-text: #3f7210;
+  --color-accent-tint: #eef5e4;
+  --color-on-accent: #ffffff;
+  --color-danger: #c62f2f;
+  --color-danger-tint: #fbeaea;
+  --color-success: #1f7a4d;
+  --color-success-tint: #e7f4ed;
+  --color-warning: #a15c07;
+  --color-warning-tint: #fbf1e2;
+  --color-focus-ring: #477f10;
+
+  --font-sans: Manrope, Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --text-xs: 12px;  --text-xs-line: 16px;
+  --text-sm: 14px;  --text-sm-line: 20px;
+  --text-base: 16px; --text-base-line: 24px;
+  --text-lg: 20px;  --text-lg-line: 28px;
+  --text-xl: 28px;  --text-xl-line: 34px;
+  --text-display: 40px; --text-display-line: 44px;
+
+  --space-0: 0; --space-1: 4px; --space-2: 8px; --space-3: 12px;
+  --space-4: 16px; --space-6: 24px; --space-8: 32px; --space-12: 48px; --space-16: 64px;
+
+  --radius-sm: 6px; --radius-md: 10px; --radius-lg: 16px; --radius-pill: 999px;
+
+  --shadow-card: 0 1px 2px rgba(16,24,40,.06), 0 1px 3px rgba(16,24,40,.10);
+  --shadow-pop: 0 12px 32px rgba(16,24,40,.16);
+
+  --motion-fast: 120ms; --motion-base: 200ms; --motion-ease: cubic-bezier(.2,.8,.2,1);
+
+  --layout-max: 1200px; --layout-header: 56px; --layout-row: 44px;
+}
+
+/* Tailwind v4 theme mapping — components use bg-surface, text-muted, etc. */
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-border: var(--color-border);
+  --color-border-input: var(--color-border-input);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-accent-text: var(--color-accent-text);
+  --color-accent-tint: var(--color-accent-tint);
+  --color-on-accent: var(--color-on-accent);
+  --color-danger: var(--color-danger);
+  --color-danger-tint: var(--color-danger-tint);
+  --color-success: var(--color-success);
+  --color-success-tint: var(--color-success-tint);
+  --color-warning: var(--color-warning);
+  --color-warning-tint: var(--color-warning-tint);
+  --color-focus-ring: var(--color-focus-ring);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --shadow-card: var(--shadow-card);
+  --shadow-pop: var(--shadow-pop);
+}
+
+/* Base */
+html { font-family: var(--font-sans); color: var(--color-text); background: var(--color-bg); }
+*:focus-visible { outline: 2px solid var(--color-focus-ring); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

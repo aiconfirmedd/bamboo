@@ -17,7 +17,9 @@ with your own content.
 | `replica/recon.md` | the recon map: sources, 32 screens, 12 user flows, components, inferred data model, out-of-scope list, size estimate |
 | `replica/features.csv` | the feature matrix: 80 rows, priority-tagged (43 must / 18 should / 11 could / 8 skip) — this is the build checklist and the parity score |
 | `replica/screens/` | 24 layout reference screenshots (18 web, 6 iOS). Reference only — never shipped |
+| `replica/design/` | design tokens (`tokens.json`, `tokens.css`, Tailwind mapping) and component specs — 14/14 contrast pairs pass AA |
 | `docs/workflow.md` | the 9-step rebuild workflow and the clean-room ground rules |
+| `docs/IMPLEMENTATION.md` | recipient guide: implement the likeness, load your content, aim it at your clientele |
 
 Scope of the recon: **Home/Dashboard, People, Hiring/ATS (job intake →
 pipeline), Onboarding (packets, tasks, e-sign), Performance & Retention
@@ -27,20 +29,26 @@ time & attendance are deliberately excluded.
 ## Status
 
 - [x] Recon (this repo)
-- [ ] Architecture — stack, schema, API plan
-- [ ] Design system
-- [ ] Build
+- [x] Architecture — stack, schema, API plan
+- [x] Design system — tokens, component specs, contrast report
+- [ ] Build — primitives first, then the vertical slice
 - [ ] Parity diff, tests, rebrand, launch
+
+The code is **not built yet** by design: this repo stops one step before the
+build so you can implement it against your own brand and content. Start with
+`docs/IMPLEMENTATION.md`.
 
 ## How to use it
 
-1. Read `replica/recon.md` end to end. The flows are the spec; the edge cases
+1. Read `docs/IMPLEMENTATION.md` — it is the handoff: likeness, content,
+   clientele.
+2. Read `replica/recon.md` end to end. The flows are the spec; the edge cases
    listed under each flow are requirements, not trivia.
-2. Treat `replica/features.csv` as the checklist. The `clone` column stays `no`
+3. Treat `replica/features.csv` as the checklist. The `clone` column stays `no`
    until a feature is built **and** verified.
-3. Open `replica/screens/` next to your build and match layout, not pixels.
-4. Follow `docs/workflow.md` for the remaining steps (architect → design →
-   build → diff → test → brand → launch → deploy).
+4. Open `replica/screens/` next to your build and match layout, not pixels.
+5. Build from `replica/design/` tokens and specs; follow
+   `docs/architecture/build-order.md`.
 
 ### Make it yours
 

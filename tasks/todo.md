@@ -9,9 +9,10 @@ Reference repo: https://github.com/aiconfirmedd/bamboo
 - [x] 24 reference screenshots
 - [x] Public reference repo + workflow docs
 - [x] Architecture: stack, schema.sql (92 tables, RLS), 215-route API plan, build order
+- [x] Design: tokens (14/14 AA), component specs, recipient implementation guide
 
 ## Next
-- [ ] Design tokens + component specs
+- [ ] Build primitives on /design route (Button, Input, Select, Dialog, Toast, EmptyState)
 - [ ] Vertical slice: Home + People + Hiring pipeline + packet onboarding
 - [ ] Reviews / goals / eNPS
 - [ ] Parity diff vs features.csv

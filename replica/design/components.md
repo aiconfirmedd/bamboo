@@ -1,7 +1,7 @@
 # Bamboo component specs
 
 Every component from the recon list, plus the primitives they are built from.
-Tokens refer to `tokens.json` roles — never raw hex. Observed evidence is enumerated in design-audit.md. Required states are implementation requirements, not screenshot proof. Keyboard and screen-reader behaviour is part of each spec.
+Tokens refer to `tokens.json` roles — never raw hex. Observed evidence is enumerated in design-audit.md and design-audit-2.md; design-audit-3.md governs current live assets. Required states are implementation requirements, not screenshot proof. Keyboard and screen-reader behaviour is part of each spec.
 
 ## Primitives
 
@@ -45,7 +45,7 @@ DatePicker
 FileUpload
   states    idle, drag-over, uploading (progress), done, error (retry), size/type rejected
   a11y      button + hidden input, announce progress, list uploaded files with remove
-  used on   S10, S11, S15 (resume), S19
+  used on   S10, S11, S15 (resume), S19, S35; public idle and required-file error observed
 
 Badge / StatusPill
   variants  neutral, accent, success, warning, danger, muted
@@ -143,7 +143,7 @@ Modal / Dialog
 SectionedForm
   states    default, dirty, validation error per field, submit loading, success
   tokens    section heading lg/600, field gap 16, section gap 32
-  a11y      fieldset+legend per section, error summary at top with links
+  a11y      fieldset+legend per section, linked error summary required for implementation; source careers form shows inline errors only
   used on   S14, S18, S22
 
 EmailTemplateEditor
@@ -195,8 +195,7 @@ GoalCard / MilestoneList
 
 `design-audit.md` is the evidence ledger. Marketing green backgrounds, offset lime
 frames, arrows, stars, phone hardware and promotional headlines are presentation,
-not application components. Never ship source assets/copy/branding. All sizes below
-are implementation estimates unless explicitly called raster coordinates.
+not application components. Never ship source assets/copy/branding. Sizes in this older marketing section are implementation estimates unless explicitly called raster coordinates; later live careers measurements are scoped separately.
 
 - Typography: web record titles and section/chart headings use a bold serif;
   controls, labels and body use sans. Use `font.heading` for that job; never infer
@@ -239,5 +238,103 @@ are implementation estimates unless explicitly called raster coordinates.
 Geometry policy: `space` remains the proposed 4px rhythm; field radius ~6 raster
 pixels in mkt-01; its inner form corners ~12px. Large composite panels elsewhere
 have ~24–32 raster-pixel corners. `md=12`, `lg=24` are estimates for separate panel
-sizes, not evidence of one CSS scale. Header 56, row 44, sidebar widths, type sizes,
+sizes, not evidence of one CSS scale. Admin header 56, row 44, sidebar widths, type sizes,
 shadows, breakpoint values and motion are defaults awaiting a live app check.
+
+## Live careers corrections (2026-10-30)
+
+These scoped specs override generic geometry for S33–S35 only. The 17 simulator
+captures do not establish the logged-in app shell: all 17 show the personalization gate. Audit 2's invitation observation is superseded by current pixels. Never use its dark left rail, top chapters, hints,
+video, font zoom or Auto mode as application nav or permission evidence.
+Admin nav position/order/role visibility, header, table and pipeline remain unproven.
+No live completed/current product wizard steps are shown; prior marketing evidence
+for S14/S25 remains valid. Simulator current/expanded steps belong to demo chrome.
+
+PublicCareersShell (S33–S35)
+  White outer canvas; warm surface container inset ~32 raster px, small rounded
+  outer corners. Organization mark upper-left. List has three social links top-right;
+  detail/apply has privacy link upper-right. No employee/admin nav or login shown.
+  List at 1200px: white panel x64..1136, y172..652, ~16px corners, subtle bottom shadow;
+  inset 20px, title serif ~24px, body sans ~14–16px. Footer near page bottom.
+  Detail/apply at 1440px: main x78..970 (~892), rail x1002..1362 (~360), gap 32;
+  panels begin y172. Main inset ~20, outer inset 32, inner inset ~46 from surface.
+  Careers inner-inset token 32 is the list layout; detail/apply differ as above.
+  White panels use radius-careers-panel; generic lg=24 remains a marketing/default role.
+  Title uses heading family, copy/labels sans; exact family/weights unproven.
+  Surface #f3f2ef, panel white, text #3f3937, muted #6c6765, divider #bfbab7;
+  source heading/action #1e6e46, links #0e46cb. Neutral accent remains default.
+
+JobListRow (S33; observed filled, three rows)
+  One divided list, no board, table header, search, stage counts or status pills.
+  Three columns: linked title + department; work mode icon/text + location;
+  department icon/text + employment type. Native raster rows ~127px high.
+  Separators inset 20px; row content inset another ~16px. No selected/empty state seen.
+  a11y: list semantics, descriptive title links; icons decorative with adjacent text.
+
+JobDetail (S34)
+  Main white article: back-to-openings link, serif title, metadata line, divider,
+  long sectioned prose and bullet lists. Rail white card: full-width pill primary
+  apply action, divider, job-link field, three outlined social icon pills.
+  Below card on surface: location, department, employment type, compensation,
+  each separated by rules. No candidate profile, internal pipeline or offer UI.
+  Footer legal links left, platform attribution right. Sticky rail unproven.
+  a11y: article headings and lists, labelled sharing actions and link field.
+
+ApplyForm (S35)
+  Retains detail title/back link and metadata rail; rail primary becomes outlined
+  return-to-description pill. First/last name paired; email and phone separate rows,
+  narrower phone. Labels above; required asterisk. Controls ~40 raster px high,
+  ~6px corners, white fill. Sections divided horizontally: identity, attachments,
+  screening/consent. Questions stack with vertical radio groups or short inputs;
+  no select-open, checked option, entered answer or successful submission observed.
+  Full-width dark footer (#312b29): attribution left, cancel + white submit pill
+  right. It is at document bottom; fixed/sticky behaviour unproven.
+  a11y: labels, fieldset/legend, native radios, required semantics; preserve input
+  after validation. Employer questions/copy are reference only, write original copy.
+
+PublicFileUpload (S35)
+  Cover letter optional, resume required; two stacked rows. Outlined pill chooser
+  with upload icon, adjacent document icon + empty filename status. Observed idle
+  and required-resume error only. No dropzone, progress, chosen filename or remove
+  action proven. Those generic FileUpload states remain requirements if implemented.
+  a11y: labelled file input, required state and error association; announce filename.
+
+ValidationSummary / InlineValidation (S35 validation variant)
+  Observed: all required blank fields/groups flagged together. Red icon + label,
+  red input border; pale pink error blocks below fields. Radio-group errors span
+  main content width, text-input messages fit content. Required resume gets its own
+  error; optional cover letter remains neutral. Form grows 2628→3408 raster px.
+  No top-level error summary is visible. Add a linked summary as an accessibility
+  requirement, explicitly unobserved. Use danger text on danger-tint; source bright
+  red #d91425 is observational, darker #a40b17 token preserves AA normal text.
+  a11y: aria-invalid, aria-describedby, focus summary after failed submit; error
+  icon/text prevents colour-only signaling. Successful correction/focus unproven.
+
+Token scope: added careers layout roles are native raster measurements, not universal
+CSS dimensions. Keep existing admin header/row/sidebar defaults pending real evidence.
+Border-input retains accessible #838b95 rather than copying faint source borders.
+No source shadows, proprietary fonts, role gating or responsive behaviour recovered.
+
+## Audit 3 overrides — current assets (2026-10-30)
+
+All 17 demo captures show Get Started > Personalize, including sat-enps. No
+invitation or internal shell is currently evidenced. Gate email `na@` in perf is
+partial input, not a product validation state; Auto mode on in sat-report is
+simulator state. Current/expanded simulator chapters are not product steppers.
+See design-audit-3.md for every filename and exact duplicate group.
+
+PublicShareRail (S34–S35, observed)
+  Main/rail gap32, rail360 at 1440px; panel padding20 and radius16 raster px.
+  Filled apply pill switches to outlined description-return pill on S35.
+  Link field with displayed URL; readonly/editable behaviour unproven.
+  Three outlined social icon pills, not square global IconButtons; accessible
+  names required. Metadata is below card on surface with decorative dividers.
+
+Public form states override generic Checkbox/Radio/Toggle dimensions: unselected
+round radios only; 20px checkbox geometry is an implementation default. Input,
+radio and FileUpload use also includes S35. No checked public answer or filled
+application is observed. Inline validation is observed; summary is required only.
+Panel padding20 and detail inset46 are native raster measures scoped to careers;
+list inner inset32 remains separate. Source divider is decorative; border-input
+is the accessible control boundary. Public type sizes are approximate raster
+estimates, not measured font CSS. No new internal component dimensions inferred.

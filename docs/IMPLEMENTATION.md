@@ -12,7 +12,7 @@ Read `docs/workflow.md` first. This guide assumes you follow it.
 
 Likeness is layout and behaviour, not pixels and not their brand.
 
-Visual evidence and its limits: see `replica/design/design-audit.md`. Full web
+Visual evidence and its limits: see `replica/design/design-audit.md` and `replica/design/design-audit-2.md`. Public careers S33–S35 now establish list/detail/form and inline validation; 16 live simulator captures retain the personalization gate and one shows an invitation email. Full web
 navigation, pipeline, goals and packet stepper remain requirements without screenshot
 proof; mobile and marketing crops do not establish their complete web layout.
 

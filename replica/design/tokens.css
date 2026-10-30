@@ -1,19 +1,32 @@
-/* Generated from tokens.json; visual evidence: design-audit.md. */
+/* Generated from tokens.json; current visual evidence: design-audit-3.md. */
 :root {
+  --bamboo-layout-careers-detail-inset: 46px;
+  --bamboo-layout-careers-panel-padding: 20px;
+  --bamboo-layout-careers-input-height: 40px;
+  --bamboo-layout-careers-row-height: 127px;
+  --bamboo-layout-careers-sidebar: 360px;
+  --bamboo-layout-careers-main: 892px;
+  --bamboo-layout-careers-column-gap: 32px;
+  --bamboo-layout-careers-inner-inset: 32px;
+  --bamboo-layout-careers-outer-inset: 32px;
+  --bamboo-radius-careers-panel: 16px;
+  --bamboo-color-link: #0e46cb;
+  --bamboo-color-on-footer: #ffffff;
+  --bamboo-color-footer: #312b29;
   --bamboo-color-bg: #ffffff;
-  --bamboo-color-surface: #f6f6f4;
+  --bamboo-color-surface: #f3f2ef;
   --bamboo-color-surface-raised: #ffffff;
-  --bamboo-color-border: #d8d8d8;
-  --bamboo-color-border-input: #868e98;
-  --bamboo-color-text: #333333;
-  --bamboo-color-text-muted: #626262;
+  --bamboo-color-border: #bfbab7;
+  --bamboo-color-border-input: #838b95;
+  --bamboo-color-text: #3f3937;
+  --bamboo-color-text-muted: #6c6765;
   --bamboo-color-accent: #475569;
   --bamboo-color-accent-hover: #334155;
   --bamboo-color-accent-text: #334155;
   --bamboo-color-accent-tint: #f1f5f9;
   --bamboo-color-on-accent: #ffffff;
-  --bamboo-color-danger: #c62f2f;
-  --bamboo-color-danger-tint: #fbeaea;
+  --bamboo-color-danger: #a40b17;
+  --bamboo-color-danger-tint: #fde7e9;
   --bamboo-color-success: #1f7a4d;
   --bamboo-color-success-tint: #e7f4ed;
   --bamboo-color-warning: #a15c07;
@@ -52,7 +65,7 @@
   --bamboo-radius-sm: 6px;
   --bamboo-radius-md: 12px;
   --bamboo-radius-lg: 24px;
-  --bamboo-radius-pill: 999px;
+  --bamboo-radius-pill: 999;
   --bamboo-shadow-card: 0 1px 2px rgba(16,24,40,.06), 0 1px 3px rgba(16,24,40,.10);
   --bamboo-shadow-pop: 0 12px 32px rgba(16,24,40,.16);
   --bamboo-motion-fast: 120ms;
@@ -68,6 +81,9 @@
   --bamboo-layout-record-sidebar: 200px;
   --bamboo-layout-wizard-sidebar: 264px;
   --bamboo-layout-mobile-tab-height: 56px;
+  --color-footer: var(--bamboo-color-footer);
+  --color-on-footer: var(--bamboo-color-on-footer);
+  --color-link: var(--bamboo-color-link);
   --color-bg: var(--bamboo-color-bg);
   --color-surface: var(--bamboo-color-surface);
   --color-surface-raised: var(--bamboo-color-surface-raised);
@@ -90,6 +106,7 @@
   --font-sans: var(--bamboo-font-sans);
   --font-mono: var(--bamboo-font-mono);
   --font-heading: var(--bamboo-font-heading);
+  --radius-careers-panel: var(--bamboo-radius-careers-panel);
   --radius-sm: var(--bamboo-radius-sm);
   --radius-md: var(--bamboo-radius-md);
   --radius-lg: var(--bamboo-radius-lg);
@@ -132,12 +149,24 @@
   --layout-record-sidebar: var(--bamboo-layout-record-sidebar);
   --layout-wizard-sidebar: var(--bamboo-layout-wizard-sidebar);
   --layout-mobile-tab-height: var(--bamboo-layout-mobile-tab-height);
+  --layout-careers-outer-inset: var(--bamboo-layout-careers-outer-inset);
+  --layout-careers-inner-inset: var(--bamboo-layout-careers-inner-inset);
+  --layout-careers-column-gap: var(--bamboo-layout-careers-column-gap);
+  --layout-careers-main: var(--bamboo-layout-careers-main);
+  --layout-careers-sidebar: var(--bamboo-layout-careers-sidebar);
+  --layout-careers-row-height: var(--bamboo-layout-careers-row-height);
+  --layout-careers-input-height: var(--bamboo-layout-careers-input-height);
+  --layout-careers-panel-padding: var(--bamboo-layout-careers-panel-padding);
+  --layout-careers-detail-inset: var(--bamboo-layout-careers-detail-inset);
   --layout-max: var(--bamboo-layout-max-content);
   --layout-header: var(--bamboo-layout-header-height);
   --layout-row: var(--bamboo-layout-row-height);
 }
 
 @theme inline {
+  --color-footer: var(--bamboo-color-footer);
+  --color-on-footer: var(--bamboo-color-on-footer);
+  --color-link: var(--bamboo-color-link);
   --color-bg: var(--bamboo-color-bg);
   --color-surface: var(--bamboo-color-surface);
   --color-surface-raised: var(--bamboo-color-surface-raised);
@@ -178,6 +207,7 @@
   --text-display: var(--bamboo-text-display);
   --text-display--line-height: var(--bamboo-text-display-line);
   --text-display--font-weight: var(--bamboo-text-display-weight);
+  --radius-careers-panel: var(--bamboo-radius-careers-panel);
   --radius-sm: var(--bamboo-radius-sm);
   --radius-md: var(--bamboo-radius-md);
   --radius-lg: var(--bamboo-radius-lg);

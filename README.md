@@ -66,6 +66,15 @@ Fork it, then:
   intake → approval as a deliberate improvement.
 - Google Play screenshots were not captured (iOS set is included instead).
 
+### Live-capture coverage (2026-10-30)
+
+Captured without login: the public interactive demo simulator (17 steps) and a
+real public careers portal (list, detail, apply form, validation). Still needs a
+logged-in session: admin settings, access levels, review-cycle setup, packet
+builder, eNPS launch, report builder, org chart, snapshot popup, offer
+templates, announcements composer, permission-denied states, and computed CSS
+metrics. See `replica/design/design-audit-2.md` and `-3.md`.
+
 ## License
 
 MIT for the recon text, matrix, and docs. Screenshots © BambooHR LLC, included

@@ -2,7 +2,7 @@
 
 You are holding a clean-room reference for **Bamboo**, an HR portal covering
 intake, onboarding, recruiting, and retention. Nothing here is built yet — the
-recon, the architecture, and the design system are done. This guide is how you
+recon, the architecture, and the design system are documented. This guide is how you
 turn them into your own working product: its **likeness**, your **content**,
 and your **clientele**.
 
@@ -12,7 +12,11 @@ Read `docs/workflow.md` first. This guide assumes you follow it.
 
 Likeness is layout and behaviour, not pixels and not their brand.
 
-**Keep (this is the product):**
+Visual evidence and its limits: see `replica/design/design-audit.md`. Full web
+navigation, pipeline, goals and packet stepper remain requirements without screenshot
+proof; mobile and marketing crops do not establish their complete web layout.
+
+**Keep (product requirements; observation status is in the audit):**
 
 - The nav order and role-based visibility: Home, My Info, Recognition, People,
   Files, Community, Reports, Settings, My Account.
@@ -33,6 +37,9 @@ Likeness is layout and behaviour, not pixels and not their brand.
 - Name, logo, favicon, accent colour, font. Swap values in
   `replica/design/tokens.json`, regenerate `tokens.css`, re-run
   `python3 contrast.py replica/design/tokens.json` until zero AA failures.
+  The default accent is a neutral slate (clean-room placeholder); for the
+  closest likeness copy the `theme-likeness` block over the matching colour
+  roles — those are the measured source greens, contrast-checked.
 - All copy. Every label, empty state, email template, and survey question is
   written fresh — do not copy BambooHR's wording.
 - Icons: use Lucide or Phosphor. Illustrations: commission or make your own.

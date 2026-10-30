@@ -1,9 +1,7 @@
 # Bamboo component specs
 
 Every component from the recon list, plus the primitives they are built from.
-Tokens refer to `tokens.json` roles — never raw hex. States marked (R) were seen
-in recon; the rest are required even though the original's public pages never
-showed them. Keyboard and screen-reader behaviour is part of each spec.
+Tokens refer to `tokens.json` roles — never raw hex. Observed evidence is enumerated in design-audit.md. Required states are implementation requirements, not screenshot proof. Keyboard and screen-reader behaviour is part of each spec.
 
 ## Primitives
 
@@ -11,8 +9,8 @@ showed them. Keyboard and screen-reader behaviour is part of each spec.
 Button
   variants  primary (accent bg), secondary (surface bg, border), ghost (transparent), danger (danger bg)
   sizes     sm 32px, md 40px, lg 48px; padding 12/16/24 horizontal
-  states    default, hover (accent-hover), active (translate-y-px), focus-visible (2px focus-ring, offset 2), disabled (50% opacity, no pointer), loading (spinner replaces icon, label kept for SR)
-  tokens    bg accent, text on-accent, radius md, font sm/600, motion fast
+  states    default, hover (accent-hover), active (behaviour unobserved), focus-visible (2px focus-ring, offset 2), disabled (50% opacity, no pointer), loading (spinner replaces icon, label kept for SR)
+  tokens    bg accent, text on-accent, radius pill for primary/secondary actions, font sm/600, motion fast
   a11y      real <button>, aria-busy while loading, aria-disabled not just visual
   used on   all screens
 
@@ -87,22 +85,23 @@ Skeleton
 ## Composites
 
 ```
-TopNav
-  variants  employee, manager, admin (items appear by role; Settings gear admin-only)
-  states    default, active item, condensed on scroll
-  tokens    bg bg, border-b border, height header, font sm/500, active = accent-text + 2px accent underline
-  a11y      nav landmark, aria-current=page, skip link before it, mobile drawer with focus trap
-  used on   all screens
+GlobalNav / MobileTabBar
+  web       no full application shell is visible in these marketing crops; web nav position/order and role gating remain unverified
+  mobile    bottom order Home, My Info, People, Files; iOS white background with active accent icon/text; Android solid accent with white icons/text
+  header    mobile accent bar, centred iOS title / left Android title; back/close at left on detail screens; contextual actions right
+  states    active tab observed; drawer, condensed-on-scroll and role gating unobserved
+  a11y      nav landmark, aria-current=page, labelled icons, skip link
+  used on   S32; web shell remains a requirement
 
 WidgetCard
   variants  welcome, celebrations, company-links, whos-out, my-stuff, whats-happening, insights-metric
-  states    empty (R), filled (R), loading, error, admin-configured hidden
+  states    empty (required, unobserved), filled (observed), loading, error, admin-configured hidden
   tokens    bg surface-raised, border border, radius lg, shadow card, padding 16
   a11y      h2 per widget, admin edit affordance labelled "Configure <widget>"
   used on   S02, S03
 
 DataTable
-  states    empty (R), filled (R), loading skeleton, sorted, filtered, selected rows, permission-masked cells
+  states    empty (required, unobserved), filled (observed), loading skeleton, sorted, filtered, selected rows, permission-masked cells
   tokens    row height, border-b border, header font xs/600 text-muted, hover surface
   a11y      <table> with caption, th scope, sort buttons with aria-sort, row action menu
   used on   S06, S12, S23
@@ -118,19 +117,19 @@ TabbedRecordPage
   used on   S08, S15
 
 PipelineBoard
-  states    empty column (R), filled column (R), drag-over, collapsed column, stage count
+  states    empty column (required), filled column (required; no pipeline screenshot), drag-over, collapsed column, stage count
   tokens    column bg surface, card bg bg + shadow card, radius md
   a11y      columns as lists with headings; drag has keyboard alternative (move-to menu)
   used on   S13
 
 TaskList / TaskTile
   states    todo, done (strikethrough + check), overdue (warning), assigned-to-me, assigned-to-other
-  tokens    tile bg surface-raised, border, radius md; done = success-tint
+  tokens    tile bg surface-raised, border, radius md; done styling unobserved; unchecked tasks are observed
   a11y      checkbox per task, assignee in text, progress announced
   used on   S19, S20
 
 ESignBlock
-  states    unsigned, signing, signed (hash + timestamp), declined, expired
+  states    unsigned, signing, signature drawn (observed), signed receipt with hash + timestamp (required, unobserved), declined, expired
   tokens    border dashed border-input, radius md, signed = success-tint + lock icon
   a11y      sign action is a button, receipt text readable, document link opens new tab
   used on   S17, S19
@@ -191,3 +190,54 @@ GoalCard / MilestoneList
 - Colour is never the only signal (pills carry text, errors carry icons + text).
 - Reduced motion: transitions collapse to 0.01ms.
 - Every list screen ships an empty state with a real next action.
+
+## Visual audit corrections (2026-10-30)
+
+`design-audit.md` is the evidence ledger. Marketing green backgrounds, offset lime
+frames, arrows, stars, phone hardware and promotional headlines are presentation,
+not application components. Never ship source assets/copy/branding. All sizes below
+are implementation estimates unless explicitly called raster coordinates.
+
+- Typography: web record titles and section/chart headings use a bold serif;
+  controls, labels and body use sans. Use `font.heading` for that job; never infer
+  the proprietary face from a raster. Mobile uses sans throughout the app.
+- Buttons: observed web save/next actions are full-width pills at the bottom of a
+  wizard rail; secondary finish-later immediately below. Profile request/overflow
+  and edit actions sit top-right. Fields have small rounded corners, white fill,
+  thin grey borders; labels above. Selected tab is a raised light rectangle,
+  not a global 2px underline rule.
+- Record header (mkt-01): dark branded masthead; large overlapping square avatar
+  left, serif name and subtitle, right-side actions. Below, tabs in order Personal,
+  Job, Time off, Documents, Timesheets, Performance, Emergency, Training, More.
+  Left vitals/manager rail; right section title + Edit fields above white form.
+  Four name fields across, later rows 1–3 fields; not a directory table.
+- Wizard (mkt-06,13): standalone title strip above a narrow left step rail and
+  wider right form. Completed check circles, current light row, incomplete hollow
+  circle; all three observed. Job steps: Job Information, Application Details,
+  Job Pipeline, Automated Emails, Job Boards. Review steps: People, Feedback,
+  Assessments, Review & Launch. Checked job-board tiles and enabled review toggle
+  observed; no dropdown-open or validation state shown.
+- Home/community (mkt-03,15): compact summary cards left, wide tabbed community
+  list right. Toolbar separate from divided feed rows; thumbnail, title, byline,
+  metadata, reaction/view controls. Not independent large cards for each post.
+- Tasks (mkt-10): single white list panel; heading left, Add Task and gear right;
+  category labels then unchecked rows; assignee and due date right. No evidence
+  of completed/overdue semantics, tile grid or green completed background.
+- Signature (mkt-07): document review plus Add Signature editor with Draw/Type,
+  drawn mark, clear/cancel and save/apply control. No visible receipt/hash/expiry.
+- Analytics (mkt-02,08,12,16): bar/donut panels; KPI strip and horizontal funnel;
+  performance value-versus-engagement scatterplot with avatars and employee list;
+  wellbeing trend chart, category summary and numeric heatmap respectively.
+  Heatmap needs legible numbers and legend, not colour alone. No goal/milestone
+  UI is evidenced by mkt-12.
+- Mobile: single-column divided lists, compact headers and bottom tabs, not web
+  card grids. Directory photo and initials/silhouette fallbacks, selected calendar
+  date, request comment thread with fixed bottom approval actions, unread inbox
+  tab, and filled signature form are observed. Empty contact slots in play-03
+  are field-level absence with add links, not an empty-screen state.
+
+Geometry policy: `space` remains the proposed 4px rhythm; field radius ~6 raster
+pixels in mkt-01; its inner form corners ~12px. Large composite panels elsewhere
+have ~24–32 raster-pixel corners. `md=12`, `lg=24` are estimates for separate panel
+sizes, not evidence of one CSS scale. Header 56, row 44, sidebar widths, type sizes,
+shadows, breakpoint values and motion are defaults awaiting a live app check.

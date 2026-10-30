@@ -5,7 +5,7 @@ For: owner's own agency — internal recruiting/retention portal, rebrandable, o
 Date: 2026-10-29
 Method: clean-room, public sources only (marketing, pricing, help center, product updates, public API docs, app store listings). No logins, no JS-bundle reads, no traffic capture.
 
-Legend: **(O)** = observed on a public page; **(I)** = inferred. States column: public marketing shows filled states only — empty/error/permission states are unobserved unless noted.
+Legend: **(O)** = observed on a public page; **(I)** = inferred. States column audited against all 48 local images (2026-10-30); see design/design-audit.md. Blank fields are not empty screens; help-center files are icons, not UI captures.
 
 ## Sources
 
@@ -34,38 +34,38 @@ A company runs its whole people lifecycle in one place: it opens a job, tracks a
 
 | ID | screen | route / how to reach | purpose | key components | states seen |
 | --- | --- | --- | --- | --- | --- |
-| S01 | Login / SSO | /login | sign in | email+password, SAML SSO button, passkey (O: store listing, passkeys update) | filled only |
-| S02 | Home (employee) | default after login | personal dashboard | widgets: Welcome, Celebrations, Company Links, Who's Out, My Stuff, What's Happening (O: help 639584) | filled (mkt-03) |
-| S03 | Insights Dashboard (admin) | Reports > Insights | 16 metric widgets, role-based visibility (O: product-updates 2025) | widget grid, filters | filled (mkt-02) |
-| S04 | Global search + Employee Snapshot | top search, any page | popup record preview without leaving page (O: help 2007786) | search input, modal card | filled only |
-| S05 | My Info (self-service) | My Info nav | edit own record per field permission (O: help 587803) | field groups, save bar | filled only |
-| S06 | People directory | People tab | searchable/filterable/exportable list; standard filters dept/division/status/title/location/teams (O: 587751, 587753) | table, filter chips, export | filled (mkt-01) |
-| S07 | Org chart | from directory/profile | hierarchy view, quick link (O: update Nov 2025) | node tree, zoom | filled only |
-| S08 | Employee profile | click person | tabbed record: Personal, Job, Time Off, Documents, Benefits, Pay Info, Performance, Emergency, Notes, Training, Onboarding/Offboarding, More (O: 587295) | tabs, field groups, action menu | filled (mkt-01) |
+| S01 | Login / SSO | /login | sign in | email+password, SAML SSO button, passkey (O: store listing, passkeys update) | not visually observed |
+| S02 | Home (employee) | default after login | personal dashboard | widgets: Welcome, Celebrations, Company Links, Who's Out, My Stuff, What's Happening (O: help 639584) | filled balances/summary + selected community tab and populated feed (mkt-03); full shell unobserved |
+| S03 | Insights Dashboard (admin) | Reports > Insights | 16 metric widgets, role-based visibility (O: product-updates 2025) | widget grid, filters | populated chart montage (mkt-02); Insights page placement unproven |
+| S04 | Global search + Employee Snapshot | top search, any page | popup record preview without leaving page (O: help 2007786) | search input, modal card | not visually observed |
+| S05 | My Info (self-service) | My Info nav | edit own record per field permission (O: help 587803) | field groups, save bar | mobile populated contact record + absent contact fields/add links (play-03); web edit/save unobserved |
+| S06 | People directory | People tab | searchable/filterable/exportable list; standard filters dept/division/status/title/location/teams (O: 587751, 587753) | table, filter chips, export | mobile filled alphabetical list, avatar fallback, active People tab (ios-03, play-05); web directory unobserved |
+| S07 | Org chart | from directory/profile | hierarchy view, quick link (O: update Nov 2025) | node tree, zoom | not visually observed |
+| S08 | Employee profile | click person | tabbed record: Personal, Job, Time Off, Documents, Benefits, Pay Info, Performance, Emergency, Notes, Training, Onboarding/Offboarding, More (O: 587295) | tabs, field groups, action menu | Personal selected, filled and blank fields, photo, request-change/edit actions (mkt-01); Onboarding verification fragment (mkt-11) |
 | S09 | Profile customize | Customize Tabs / Customize Layout | admin reorders fields/tabs (O: 587295) | drag lists, toggles | not observed |
 | S10 | Employee documents | profile Documents tab | list/upload docs, per-doc share checkbox, Employee Uploads folder (O: 640097) | file list, upload, share toggle | not observed |
 | S11 | Company Files | Files nav | company file categories (O: 587287) | category list, upload | not observed |
-| S12 | Job Openings list | Hiring nav | openings with search by title/dept/location/lead, stage counts (O: 875031) | table, search, status pills | filled only |
-| S13 | Job opening detail | click opening | Candidates pipeline + Job Boards tabs (O: 1070282) | pipeline columns w/ counts, candidate cards, tabs | filled (mkt-06) |
-| S14 | New/Edit job opening | openings list / Settings > Hiring | intake form: title, dept, location, type, description, hiring lead (O: 587638) | sectioned form, selects | not observed |
-| S15 | Candidate profile | click candidate | Info / Emails / Notes / Interviews tabs (O: 587645) | tabs, resume viewer, message composer, scorecard | filled only |
+| S12 | Job Openings list | Hiring nav | openings with search by title/dept/location/lead, stage counts (O: 875031) | table, search, status pills | not visually observed |
+| S13 | Job opening detail | click opening | Candidates pipeline + Job Boards tabs (O: 1070282) | pipeline columns w/ counts, candidate cards, tabs | not visually observed; mkt-06 is S14, not a candidate pipeline |
+| S14 | New/Edit job opening | openings list / Settings > Hiring | intake form: title, dept, location, type, description, hiring lead (O: 587638) | sectioned form, selects | Job Boards current, prior steps complete, two board tiles checked, save/finish-later actions (mkt-06) |
+| S15 | Candidate profile | click candidate | Info / Emails / Notes / Interviews tabs (O: 587645) | tabs, resume viewer, message composer, scorecard | populated candidate fragment, Info selected (mkt-05); full screen unobserved |
 | S16 | Interview self-schedule page | candidate email link | slot picker with calendar buffer (O: 1976009) | calendar, slot list, confirm | not observed |
-| S17 | Offer letter flow | candidate profile | template select, auto-populate, email preview, e-sign, status (O: 960688) | template picker, preview, e-sign block | filled (mkt-07) |
-| S18 | Add Employee | People > Add | form with optional auto-send New Hire Packet (O: 588009) | sectioned form, packet toggle | not observed |
-| S19 | New Hire Packet (new-hire view) | email link / profile Onboarding tab | info fields, e-sign docs, tasks, progress (O: 588009) | stepper, e-sign blocks, task list | filled (mkt-09) |
-| S20 | Onboarding/Offboarding tab | profile | task lists (IT Setup, Manager) with tiles (O: 587295, task design update) | task tiles, progress, assignees | filled (mkt-10) |
+| S17 | Offer letter flow | candidate profile | template select, auto-populate, email preview, e-sign, status (O: 960688) | template picker, preview, e-sign block | pending document + signature drawing editor with drawn mark (mkt-07); final receipt unobserved |
+| S18 | Add Employee | People > Add | form with optional auto-send New Hire Packet (O: 588009) | sectioned form, packet toggle | hired confirmation + add-employee action only (mkt-05); add form unobserved |
+| S19 | New Hire Packet (new-hire view) | email link / profile Onboarding tab | info fields, e-sign docs, tasks, progress (O: 588009) | stepper, e-sign blocks, task list | welcome/start and packet/setup form fragments with filled/blank fields and enabled introduction toggle (mkt-09; actor uncertain); mobile drawn I-9 signature (play-08) |
+| S20 | Onboarding/Offboarding tab | profile | task lists (IT Setup, Manager) with tiles (O: 587295, task design update) | task tiles, progress, assignees | grouped unchecked tasks, assignee/due dates, Add Task/gear (mkt-10, mkt-05); no completed/overdue proof |
 | S21 | Settings hub | gear, bottom-left (admins only) | admin groups: Hiring, Onboarding & Offboarding, Employee Satisfaction, Core Values, API keys, Billing, Access Levels (O: 2086908) | grouped nav | not observed |
 | S22 | Access levels editor | Settings > Access Levels | sections See About Themselves / See About Other Employees / See on Home; preview-as-user; custom levels; non-employee users (O: 587374, 925390) | permission matrix, preview mode | not observed |
-| S23 | Reports | Reports nav | standard reports (Candidate Sources, Applicant Funnel, Turnover, Goals Status) + custom builder (O: 587875, 691371) | report list, builder, export | filled (mkt-08) |
+| S23 | Reports | Reports nav | standard reports (Candidate Sources, Applicant Funnel, Turnover, Goals Status) + custom builder (O: 587875, 691371) | report list, builder, export | populated bar/donut charts (mkt-02), KPI/funnel (mkt-08), performance scatterplot (mkt-12); builder/list/export unobserved |
 | S24 | Performance tab | profile | Goals, assessments, peer feedback subtabs (O: 588034) | subtabs, goal cards, feedback list | not observed |
-| S25 | Review cycle setup | Performance admin | questions, 360 config, double-blind, segments, duplicate (O: 588033, 1810421) | form, question editor, toggles | filled (mkt-13) |
-| S26 | Goals | profile Performance / nav | individual + shared goals, ≤10 milestones, progress, comments, cascading tree (O: 588034, 984999) | goal cards, milestone list, alignment picker | filled (mkt-12) |
+| S25 | Review cycle setup | Performance admin | questions, 360 config, double-blind, segments, duplicate (O: 588033, 1810421) | form, question editor, toggles | Assessments selected, prior steps checked, pending review step, enabled toggle, filled dates/frequency and upcoming windows (mkt-13) |
+| S26 | Goals | profile Performance / nav | individual + shared goals, ≤10 milestones, progress, comments, cascading tree (O: 588034, 984999) | goal cards, milestone list, alignment picker | not visually observed; mkt-12 is performance scatterplot, not goals |
 | S27 | 1:1s | profile | scheduling, agenda, shared notes (O: 1898823) | scheduler, notes editor | not observed |
-| S28 | Recognition feed | Recognition nav | posts, core-value tags, points (O: 2082447) | feed cards, composer, points | filled only |
+| S28 | Recognition feed | Recognition nav | posts, core-value tags, points (O: 2082447) | feed cards, composer, points | not visually observed |
 | S29 | eNPS survey | email/banner link | 0–10 rating + comment, anonymous (O: 2005406) | rating scale, comment box | not observed |
-| S30 | Wellbeing survey + report | link / Reports | validated questions, heatmap (O: 1534121, 1536452) | survey, heatmap | filled (mkt-16) |
-| S31 | Community feed | Community nav | posts/announcements (Pro/Elite) (O: glossary 2002837) | feed, composer | filled (mkt-15) |
-| S32 | Mobile app home | iOS/Android app | directory, time off, who's out, approvals, SSO, theming (O: store listing) | tab bar, cards | filled (screens/ios-*.jpg) |
+| S30 | Wellbeing survey + report | link / Reports | validated questions, heatmap (O: 1534121, 1536452) | survey, heatmap | populated trend/category summary and numeric heatmap (mkt-16); survey input unobserved |
+| S31 | Community feed | Community nav | posts/announcements (Pro/Elite) (O: glossary 2002837) | feed, composer | community tab selected, populated divided feed, toolbar, reaction/view controls (mkt-15, mkt-03); composer unobserved |
+| S32 | Mobile app home | iOS/Android app | directory, time off, who's out, approvals, SSO, theming (O: store listing) | tab bar, cards | filled Home/counts, directory/fallback, request/comment thread, selected calendar day, active tabs, inbox, running timer, payroll and drawn document signature (ios-01..06, play-01..08); excluded modules remain reference only |
 
 ## Flows
 
@@ -135,9 +135,9 @@ F12 Manage company files
 
 | component | variants | states | used on |
 | --- | --- | --- | --- |
-| Top nav | employee, manager, admin (items appear by role) | default, active, collapsed | all screens |
+| Global nav | web role variants unverified; mobile bottom Home/My Info/People/Files | mobile active observed; web/collapsed unobserved | all screens |
 | Settings gear entry | admin only | default | all screens |
-| Widget card | 6+ widget types, admin-configurable | empty, filled, rearranged | S02, S03 |
+| Widget card | 6+ widget types, admin-configurable | filled observed; empty/rearranged required, unobserved | S02, S03 |
 | Data table | directory, openings, reports | empty, filtered, sorted, exported | S06, S12, S23 |
 | Filter chip row | standard filters | default, applied, cleared | S06, S12 |
 | Tabbed record page | profile, candidate | default tab, deep-linked tab | S08, S15 |
@@ -278,9 +278,9 @@ See `features.csv`. Must: 43, should: 18, could: 11, skip: 8 (80 rows).
 
 ## Gaps / follow-ups
 
-- Empty, error, permission-denied, and loading states are unobserved — public marketing only shows filled states. A logged-in pass on the owner's own account (owner drives login) would fix this.
+- Empty-screen, error, permission-denied and loading states remain unobserved. Blank fields, unchecked tasks, selected controls and drawn signatures are now visually proven; see design/design-audit.md. Help-center files show only repeated plus/minus icons.
 - Demo videos (Wistia embeds) not watched.
-- Google Play screenshot hashes truncated in recon output — Play screenshots not saved; iOS set saved instead.
+- Play screenshots play-01..08 and iOS ios-01..06 are saved and visually audited; these native themes do not establish responsive web behaviour.
 - Original has **no formal requisition-approval workflow** (I) — the clone should add intake → approval as a deliberate improvement.
 - Interview scorecards evidenced by press release only (no help article).
 - No public API for surveys, reviews, e-sign, announcements — those models are inferred from help articles and UI.

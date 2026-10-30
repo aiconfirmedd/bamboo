@@ -1,3 +1,5 @@
+> Read [the current start guide](../START_HERE.md) and [gap register](GAPS.csv) first. Publicly documented behavior and independent design choices must not be presented as captured vendor internals.
+
 # Implementation guide for the recipient
 
 You are holding a clean-room reference for **Bamboo**, an HR portal covering

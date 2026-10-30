@@ -1,5 +1,5 @@
 feature,area,priority,original,clone,notes
-Role-based top nav (Home/My Info/Recognition/People/Files/Community/Reports/Settings/My Account),home,must,yes,no,help.bamboohr.com/s/article/2086908; gear for admins only
+Role-based top nav (Home/My Info/Recognition/People/Files/Community/Reports/Settings/My Account),home,must,yes,no,"help.bamboohr.com/s/article/2086908; gear for admins only; audit7 observes one employee preview with reduced left sidebar, not exhaustive role enforcement"
 Widget-based employee Home (Welcome/Celebrations/Company Links/Who's Out/My Stuff/What's Happening),home,must,yes,no,help 639584; admin-configured per widget
 Admin can enable/rearrange Home widgets,home,must,yes,no,help 587797
 Announcements via What's Happening widget,home,must,yes,no,new hires don't see past announcements (help 2001089)
@@ -20,7 +20,7 @@ Terminated employee records: read-only controls + former-employee self-service,p
 Ask-BambooHR-style AI Q&A over HR data,people,could,yes,no,replace with own AI later; Bamboo AI is their layer
 Bookmarkable public-style directory quick link (30-day re-auth),people,could,yes,no,help 587751
 Job openings list with search (title/dept/location/hiring lead),hiring,must,yes,no,help 875031; product-updates job-opening search
-"Create/edit job opening (intake form: title/dept/location/type/description/hiring lead)",hiring,must,yes,no,"help 587638; NOTE: original has NO formal requisition-approval flow (gap, inferred)"
+Create/edit job opening (intake form: title/dept/location/type/description/hiring lead),hiring,must,yes,no,"help 587638; NOTE: original has NO formal requisition-approval flow (gap, inferred)"
 Candidate pipeline with custom statuses + stage counts,hiring,must,yes,no,help 875031; custom statuses video
 Candidate profile (Info/Emails/Notes/Interviews tabs),hiring,must,yes,no,help 587645
 Application form: resume upload + custom questions,hiring,must,yes,no,API POST /applicant_tracking/application; candidate record shows Q&A
@@ -38,8 +38,8 @@ Searchable talent pools,hiring,could,yes,no,ATS product page
 Public careers page listing open jobs,hiring,could,yes,no,not confirmed in evidence; inferred from job-board posting flow - design choice for clone
 Add Employee form with optional auto-send New Hire Packet,onboarding,must,yes,no,help 588009; ATS data pre-populates
 "New Hire Packet: info fields + e-sign docs + tasks, self-paced pre-start",onboarding,must,yes,no,help 588009; enhanced packets Sep 2026
-Reusable New Hire Packet templates,onboarding,must,yes,no,help 1376515
-Onboarding task lists (IT Setup/Manager) + per-employee customization + reminders,onboarding,must,yes,no,help 587617/587627; sample checklists 1467415
+Reusable New Hire Packet templates,onboarding,must,yes,no,help 1376515; audit7 list/editor/four-step preview; actual field/task steps withheld by template preview
+Onboarding task lists (IT Setup/Manager) + per-employee customization + reminders,onboarding,must,yes,no,"help 587617/587627; sample checklists 1467415; audit7 current Settings groups, relative dates and Add Task modal observed; cancelled"
 e-signature requests work pre-access; signed docs auto-file to designated Documents folder,onboarding,must,yes,no,help 1492921
 Onboarding progress dashboard/progress bar,onboarding,should,yes,no,onboarding product page
 Access-before-hire-date rules tied to packet completion,onboarding,should,yes,no,help 712129
@@ -59,14 +59,14 @@ Goals Status report + review completion reminders,performance,must,yes,no,help 5
 Performance data in custom report builder,performance,should,yes,no,product-updates Dec 2025
 "Recognition & Rewards feed (posts, core-value tags, points, gift cards)",retention,should,yes,no,help 2082447; launched 2026-06; Slack integration
 Core Values config in Settings,retention,should,yes,no,product-updates 2026-04
-"eNPS survey (company-wide, truly anonymous, auto-reminders, admins see % complete only)",retention,must,yes,no,help 2005406/925445; anonymity design must be copied
+"eNPS survey (company-wide, truly anonymous, auto-reminders, admins see % complete only)",retention,must,yes,no,help 2005406/925445; anonymity design must be copied; audit7 admin setup explicitly Disabled for trial accounts; recipient/send not tested
 Wellbeing survey + heatmap report,retention,could,yes,no,help 1534121/1536452; research-validated questions
 Turnover/separations report,retention,should,yes,no,help 691371
 "Employee Community feed (posts, discussions)",retention,could,yes,no,Pro/Elite module; network feature - lite clone possible
-Settings hub (gear; admins/custom only),platform,must,yes,no,help 2086908
+Settings hub (current lower-left navigation; historical top-right gear),platform,must,yes,no,help 2086908
 Access levels: Employee/Manager/Full Admin/Payroll Admin/Custom,platform,must,yes,no,help 587374
-Permission sections: See About Themselves / See About Other Employees / See on Home,platform,must,yes,no,help 587374; per-field grants
-Preview-as-user (impersonation preview),platform,must,yes,no,help 925390
+Permission sections: See About Themselves / See About Other Employees / See on Home,platform,must,yes,no,help 587374; per-field grants; audit7 employee editor Self/Home and grouped grant states observed; Other Employees section not proved in this level
+Preview-as-user (impersonation preview),platform,must,yes,no,"help 925390; audit7 named preview and Done Previewing observed, exited to admin"
 Multiple access levels per user + non-employee users (external recruiter),platform,should,yes,no,help 1975476/1976637
 Workflow/approval automation builder,platform,should,yes,no,platform page; Core plan includes workflows/approvals
 Standard + custom report builder with datasets,platform,must,yes,no,API /custom-reports /datasets

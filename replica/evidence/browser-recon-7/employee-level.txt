@@ -1,0 +1,150 @@
+Window: "Edit Employee Access Level", App: Google Chrome.
+0 standard window Edit Employee Access Level - Google Chrome, URL: aiconfirmed.bamboohr.com/access_levels/employee/edit/640, Secondary Actions: Raise
+	1 container Edit Employee Access Level - Google Chrome, URL: aiconfirmed.bamboohr.com/access_levels/employee/edit/640
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/access_levels/employee/edit/640, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button Control your music, videos, and more
+				12 button You
+				13 pop up button Chrome
+			14 container
+				15 scroll area
+					16 HTML content Edit Employee Access Level, URL: aiconfirmed.bamboohr.com/access_levels/employee/edit/640
+						17 container
+							18 link Skip to content, Value: aiconfirmed.bamboohr.com/access_levels/employee/edit/640#js-PageCapsule
+							19 container
+								20 text 7
+								21 text  days left in your free trial. Call 1-801-724-6601 to sign up! Viewing sample data.
+							22 container
+								23 content list
+									24 link Home, Value: aiconfirmed.bamboohr.com/home
+									25 link My Info, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=8&clearLooping=true
+									26 link People, Value: aiconfirmed.bamboohr.com/employees/?redirect
+									27 link Hiring, Value: aiconfirmed.bamboohr.com/hiring
+									28 link Reports, Value: aiconfirmed.bamboohr.com/app/reports/
+									29 link Files, Value: aiconfirmed.bamboohr.com/files/
+									30 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+									31 link Compensation, Value: aiconfirmed.bamboohr.com/app/compensation
+									32 link Time & Attendance, Value: aiconfirmed.bamboohr.com/app/time-and-attendance
+									33 link Benefits, Value: aiconfirmed.bamboohr.com/app/benefits
+									34 link Recognition, Value: aiconfirmed.bamboohr.com/app/recognition
+									35 link Ecosystem, Value: aiconfirmed.bamboohr.com/app/ecosystem
+									36 link Global Employment
+										37 text Global Employment
+								38 content list
+									39 link Resources
+										40 text Resources
+									41 link Settings, Value: aiconfirmed.bamboohr.com/settings/
+									42 link neal My Account
+										43 image neal
+										44 text My Account
+									45 button Collapse
+							46 container
+								47 container
+									48 link Logo, Value: aiconfirmed.bamboohr.com/
+									49 container
+										50 text field (settable) Search, Placeholder: Search...
+									51 pop up button Inbox Header Button
+										52 text 24
+									53 container micro-container2
+										54 button Ask chat icon Ask
+								55 container
+									56 container
+										57 link Access Levels, Value: aiconfirmed.bamboohr.com/settings/access_levels
+										58 heading Edit Employee Access Level, Value: 2
+											59 text Edit Employee Access Level
+									60 container
+										61 container
+											62 text Access Level Name
+											63 text *
+											64 text field (settable) Employee
+										65 container
+											66 text Description
+											67 text entry area (settable) This access level allows employees in the US to view, edit (with or without approval) some of their own information.
+										68 text What Can People with this Access Level See?
+										69 container
+											70 container
+												71 text See About Themselves Choose what people with this Access Level will see about themselves.
+											72 container
+												73 text See on Home Choose what should show on Home for people with this Access Level.
+											74 text This Access Level will only be able to see their own information.
+											75 container
+												76 text Personal
+												77 text Job
+												78 text Time Off
+												79 text Timesheet
+												80 text Benefits
+												81 text Training
+												82 text Assets
+												83 text Emergency
+												84 text Pay Info
+												85 text Expense Tracking
+												86 pop up button More
+												87 heading Personal, Value: 4
+													88 text Personal
+												89 pop up button  [object Object]
+													90 text –Select–
+												91 text Set all fields to No Access to hide the Personal tab.
+												92 container
+													93 text Basic Info Employee #, First Name, Middle Name, Last Name, Preferred Name, Birth Date, Gender, Marital Status, SSN, Tax File Number, NIN, Shirt size, Allergies, Dietary Restrictions Access Varies
+												94 container
+													95 text Address Address Line 1, Address Line 2, City, State, Zip Code, Country Edit - Approval Required
+												96 container
+													97 text Contact Work Phone, Work Ext., Mobile Phone, Home Phone, Work Email, Home Email Access Varies
+												98 container
+													99 text Social Links LinkedIn URL, Twitter Feed, Facebook URL, Pinterest URL, Instagram URL Access Varies
+												100 container
+													101 text Education College/Institution, Degree, Major/Specialization, GPA, Employee Education: Start Date, Employee Education: End Date Edit
+												102 container
+													103 text Secondary Language No Access
+												104 container
+													105 text Visa Information Visa, Visa:Date, Issuing country, Issued, Expiration, Note No Access
+									106 container
+										107 button Save Access Level
+										108 button Cancel
+			109 container Infobar Container
+				110 container Infobar
+					111 container
+						112 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						113 link Settings, opens in new tab.
+					114 button Close
+			115 pop up button Tab search
+			116 container
+				117 tab group
+					118 tab (settable, boolean) BambooHR, Value: off
+						119 button Close
+					120 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						121 button Close
+					122 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						123 button Close
+					124 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						125 button Close
+					126 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						127 button Close
+					128 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						129 button Close
+					130 tab (selected, settable, boolean) Edit Employee Access Level, Value: on
+						131 button Close
+			132 button New Tab
+	133 close button
+	134 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	135 minimize button
+136 menu bar
+	137 Chrome
+	138 File
+	139 Edit
+	140 View
+	141 History
+	142 Bookmarks
+	143 Profiles
+	144 Tab
+	145 Window
+	146 Help
+
+The focused UI element is 64 text field (settable) Employee

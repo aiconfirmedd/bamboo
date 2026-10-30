@@ -1,0 +1,40 @@
+id,screen,visual,empty,validation,denied,loading,post_submit,mobile,note
+S01,Login / SSO,not-observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S02,Home (employee),observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S03,Insights Dashboard (admin),partial-or-historical,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S04,Global search + Employee Snapshot,partial-or-historical,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S05,My Info (self-service),partial-or-historical,not-observed,not-observed,not-observed,not-tested,not-tested,store-reference,Use recon row and audit provenance; observed variants are not all feature states.
+S06,People directory,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S07,Org chart,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S08,Employee profile,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S09,Profile customize,not-observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S10,Employee documents,not-observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S11,Company Files,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S12,Job Openings list,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S13,Job opening detail,observed,observed-historical-candidate/tasks-only,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S14,New/Edit job opening,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S15,Candidate profile,observed,observed-historical-candidate/tasks-only,not-observed,not-observed,not-tested,historical-simulator-only,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S16,Interview self-schedule page,not-observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S17,Offer letter flow,partial-or-historical,not-observed,not-observed,not-observed,not-tested,historical-simulator-only,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S18,Add Employee,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S19,New Hire Packet (new-hire view),partial-or-historical,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S20,Onboarding/Offboarding tab,partial-or-historical,observed-historical-candidate/tasks-only,not-observed,not-observed,transient-attempt-not-product-spec,historical-simulator-only,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S21,Settings hub,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S22,Access levels editor,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S23,Reports,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S24,Performance tab,not-observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S25,Review cycle setup,partial-or-historical,not-observed,not-observed,not-observed,transient-attempt-not-product-spec,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S26,Goals,partial-or-historical,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S27,1:1s,not-observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S28,Recognition feed,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S29,eNPS survey,partial-or-historical,not-observed,not-observed,not-observed,transient-attempt-not-product-spec,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S30,Wellbeing survey + report,partial-or-historical,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S31,Community feed,partial-or-historical,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S32,Mobile app home,mobile-reference-only,not-observed,not-observed,not-observed,not-tested,not-tested,store-reference,Use recon row and audit provenance; observed variants are not all feature states.
+S33,Public careers openings,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S34,Public job description,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S35,Public application,partial-or-historical,not-observed,observed-public-application,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S36,New Hire Packet administrator setup,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S37,Public demo request,partial-or-historical,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S38,Public trial signup / Create Account,observed,not-observed,not-observed,not-observed,prospect-preparation-observed,prospect-provisioning-partial,not-tested,Use recon row and audit provenance; observed variants are not all feature states.
+S39,Announcements administration,observed,not-observed,not-observed,not-observed,not-tested,not-tested,not-tested,Use recon row and audit provenance; observed variants are not all feature states.

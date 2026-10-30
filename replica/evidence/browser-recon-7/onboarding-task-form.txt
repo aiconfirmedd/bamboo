@@ -1,0 +1,94 @@
+Window: "Onboarding", App: Google Chrome.
+0 standard window Onboarding - Google Chrome, URL: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding, Secondary Actions: Raise
+	1 container Onboarding - Google Chrome, URL: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button Control your music, videos, and more
+				12 button You
+				13 pop up button Chrome
+			14 container
+				15 scroll area
+					16 HTML content Onboarding, URL: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding
+						17 container Add Task
+							18 heading Add Task, Value: 3
+								19 text Add Task
+							20 button close modal
+							21 container
+								22 text Task Name
+								23 text field (settable) Task Name
+								24 text Assign to
+								25 pop up button Assign to –Select–
+									26 text –Select–
+								27 text Task List
+								28 pop up button Task List Miscellaneous
+									29 text Miscellaneous
+								30 Due Date
+									31 text Due Date
+									32 container
+										33 radio button None, Value: 1
+										34 text None
+									35 container
+										36 radio button On Hire Date, Value: 0
+										37 text On Hire Date
+									38 container
+										39 radio button Custom, Value: 0
+										40 text Custom
+								41 container
+									42 text Send Assignment Notifications...
+								43 pop up button (disabled) Send Assignment Notifications... Soon After Task Is Imported
+									44 text Soon After Task Is Imported
+								45 text Description
+								46 text entry area (settable) Description
+								47 text Attach File(s)
+								48 button Choose File(s)
+								49 text Import this task when onboarding All Employees
+								50 button Edit
+							51 button Save Task
+							52 button Cancel
+			53 container Infobar Container
+				54 container Infobar
+					55 container
+						56 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						57 link Settings, opens in new tab.
+					58 button Close
+			59 pop up button Tab search
+			60 container
+				61 tab group
+					62 tab (settable, boolean) BambooHR, Value: off
+						63 button Close
+					64 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						65 button Close
+					66 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						67 button Close
+					68 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						69 button Close
+					70 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						71 button Close
+					72 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						73 button Close
+					74 tab (selected, settable, boolean) Onboarding - Memory usage - 402 MB, Value: on
+						75 button Close
+			76 button New Tab
+	77 close button
+	78 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	79 minimize button
+80 menu bar
+	81 Chrome
+	82 File
+	83 Edit
+	84 View
+	85 History
+	86 Bookmarks
+	87 Profiles
+	88 Tab
+	89 Window
+	90 Help
+
+The focused UI element is 23 text field (settable) Task Name

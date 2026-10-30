@@ -1,85 +1,55 @@
-# Bamboo
+# Bamboo — HR portal reference
 
-**AI Confirmed white-label HR portal** — clean-room rebuild reference of
-BambooHR's intake, onboarding, recruiting, and retention flows. Captured so the
-product can be rebuilt 1:1 on features and layout, then rebranded and filled
-with your own content.
+A self-contained AI Confirmed reference package for an independent agency HR
+portal. **Specifications, evidence and schema checks; the application is not built.**
 
-> Not affiliated with BambooHR. Screenshots are reference captures of public
-> pages. Everything here was gathered from public sources only: marketing
-> pages, pricing, help center, product updates, public API docs, and app store
-> listings. No logins, no source code, no network capture.
+[Start here: setup takeover, no rebuild](START_HERE.md) · [Gallery](index.html) · [Upload instructions](UPLOAD.md)
 
-## What's inside
+## What is included
 
-| path | what it is |
-| --- | --- |
-| `replica/recon.md` | the recon map: sources, 32 screens, 12 user flows, components, inferred data model, out-of-scope list, size estimate |
-| `replica/features.csv` | the feature matrix: 80 rows, priority-tagged (43 must / 18 should / 11 could / 8 skip) — this is the build checklist and the parity score |
-| `replica/screens/` | 24 layout reference screenshots (18 web, 6 iOS). Reference only — never shipped |
-| `replica/design/` | design tokens (`tokens.json`, `tokens.css`, Tailwind mapping) and component specs — 14/14 contrast pairs pass AA |
-| `docs/workflow.md` | the 9-step rebuild workflow and the clean-room ground rules |
-| `docs/IMPLEMENTATION.md` | recipient guide: implement the likeness, load your content, aim it at your clientele |
+- 39 stable screens,12 flows,80 prioritized features and29 inferred entities.
+- Current-trial and historical public visual evidence, labelled by environment.
+- Original OpenCode capture comparison, corrected claims, explicit gap dispositions.
+- Design tokens/CSS/component specs; a 92-table proposed schema and 215 authored API contracts.
+- Recovered source metrics, portable executable schema checks, source/route/file catalogs.
+- Offline gallery, Python integrity/contrast checks and GitHub Actions.
 
-Scope of the recon: **Home/Dashboard, People, Hiring/ATS (job intake →
-pipeline), Onboarding (packets, tasks, e-sign), Performance & Retention
-(reviews, goals, 1:1s, recognition, eNPS/wellbeing)**. Payroll, benefits, and
-time & attendance are deliberately excluded.
+Scope: Home, People, Hiring/ATS, Onboarding, Performance/Retention. Requisition
+approval is an independent addition. Payroll/benefits/attendance and proprietary
+AI/licensed content/partner rails/native apps remain excluded.
 
-## Status
+## Read and verify
 
-- [x] Recon (this repo)
-- [x] Architecture — stack, schema, API plan
-- [x] Design system — tokens, component specs, contrast report
-- [ ] Build — primitives first, then the vertical slice
-- [ ] Parity diff, tests, rebrand, launch
+Start at [START_HERE.md](START_HERE.md). [Comparison](docs/CAPTURE-COMPARISON.md)
+separates OpenCode's summaries from actual capture evidence. [GAPS.csv](docs/GAPS.csv)
+keeps unobserved/trial-gated behavior visible. [Public requirements](docs/public-sources/REQUIREMENTS.md)
+fill documented behavior without inventing private implementation or UI evidence.
 
-The code is **not built yet** by design: this repo stops one step before the
-build so you can implement it against your own brand and content. Start with
-`docs/IMPLEMENTATION.md`.
+```sh
+python3 scripts/verify_reference.py
+python3 scripts/check_contrast.py
+npm ci --ignore-scripts
+npm run check:schema
+```
 
-## How to use it
+Open [index.html](index.html) locally for the visual archive. Build instructions
+are in [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md) and [the architecture build order](docs/architecture/build-order.md).
+All 80 feature clone flags remain no until actual implementation and verification.
 
-1. Read `docs/IMPLEMENTATION.md` — it is the handoff: likeness, content,
-   clientele.
-2. Read `replica/recon.md` end to end. The flows are the spec; the edge cases
-   listed under each flow are requirements, not trivia.
-3. Treat `replica/features.csv` as the checklist. The `clone` column stays `no`
-   until a feature is built **and** verified.
-4. Open `replica/screens/` next to your build and match layout, not pixels.
-5. Build from `replica/design/` tokens and specs; follow
-   `docs/architecture/build-order.md`.
+## Reuse and provenance
 
-### Make it yours
+Original authored docs/helpers are MIT. Third-party screenshots/trademarks retain
+their owners' rights and are reference only. Not affiliated with BambooHR.
+See [NOTICE.md](NOTICE.md) and [evidence rules](docs/EVIDENCE.md). The original
+public reference is [aiconfirmedd/bamboo](https://github.com/aiconfirmedd/bamboo);
+this repository contains the consolidated reference and setup handoff.
 
-Fork it, then:
+[All-screen state coverage](docs/STATE_COVERAGE.csv) · [Source/link index](docs/LINKS.md) · [Validation](docs/VALIDATION.md) · [Adapt for your agency](docs/ADAPT_FOR_YOUR_AGENCY.md)
 
-- rewrite the scope block at the top of `replica/recon.md`;
-- re-prioritize and prune `features.csv` — add your own rows;
-- keep the "Out of scope" list honest, or consciously move items out of it.
+Byte-identical images are stored once. [Original-name alias map](docs/inventory/deduplication.csv) preserves capture provenance without duplicate files.
 
-## Known gaps
+## Implementation-ready transfer
 
-- Empty, error, and permission states are unobserved — public marketing only
-  shows filled states. A logged-in pass on your own account closes this.
-- BambooHR has no formal requisition-approval flow; the clone should add
-  intake → approval as a deliberate improvement.
-- Google Play screenshots were not captured (iOS set is included instead).
+[Git handoff](docs/GIT_HANDOFF.md) pins publisher/recipient steps to a commit. [Connections](docs/CONNECTIONS.md) defines recipient-owned service setup; [connection manifest](config/connections.json) and offline checker are executable configuration contracts. [Rebuild runbook](docs/REBUILD_RUNBOOK.md) gives exit gates through staging and operations. Services remain planned until the app and actual integration tests exist.
 
-### Live-capture coverage (2026-10-30)
-
-Captured without login: the public interactive demo simulator (17 steps) and a
-real public careers portal (list, detail, apply form, validation). Still needs a
-logged-in session: admin settings, access levels, review-cycle setup, packet
-builder, eNPS launch, report builder, org chart, snapshot popup, offer
-templates, announcements composer, permission-denied states, and computed CSS
-metrics. See `replica/design/design-audit-2.md` and `-3.md`.
-
-## License
-
-MIT for the recon text, matrix, and docs. Screenshots © BambooHR LLC, included
-for reference only. See `LICENSE`.
-
----
-
-Built by [AI Confirmed](https://github.com/aiconfirmedd).
+[Fill out the setup form](setup/form.html), then upload its exported JSON for configuration preparation. See [the submission workflow](setup/README.md).

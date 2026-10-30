@@ -1,0 +1,53 @@
+Window: "eNPS Setup", App: Google Chrome.
+0 standard window eNPS Setup - Google Chrome, URL: aiconfirmed.bamboohr.com/app/settings/enps, Secondary Actions: Raise
+	1 container eNPS Setup - Google Chrome, URL: aiconfirmed.bamboohr.com/app/settings/enps
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/app/settings/enps, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button Control your music, videos, and more
+				12 button You
+				13 pop up button Chrome
+			14 container Infobar Container
+				15 container Infobar
+					16 container
+						17 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						18 link Settings, opens in new tab.
+					19 button Close
+			20 pop up button Tab search
+			21 container
+				22 tab group
+					23 tab (settable, boolean) BambooHR, Value: off
+						24 button Close
+					25 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						26 button Close
+					27 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						28 button Close
+					29 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						30 button Close
+					31 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						32 button Close
+					33 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						34 button Close
+					35 tab (selected, settable, boolean) eNPS Setup - Memory usage - 332 MB, Value: on
+						36 button Close
+			37 button New Tab
+	38 close button
+	39 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	40 minimize button
+41 menu bar
+	42 Chrome
+	43 File
+	44 Edit
+	45 View
+	46 History
+	47 Bookmarks
+	48 Profiles
+	49 Tab
+	50 Window
+	51 Help

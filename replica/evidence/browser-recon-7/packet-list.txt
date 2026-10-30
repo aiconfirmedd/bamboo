@@ -1,0 +1,171 @@
+Window: "New Hire Packet Templates", App: Google Chrome.
+0 standard window New Hire Packet Templates - Google Chrome, URL: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template, Secondary Actions: Raise
+	1 container New Hire Packet Templates - Google Chrome, URL: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button You
+				12 pop up button Chrome
+			13 container
+				14 scroll area
+					15 HTML content New Hire Packet Templates, URL: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template
+						16 container
+							17 link Skip to content, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding#js-PageCapsule
+							18 container
+								19 text 7
+								20 text  days left in your free trial. Call 1-801-724-6601 to sign up! Viewing sample data.
+							21 container
+								22 content list
+									23 link Home, Value: aiconfirmed.bamboohr.com/home
+									24 link My Info, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=8&clearLooping=true
+									25 link People, Value: aiconfirmed.bamboohr.com/employees/?redirect
+									26 link Hiring, Value: aiconfirmed.bamboohr.com/hiring
+									27 link Reports, Value: aiconfirmed.bamboohr.com/app/reports/
+									28 link Files, Value: aiconfirmed.bamboohr.com/files/
+									29 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+									30 link Compensation, Value: aiconfirmed.bamboohr.com/app/compensation
+									31 link Time & Attendance, Value: aiconfirmed.bamboohr.com/app/time-and-attendance
+									32 link Benefits, Value: aiconfirmed.bamboohr.com/app/benefits
+									33 link Recognition, Value: aiconfirmed.bamboohr.com/app/recognition
+									34 link Ecosystem, Value: aiconfirmed.bamboohr.com/app/ecosystem
+									35 link Global Employment
+										36 text Global Employment
+								37 content list
+									38 link Resources
+										39 text Resources
+									40 link Settings, Value: aiconfirmed.bamboohr.com/settings/
+									41 link neal My Account
+										42 image neal
+										43 text My Account
+									44 button Collapse
+							45 container
+								46 container
+									47 link Logo, Value: aiconfirmed.bamboohr.com/
+									48 container
+										49 text field (settable) Search, Placeholder: Search...
+									50 pop up button Inbox Header Button
+										51 text 24
+									52 container micro-container2
+										53 button Ask chat icon Ask
+								54 container
+									55 heading Settings, Value: 2
+										56 text Settings
+									57 container
+										58 container Settings
+											59 content list
+												60 link Account, Value: aiconfirmed.bamboohr.com/app/settings/account
+												61 link Access Levels, Value: aiconfirmed.bamboohr.com/app/settings/access_levels/all
+												62 link Employee Fields, Value: aiconfirmed.bamboohr.com/settings/list.php?id=3458
+												63 link Approvals, Value: aiconfirmed.bamboohr.com/settings/workflows/
+												64 link Apps, Value: aiconfirmed.bamboohr.com/settings/apps
+												65 link Ask BambooHR, Value: aiconfirmed.bamboohr.com/app/settings/answers
+												66 link Benefits, Value: aiconfirmed.bamboohr.com/settings/benefits/plans
+												67 link Company Directory, Value: aiconfirmed.bamboohr.com/app/settings/directory
+												68 link Compensation, Value: aiconfirmed.bamboohr.com/app/settings/compensation
+												69 link Core Values, Value: aiconfirmed.bamboohr.com/app/settings/core-values
+												70 link Custom Fields & Tables, Value: aiconfirmed.bamboohr.com/app/settings/custom_fields
+												71 link Email Alerts, Value: aiconfirmed.bamboohr.com/settings/alerts.php
+												72 link Employee Community, Value: aiconfirmed.bamboohr.com/app/settings/employee_community
+												73 link Employee Satisfaction, Value: aiconfirmed.bamboohr.com/app/settings/enps
+												74 link Employee Wellbeing, Value: aiconfirmed.bamboohr.com/app/settings/employee-wellbeing
+												75 link Global Employment, Value: aiconfirmed.bamboohr.com/app/settings/global_employment
+												76 link Hiring, Value: aiconfirmed.bamboohr.com/app/settings/hiring/
+												77 link Holidays, Value: aiconfirmed.bamboohr.com/app/settings/holidays
+												78 link Job Organization, Value: aiconfirmed.bamboohr.com/app/settings/job-organization
+												79 link Logo & Color, Value: aiconfirmed.bamboohr.com/app/settings/logo
+												80 link Offboarding, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=offboarding
+												81 link Onboarding, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding
+												82 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+												83 link Performance, Value: aiconfirmed.bamboohr.com/app/settings/performance
+												84 link Recognition, Value: aiconfirmed.bamboohr.com/app/settings/recognition
+												85 link Retirement Savings, Value: aiconfirmed.bamboohr.com/app/settings/retirement-savings
+												86 link Time Off, Value: aiconfirmed.bamboohr.com/app/settings/time-off
+												87 link Time & Attendance, Value: aiconfirmed.bamboohr.com/settings/time_tracking/
+												88 link Total Rewards, Value: aiconfirmed.bamboohr.com/app/settings/total_rewards/overview
+												89 link Training, Value: aiconfirmed.bamboohr.com/settings/training/list
+										90 heading Onboarding, Value: 3
+											91 text Onboarding
+										92 container Onboarding Settings
+											93 content list
+												94 link Onboarding Tasks, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding
+												95 link New Hire Packet Templates, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template
+										96 container
+											97 heading New Hire Packet Templates, Value: 4
+												98 text New Hire Packet Templates
+											99 text New Hire Packet Templates allow you to have specific packet setups for different offices, locations, or roles.
+											100 link New Template, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/add
+											101 pop up button Settings
+											102 table List of New Hire Packet Templates
+												103 text List of New Hire Packet Templates
+												104 row
+													105 column header
+														106 text Name
+													107 column header
+												108 row
+													109 cell
+														110 link California, USA, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/2
+													111 cell
+														112 container
+															113 link Duplicate Template, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/duplicate/2
+															114 button Delete Template
+												115 row
+													116 cell
+														117 link HR, Sydney, Australia, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/3
+													118 cell
+														119 container
+															120 link Duplicate Template, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/duplicate/3
+															121 button Delete Template
+												122 row
+													123 cell
+														124 link Trial New Hire Packet, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/4
+													125 cell
+														126 container
+															127 link Duplicate Template, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/duplicate/4
+															128 button Delete Template
+			129 container Infobar Container
+				130 container Infobar
+					131 container
+						132 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						133 link Settings, opens in new tab.
+					134 button Close
+			135 pop up button Tab search
+			136 container
+				137 tab group
+					138 tab (settable, boolean) BambooHR, Value: off
+						139 button Close
+					140 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						141 button Close
+					142 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						143 button Close
+					144 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						145 button Close
+					146 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						147 button Close
+					148 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						149 button Close
+					150 tab (selected, settable, boolean) New Hire Packet Templates - Memory usage - 402 MB, Value: on
+						151 button Close
+			152 button New Tab
+		153 text https://aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template
+	154 close button
+	155 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	156 minimize button
+157 menu bar
+	158 Chrome
+	159 File
+	160 Edit
+	161 View
+	162 History
+	163 Bookmarks
+	164 Profiles
+	165 Tab
+	166 Window
+	167 Help
+
+The focused UI element is 15 HTML content New Hire Packet Templates, URL: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template

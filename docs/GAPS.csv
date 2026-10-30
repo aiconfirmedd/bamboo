@@ -1,0 +1,23 @@
+id,screen,gap,status,evidence,resolution,remaining_limit
+G01,S04,Snapshot detail,documented-not-visually-verified,P01; browser8 search-result-profile,Search-to-profile observed; access-dependent Snapshot behavior documented,Restricted-user Snapshot UI remains visual gap
+G02,S22,Field permission editor,observed,browser7 employee-level/employee-permissions,Employee Self/Home grouped grants captured,Complete manager/custom grant matrix and enforcement untested
+G03,S22,Preview-as-user,observed,browser7 preview-employee,Named preview and reduced nav captured; preview exited,One persona only; not a real second-login authorization test
+G04,S25,Review-cycle editor,documented-not-visually-verified,P02-P06; browser7 review-cycles,Audience/cadence/questions/double-blind/duplicate requirements added,Current editor layout and save/release side effects unverified
+G05,S17,Offer-template manager/editor,documented-not-visually-verified,P07; audit4 tour,Template/substitution/e-sign behavior sourced,Current template controls; delivery/signature persistence not tested
+G06,S20,Onboarding task administration,observed,browser7 onboarding-*,"Groups, relative dates, Add Task form captured and cancelled",Per-employee progress transitions remain older-tour evidence
+G07,S36/S19,Packet template editor/preview,observed-with-preview-limit,browser7 packet-*,Editor and four preview steps captured,Actual employee fields/tasks withheld by template preview
+G08,S29,eNPS setup and launch,trial-gated,browser7 enps-setup; P08-P09,Admin setup captured; recipient requirements documented,Launch/send and web recipient UI not executed; trial explicitly disabled
+G09,S06,True directory no-results,unobserved,audit6 people-empty correction,Requirement and acceptance case retained,Filled screenshot cannot prove empty state
+G10,All,Permission-denied/403,unobserved,audit6/7,Independent UI/API denial acceptance cases supplied,No actual denied source request observed
+G11,All,Real-data/post-submit behavior,not-tested,audit6/7,Persistence/delivery/invitation/signature acceptance cases supplied,"No production data, email sends or destructive mutations"
+G12,All,Responsive/keyboard/focus/AT,not-tested,audit6/7,Accessibility component requirements retained,Static screenshots cannot prove behavior
+G13,All,Raw CSS provenance,recovered,opencode-original/live-metrics.json,16 entries preserved; linked to tokens measurement block,"Measurements are selector/viewport-specific, not universal styles"
+G14,Architecture,Reproducible schema checks,recovered,scripts/check_schema.cjs,Portable paths and pinned PGlite added,PGlite checks do not establish production deployment/security
+G15,Repository,Broken/missing local links,validation-gated,scripts/verify_reference.py,All distributable Markdown/HTML links checked after assembly,External help-center pages can remain gated/CSS-error
+G16,S39/S28,Announcement/recognition composers,unobserved,audit6,List/feed observed; composer and send acceptance cases retained,No new posted content created
+G17,S03/S23,Reports/exports/insights,partial,audit6 reports/report-builder,Existing screenshots/spec retained,Builder persistence/export and Insights dashboard not fully observed
+G18,S24/S26,Profile Performance and goal detail,partial,P06; audit6/7,Goal configuration and public behavior supplied,Actual goal detail/edit and current profile Performance UI remain unverified
+G19,Public help,Unreadable help links,external-access-limit,public web checks588033/960688/2007786,Public release notes and product docs supplement behavior; no bypass,Vendor CSS-error/access gate prevents current article reading
+G20,S09/S10,Profile customization and employee Documents,unobserved,audit6; historical simulator gate,Keep component/data requirements as independent implementation criteria,Current editor/file-sharing/upload states not captured
+G21,S16/S27,Interview scheduling and1:1 editor,documented-not-visually-verified,P06-P07; original help references,Scheduling/agenda/notes requirements retained,Actual booking/conflict/calendar integration and saved1:1 behavior untested
+G22,S01/S30/S32/S37/S38,Login survey mobile and prospect completeness,partial-or-excluded,audits1-6; STATE_COVERAGE.csv,Separate store shots/public funnel/historical captures from web states,Real SSO/passkey behavior; wellbeing recipient; responsive web; final signup readiness unproved

@@ -1,0 +1,224 @@
+Window: "Performance Management", App: Google Chrome.
+0 standard window Performance Management - Google Chrome, URL: aiconfirmed.bamboohr.com/app/settings/performance, Secondary Actions: Raise
+	1 container Performance Management - Google Chrome, URL: aiconfirmed.bamboohr.com/app/settings/performance
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/app/settings/performance, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button You
+				12 pop up button Chrome
+			13 container
+				14 scroll area
+					15 HTML content Performance Management, URL: aiconfirmed.bamboohr.com/app/settings/performance
+						16 container
+							17 container micro-container2
+								18 link Skip to content, Value: aiconfirmed.bamboohr.com/app/settings/performance#js-PageCapsule
+								19 container
+									20 text 7
+									21 text  days left in your free trial. Call 1-801-724-6601 to sign up! Viewing sample data.
+								22 container
+									23 content list
+										24 link Home, Value: aiconfirmed.bamboohr.com/home
+										25 link My Info, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=8&clearLooping=true
+										26 link People, Value: aiconfirmed.bamboohr.com/employees/?redirect
+										27 link Hiring, Value: aiconfirmed.bamboohr.com/hiring
+										28 link Reports, Value: aiconfirmed.bamboohr.com/app/reports/
+										29 link Files, Value: aiconfirmed.bamboohr.com/files/
+										30 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+										31 link Compensation, Value: aiconfirmed.bamboohr.com/app/compensation
+										32 link Time & Attendance, Value: aiconfirmed.bamboohr.com/app/time-and-attendance
+										33 link Benefits, Value: aiconfirmed.bamboohr.com/app/benefits
+										34 link Recognition, Value: aiconfirmed.bamboohr.com/app/recognition
+										35 link Ecosystem, Value: aiconfirmed.bamboohr.com/app/ecosystem
+										36 link Global Employment
+											37 text Global Employment
+									38 content list
+										39 link Resources
+											40 text Resources
+										41 link Settings, Value: aiconfirmed.bamboohr.com/settings/
+										42 link neal My Account
+											43 image neal
+											44 text My Account
+										45 button Collapse
+								46 container
+									47 link Logo, Value: aiconfirmed.bamboohr.com/
+									48 container
+										49 text field (settable) Search, Placeholder: Search...
+									50 pop up button Inbox Header Button
+										51 text 24
+									52 button Ask chat icon Ask
+								53 container
+									54 heading Settings, Value: 1
+										55 text Settings
+									56 container Settings
+										57 link Account, Value: aiconfirmed.bamboohr.com/app/settings/account
+										58 link Access Levels, Value: aiconfirmed.bamboohr.com/app/settings/access_levels/all
+										59 link Employee Fields, Value: aiconfirmed.bamboohr.com/settings/list.php?id=3458
+										60 link Approvals, Value: aiconfirmed.bamboohr.com/settings/workflows
+										61 link Apps, Value: aiconfirmed.bamboohr.com/settings/apps
+										62 link Ask BambooHR, Value: aiconfirmed.bamboohr.com/app/settings/answers
+										63 link Background Checks, Value: aiconfirmed.bamboohr.com/app/settings/background-checks
+										64 link Benefits, Value: aiconfirmed.bamboohr.com/settings/benefits/plans
+										65 link Company Directory, Value: aiconfirmed.bamboohr.com/app/settings/directory
+										66 link Compensation, Value: aiconfirmed.bamboohr.com/app/settings/compensation
+										67 link Core Values, Value: aiconfirmed.bamboohr.com/app/settings/core-values
+										68 link Custom Fields & Tables, Value: aiconfirmed.bamboohr.com/app/settings/custom_fields
+										69 link Email Alerts, Value: aiconfirmed.bamboohr.com/settings/alerts.php
+										70 link Employee Community, Value: aiconfirmed.bamboohr.com/app/settings/employee_community
+										71 link Employee Satisfaction, Value: aiconfirmed.bamboohr.com/app/settings/enps
+										72 link Employee Wellbeing, Value: aiconfirmed.bamboohr.com/app/settings/employee-wellbeing
+										73 link Global Employment, Value: aiconfirmed.bamboohr.com/app/settings/global_employment
+										74 link Hiring, Value: aiconfirmed.bamboohr.com/app/settings/hiring
+										75 link Holidays, Value: aiconfirmed.bamboohr.com/app/settings/holidays
+										76 link HR Consulting, Value: aiconfirmed.bamboohr.com/app/settings/hr-consulting
+										77 link Job Organization, Value: aiconfirmed.bamboohr.com/app/settings/job-organization
+										78 link Logo & Color, Value: aiconfirmed.bamboohr.com/app/settings/logo
+										79 link Managed Payroll, Value: aiconfirmed.bamboohr.com/app/settings/managed-payroll
+										80 link Offboarding, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=offboarding
+										81 link Onboarding, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding
+										82 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+										83 link Performance, Value: aiconfirmed.bamboohr.com/app/settings/performance
+										84 link Recognition, Value: aiconfirmed.bamboohr.com/app/settings/recognition
+										85 link Retirement Savings, Value: aiconfirmed.bamboohr.com/app/settings/retirement-savings
+										86 link Time Off, Value: aiconfirmed.bamboohr.com/app/settings/time-off
+										87 link Time & Attendance, Value: aiconfirmed.bamboohr.com/settings/time_tracking
+										88 link Total Rewards, Value: aiconfirmed.bamboohr.com/app/settings/total_rewards/overview
+										89 link Training, Value: aiconfirmed.bamboohr.com/settings/training/list
+									90 container
+										91 heading Performance Management, Value: 3
+											92 text Performance Management
+										93 button View Setup Guide
+										94 tab group
+											95 tab (selected) Review Cycles, Value: 1
+												96 text Review Cycles
+											97 tab (settable, integer) Goals, Value: 0
+												98 text Goals
+											99 tab (settable, integer) 1:1s, Value: 0
+												100 text 1:1s
+										101 container Review Cycles
+											102 button Create a Review Cycle
+											103 container
+												104 checkbox Include Feedback Summaries, Value: 0
+												105 text Include Feedback Summaries
+												106 button
+											107 container
+												108 table Review Cycle Configurations Table
+													109 text Review Cycle Configurations Table
+													110 row
+														111 column header
+															112 text Name
+															113 button Sort table by Name
+														114 column header
+															115 text Schedule
+														116 column header
+															117 text Employees
+														118 column header
+															119 text Status
+															120 button Sort table by Status
+														121 column header Review cycle configuration utilities
+															122 text Review cycle configuration utilities
+													123 row
+														124 cell
+															125 link Review Cycle, Value: aiconfirmed.bamboohr.com/app/settings/performance/setup/1
+														126 cell
+															127 text 0
+														128 cell
+															129 text Active
+														130 cell
+															131 container
+																132 button Duplicate
+																133 button Deactivate
+																134 button Delete
+													135 row
+														136 cell
+															137 link HR Team Semi-Annual, Value: aiconfirmed.bamboohr.com/app/settings/performance/setup/2
+														138 cell
+															139 text 0
+														140 cell
+															141 text Active
+														142 cell
+															143 container
+																144 button Duplicate
+																145 button Deactivate
+																146 button Delete
+													147 row
+														148 cell
+															149 link Sales Team Semi-Annual, Value: aiconfirmed.bamboohr.com/app/settings/performance/setup/3
+														150 cell
+															151 text 0
+														152 cell
+															153 text Active
+														154 cell
+															155 container
+																156 button Duplicate
+																157 button Deactivate
+																158 button Delete
+													159 row
+														160 cell
+															161 link 60-Day New Hire Review, Value: aiconfirmed.bamboohr.com/app/settings/performance/setup/4
+														162 cell
+															163 text 91
+														164 cell
+															165 text Active
+														166 cell
+															167 container
+																168 button Duplicate
+																169 button Deactivate
+																170 button Delete
+													171 row
+														172 cell
+															173 link 90-Day New Hire Reviews, Value: aiconfirmed.bamboohr.com/app/settings/performance/setup/5
+														174 cell
+															175 text 91
+														176 cell
+															177 text Active
+														178 cell
+															179 container
+																180 button Duplicate
+																181 button Deactivate
+																182 button Delete
+			183 container Infobar Container
+				184 container Infobar
+					185 container
+						186 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						187 link Settings, opens in new tab.
+					188 button Close
+			189 pop up button Tab search
+			190 container
+				191 tab group
+					192 tab (settable, boolean) BambooHR, Value: off
+						193 button Close
+					194 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						195 button Close
+					196 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						197 button Close
+					198 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						199 button Close
+					200 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						201 button Close
+					202 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						203 button Close
+					204 tab (selected, settable, boolean) Performance Management - Memory usage - 428 MB, Value: on
+						205 button Close
+			206 button New Tab
+	207 close button
+	208 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	209 minimize button
+210 menu bar
+	211 Chrome
+	212 File
+	213 Edit
+	214 View
+	215 History
+	216 Bookmarks
+	217 Profiles
+	218 Tab
+	219 Window
+	220 Help
+
+The focused UI element is 15 HTML content Performance Management, URL: aiconfirmed.bamboohr.com/app/settings/performance

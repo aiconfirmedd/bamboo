@@ -72,7 +72,7 @@ Preview-as-user is an audited, expiring, **read-only** effective-subject context
 
 ## Recon entity coverage
 
-The recon text lists **29 named model entities** (its closing summary says 27). All map to SQL; support tables normalize memberships, signers, task snapshots, survey credentials and delivery state. Total: **92 tables**, each with UUID PK, timestamps and an organization owner (the singleton organization owns itself). `schema.sql` is the canonical definition.
+The recon text lists **29 named model entities**; the earlier closing-summary count of27 was corrected during handoff preparation. All map to SQL; support tables normalize memberships, signers, task snapshots, survey credentials and delivery state. Total: **92 tables**, each with UUID PK, timestamps and an organization owner (the singleton organization owns itself). `schema.sql` is the canonical definition.
 
 | Recon entity | SQL tables |
 | --- | --- |

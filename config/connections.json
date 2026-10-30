@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "stage": "reference-only",
+  "environment_contract": "These variable names are the proposed application contract; provider SDKs do not automatically consume every name. No integration is implemented.",
+  "connections": [
+    {
+      "id": "repository",
+      "provider": "GitHub",
+      "required_for": "handoff",
+      "owner": "recipient organization/repository administrator",
+      "env": [],
+      "depends_on": [],
+      "scope": "Owner-controlled repository; CI contents:read. No provider secrets needed for reference checks.",
+      "endpoint_contract": null,
+      "verify": "Upload package, pin commit/tag, clone fresh, run reference checks and schema checks.",
+      "docs": "https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository",
+      "status": "planned",
+      "configured": false,
+      "live_verified": false
+    },
+    {
+      "id": "database",
+      "provider": "Neon PostgreSQL",
+      "required_for": "core application",
+      "owner": "recipient infrastructure administrator",
+      "env": [
+        "DATABASE_URL",
+        "DATABASE_MIGRATION_URL"
+      ],
+      "depends_on": [
+        "repository"
+      ],
+      "scope": "Separate restricted runtime role and migration owner; separate staging/production databases or branches.",
+      "endpoint_contract": null,
+      "verify": "Apply baseline only to fresh disposable staging; test runtime RLS/field projection and restore. Confirm required CREATE ROLE/extension privileges.",
+      "docs": "https://neon.com/docs/connect/connection-pooling",
+      "status": "planned",
+      "configured": false,
+      "live_verified": false
+    },
+    {
+      "id": "identity",
+      "provider": "Owner-selected OIDC provider + Auth.js",
+      "required_for": "core application",
+      "owner": "recipient identity administrator",
+      "env": [
+        "AUTH_SECRET",
+        "AUTH_URL",
+        "OIDC_ISSUER",
+        "OIDC_CLIENT_ID",
+        "OIDC_CLIENT_SECRET",
+        "OIDC_PROVIDER_ID"
+      ],
+      "depends_on": [
+        "database"
+      ],
+      "scope": "OIDC identity only; invitation/membership enforced by portal. No directory write permission by default.",
+      "endpoint_contract": "GET /api/auth/callback/{provider} (provider=OIDC_PROVIDER_ID; existing API plan)",
+      "verify": "Register exact staging callback; select compatible adapter/mapping for proposed auth tables; test invited login, denied membership, signout and revocation.",
+      "docs": "https://authjs.dev/reference/nextjs",
+      "status": "planned",
+      "configured": false,
+      "live_verified": false
+    },
+    {
+      "id": "files",
+      "provider": "Cloudflare R2",
+      "required_for": "core document flow",
+      "owner": "recipient storage administrator",
+      "env": [
+        "R2_ACCOUNT_ID",
+        "R2_ENDPOINT",
+        "R2_ACCESS_KEY_ID",
+        "R2_SECRET_ACCESS_KEY",
+        "R2_BUCKET"
+      ],
+      "depends_on": [
+        "database",
+        "identity"
+      ],
+      "scope": "Private bucket; object permissions limited to application bucket; server-only keys. Separate staging objects.",
+      "endpoint_contract": "POST /api/v1/files/upload-intents; POST /api/v1/files/upload-completions; POST /api/v1/files/{id}/download-tickets",
+      "verify": "Configure explicit allowed origins if browser uploads are used; verify private access, expiry, content validation, quarantine/scan and denied cross-user downloads.",
+      "docs": "https://developers.cloudflare.com/r2/api/s3/api/",
+      "status": "planned",
+      "configured": false,
+      "live_verified": false
+    },
+    {
+      "id": "email",
+      "provider": "Resend + owner DNS",
+      "required_for": "core notification flow",
+      "owner": "recipient domain/email administrator",
+      "env": [
+        "RESEND_API_KEY",
+        "RESEND_FROM",
+        "RESEND_WEBHOOK_SECRET"
+      ],
+      "depends_on": [
+        "database",
+        "jobs"
+      ],
+      "scope": "Owner-verified sending domain; least-privileged send credential; separate webhook signing secret.",
+      "endpoint_contract": "POST /api/integrations/resend/events (existing API plan)",
+      "verify": "Implement handler before registering webhook; verify signature against raw body, replay/deduplication, approved test-recipient delivery and suppression. API acceptance is not delivery.",
+      "docs": "https://resend.com/docs/webhooks/verify-webhooks-requests",
+      "status": "planned",
+      "configured": false,
+      "live_verified": false
+    },
+    {
+      "id": "jobs",
+      "provider": "Inngest",
+      "required_for": "core reminder/outbox flow",
+      "owner": "recipient application/infrastructure administrator",
+      "env": [
+        "INNGEST_EVENT_KEY",
+        "INNGEST_SIGNING_KEY"
+      ],
+      "depends_on": [
+        "database"
+      ],
+      "scope": "Separate event-ingest and signing credentials per environment; no privileged HR payloads in event metadata.",
+      "endpoint_contract": "GET/POST/PUT /api/inngest (existing API plan)",
+      "verify": "Implement serve handler and transactional outbox first; sync staging functions, verify signatures, retries, duplicate events and dead-letter recovery.",
+      "docs": "https://www.inngest.com/docs/platform-and-operations/keys-and-access",
+      "status": "planned",
+      "configured": false,
+      "live_verified": false
+    },
+    {
+      "id": "hosting",
+      "provider": "Vercel + owner domain/DNS",
+      "required_for": "deployment",
+      "owner": "recipient Vercel team/domain administrator",
+      "env": [
+        "APP_URL"
+      ],
+      "depends_on": [
+        "repository"
+      ],
+      "scope": "Import implementation repository after app exists; separate environment values; keep secrets server-only. No VERCEL_TOKEN in application runtime.",
+      "endpoint_contract": null,
+      "verify": "Select preview/production environment deliberately; deploy after build; validate HTTPS/domain/callback URLs, redacted logs and rollback.",
+      "docs": "https://vercel.com/docs/environment-variables",
+      "status": "planned",
+      "configured": false,
+      "live_verified": false
+    }
+  ],
+  "feature_flags": {
+    "ENABLE_ANONYMOUS_SURVEYS": false,
+    "ENABLE_ESIGN": false,
+    "ENABLE_CALENDAR_SYNC": false,
+    "ENABLE_REWARDS": false,
+    "ENABLE_INBOUND_EMAIL": false
+  },
+  "deferred": [
+    {
+      "id": "anonymous-surveys",
+      "decision": "Select audited unlinkability implementation or external anonymous survey service. Keep launch disabled until reviewed. No provider selected."
+    },
+    {
+      "id": "esign",
+      "decision": "Confirm acceptable evidence/assurance and select provider if required. Typed receipt plan is not a validated signing service."
+    },
+    {
+      "id": "malware-scan",
+      "decision": "Select scanner/isolated scanning worker and outage behavior before any upload is released from quarantine."
+    },
+    {
+      "id": "calendar",
+      "decision": "Select calendar provider, OAuth scopes, event verification and conflict authority only if milestone requires sync."
+    },
+    {
+      "id": "rewards",
+      "decision": "Select fulfillment vendor and budget only if rewards are in scope."
+    },
+    {
+      "id": "inbound-email",
+      "decision": "Select/verify inbound domain and reply aliases before enabling candidate inbound replies."
+    }
+  ]
+}

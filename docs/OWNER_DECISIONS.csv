@@ -1,0 +1,10 @@
+id,decision,gate,status,required_result
+D01,OIDC provider/client and organization owner,before sign-in implementation,open,"Choose issuer/provider ID, allowed callback origins and invitation policy."
+D02,Auth.js adapter/schema mapping,before baseline migration design,open,Map custom auth tables to supported adapter contract or revise schema with tests; stock compatibility unproven.
+D03,Document scanning/quarantine service,before uploads released,open,"Select scanner/isolated worker, limits and outage behavior."
+D04,Signing evidence/assurance/provider,before ENABLE_ESIGN,open,Confirm acceptable signature requirements and provider if needed; receipt design alone is not validation.
+D05,Anonymous survey implementation/provider,before ENABLE_ANONYMOUS_SURVEYS,open,Choose audited unlinkability library/review or external service; no custom cryptography.
+D06,DNS/sender/inbound reply ownership,before real mail; inbound separately,open,Confirm sender domain and approved test recipient; receiving domain stays deferred.
+D07,Calendar/rewards/inbound scope,before related flags,deferred,Keep disabled unless selected with provider permissions/budget/acceptance tests.
+D08,Retention/legal holds/backup targets,before production,open,"Owner sets retention, restore targets, alert ownership and operational policy."
+D09,Original content/branding and material sharing,before distribution/app content,open,Owner supplies original templates/questions/assets and chooses reference repo visibility; NOTICE preserved.

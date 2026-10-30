@@ -1,0 +1,40 @@
+{
+  "synthetic": true,
+  "note": "Independent local example; not BambooHR source data or import-ready schema rows",
+  "organization": {
+    "name": "Example Agency"
+  },
+  "departments": [
+    "Operations",
+    "Recruiting"
+  ],
+  "employees": [
+    {
+      "key": "example-employee-1",
+      "firstName": "Sample",
+      "lastName": "Manager",
+      "workEmail": "manager@example.invalid",
+      "department": "Operations"
+    },
+    {
+      "key": "example-employee-2",
+      "firstName": "Demo",
+      "lastName": "Recruiter",
+      "workEmail": "recruiter@example.invalid",
+      "department": "Recruiting",
+      "managerKey": "example-employee-1"
+    }
+  ],
+  "opening": {
+    "title": "Recruiting Coordinator",
+    "status": "draft",
+    "description": "Replace with your original job description."
+  },
+  "tasks": [
+    {
+      "title": "Read the agency handbook",
+      "assigneeRole": "employee",
+      "dueOffsetDays": 0
+    }
+  ]
+}

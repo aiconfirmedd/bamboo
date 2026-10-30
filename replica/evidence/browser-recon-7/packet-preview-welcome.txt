@@ -1,0 +1,91 @@
+Window: "New Hire Packet Templates", App: Google Chrome.
+0 standard window New Hire Packet Templates - Google Chrome, URL: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/2#preview/when_and_where, Secondary Actions: Raise
+	1 container New Hire Packet Templates - Google Chrome, URL: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/2#preview/when_and_where
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/2#preview/when_and_where, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button You
+				12 pop up button Chrome
+			13 container
+				14 scroll area
+					15 HTML content New Hire Packet Templates, URL: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/2#preview/when_and_where
+						16 container
+							17 text Previewing New Hire Packet Template
+							18 heading California, USA, Value: 2
+								19 text California, USA
+							20 button Edit Template
+							21 button Save Template
+							22 image ai confirmed solutions 
+							23 content list
+								24 text When & Where
+								25 text New Employee Info
+								26 text Get Introduced
+								27 text Tasks to Complete
+							28 heading Welcome to ai confirmed solutions !, Value: 3
+								29 text Welcome to ai confirmed solutions !
+							30 text We are excited that you are joining us here at ai confirmed solutions . We can't wait for you to start. We've included some helpful information and ask that you complete this new employee packet so you can hit the ground running on your first day. If you have any questions, please don't hesitate to ask.
+							31 heading Your First Day, Value: 4
+								32 text Your First Day
+							33 text Friday, November 13, 2026
+							34 text 8:00 AM
+							35 text 123 Main St
+							36 link Map & Directions. Opens in a new tab., Value: maps.google.com/?q=123%20Main%20St
+							37 heading Who to Contact, Value: 4
+								38 text Who to Contact
+							39 image Pandrew Panderson
+							40 text Pandrew Panderson
+							41 text Recruiter
+							42 link pandrewson@bamboohr.com, Value: mailto:pandrewson@bamboohr.com
+							43 text 801-766-3885 ext. 0456
+							44 link Send email to pandrewson@bamboohr.com, Value: mailto:pandrewson@bamboohr.com
+							45 heading Other Instructions, Value: 4
+								46 text Other Instructions
+							47 text - Please bring two forms of photo ID.
+- Your manager will treat you to lunch on your first day.
+							48 button Continue
+			49 container Infobar Container
+				50 container Infobar
+					51 container
+						52 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						53 link Settings, opens in new tab.
+					54 button Close
+			55 pop up button Tab search
+			56 container
+				57 tab group
+					58 tab (settable, boolean) BambooHR, Value: off
+						59 button Close
+					60 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						61 button Close
+					62 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						63 button Close
+					64 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						65 button Close
+					66 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						67 button Close
+					68 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						69 button Close
+					70 tab (selected, settable, boolean) New Hire Packet Templates - Memory usage - 404 MB, Value: on
+						71 button Close
+			72 button New Tab
+	73 close button
+	74 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	75 minimize button
+76 menu bar
+	77 Chrome
+	78 File
+	79 Edit
+	80 View
+	81 History
+	82 Bookmarks
+	83 Profiles
+	84 Tab
+	85 Window
+	86 Help
+
+The focused UI element is 20 button Edit Template

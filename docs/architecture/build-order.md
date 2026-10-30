@@ -58,6 +58,10 @@ Next stage: `/replica-design` for tokens, screen/component specifications, and W
 
 `schema.sql` applied unchanged to isolated PGlite PostgreSQL 18.6 with `btree_gist`. **92 tables; 33 assertions passed.** Checks covered base columns, forced RLS on every table, indexed foreign keys, non-superuser runtime roles, singleton tenancy, FK rejection, field grants/default denial/multiple levels, direct-report scope, read-only preview, row-version increment, raw-survey denial, immutable audit privileges, hierarchy cycles, eleven-milestone rejection, buffer-aware booking overlap/cancellation, points-budget rejection/reversal, survey nonce replay, score bounds and coarse timestamps. Schema includes repeatable metadata assertions before commit. The check used synthetic records in an in-memory database; nothing was applied to Neon or production.
 
-A future implementer can apply the baseline using `psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f docs/architecture/schema.sql` **against a fresh disposable development database only**; it is a one-time baseline, not an idempotent production upgrade. `CREATE ROLE` and `btree_gist` need migration-owner privileges. Keep runtime login membership restricted to its named role.
+A future implementer can apply the baseline using `psql "$DATABASE_MIGRATION_URL" -v ON_ERROR_STOP=1 -f docs/architecture/schema.sql` **against a fresh disposable development database only**; it is a one-time baseline, not an idempotent production upgrade. `CREATE ROLE` and `btree_gist` need migration-owner privileges. Keep runtime login membership restricted to its named role.
 
 Not verified here: native Neon behavior, parallel transactions, provider credentials/webhooks, cryptographic unlinkability, browser/UI states, app query authorization, real e-sign receipt generation, production backups or deletion. PGlite is a PostgreSQL execution check, not evidence that these planned services exist. Milestone acceptance tests above remain required during implementation.
+
+## Recipient transfer gate
+
+Use [Git handoff](../GIT_HANDOFF.md), [connections](../CONNECTIONS.md) and [rebuild runbook](../REBUILD_RUNBOOK.md). Service credentials and callbacks remain planned. The Auth.js adapter/custom auth schema mapping, scanner, signing assurance and anonymous-survey implementation are explicit owner decisions, not preconnected services.

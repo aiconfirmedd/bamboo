@@ -1,0 +1,18 @@
+[
+ {"id":"home","url":"https://aiconfirmed.bamboohr.com/home"},
+ {"id":"people","url":"https://aiconfirmed.bamboohr.com/employees/?redirect"},
+ {"id":"people-empty","url":"https://aiconfirmed.bamboohr.com/employees/?search=zzzzzz"},
+ {"id":"profile","url":"https://aiconfirmed.bamboohr.com/employees/employee.php?id=8"},
+ {"id":"hiring","url":"https://aiconfirmed.bamboohr.com/hiring/jobs"},
+ {"id":"hiring-job","url":"https://aiconfirmed.bamboohr.com/hiring/jobs/15"},
+ {"id":"hiring-add","url":"https://aiconfirmed.bamboohr.com/hiring/jobs/add"},
+ {"id":"new-employee","url":"https://aiconfirmed.bamboohr.com/employees/new.php"},
+ {"id":"reports","url":"https://aiconfirmed.bamboohr.com/app/reports/"},
+ {"id":"report-builder","url":"https://aiconfirmed.bamboohr.com/reports/wizard2.php"},
+ {"id":"settings","url":"https://aiconfirmed.bamboohr.com/settings/"},
+ {"id":"access-levels","url":"https://aiconfirmed.bamboohr.com/app/settings/access_levels/all"},
+ {"id":"files","url":"https://aiconfirmed.bamboohr.com/files/"},
+ {"id":"announcements","url":"https://aiconfirmed.bamboohr.com/app/announcements"},
+ {"id":"recognition","url":"https://aiconfirmed.bamboohr.com/app/recognition"},
+ {"id":"orgchart","url":"https://aiconfirmed.bamboohr.com/employees/orgchart"}
+]

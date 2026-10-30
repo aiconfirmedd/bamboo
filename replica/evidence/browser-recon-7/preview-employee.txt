@@ -1,0 +1,192 @@
+Window: "Home", App: Google Chrome.
+0 standard window Home - Google Chrome, URL: aiconfirmed.bamboohr.com/home/, Secondary Actions: Raise
+	1 container Home - Google Chrome, URL: aiconfirmed.bamboohr.com/home/
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/home/, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button Control your music, videos, and more
+				12 button You
+				13 pop up button Chrome
+			14 container
+				15 scroll area
+					16 HTML content Home, URL: aiconfirmed.bamboohr.com/home/
+						17 container
+							18 link Skip to content, Value: aiconfirmed.bamboohr.com/home/#js-PageCapsule
+							19 container This is what BambooHR looks like for Aaron Eckerly
+								20 image Avatar for User
+								21 text This is what BambooHR looks like for
+								22 heading Aaron Eckerly, Value: 2
+									23 text Aaron Eckerly
+								24 link « Done Previewing, Value: aiconfirmed.bamboohr.com/settings/permissions/?test=0&uri=/home/
+							25 text Viewing sample data.
+							26 container
+								27 content list
+									28 link Home, Value: aiconfirmed.bamboohr.com/home
+									29 link My Info, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=35&clearLooping=true
+									30 link People, Value: aiconfirmed.bamboohr.com/employees/directory.php
+									31 link Files, Value: aiconfirmed.bamboohr.com/files/
+									32 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+									33 link Recognition, Value: aiconfirmed.bamboohr.com/app/recognition
+								34 content list
+									35 link neal My Account
+										36 image neal
+										37 text My Account
+									38 button Collapse
+							39 container
+								40 container
+									41 link Logo, Value: aiconfirmed.bamboohr.com/
+									42 container
+										43 text field (settable) Search, Placeholder: Search...
+									44 pop up button Inbox Header Button
+										45 text 4
+								46 container
+									47 container
+										48 link Avatar Hi, Aaron Customer Success Advocate, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=35
+										49 button Edit
+									50 container
+										51 container micro-container14
+										52 container
+											53 heading My Time, Value: 5
+												54 text My Time
+											55 heading 0h 00m Today, Value: 3
+												56 text 0h 00m Today
+											57 text You don't have any shifts scheduled
+											58 button Clock in (Unscheduled)
+											59 pop up button Clock in to project or task
+											60 container micro-container2
+											61 container micro-container4
+											62 heading Today, Value: 6
+												63 text Today
+											64 text 0h 00m
+											65 heading This Week, Value: 6
+												66 text This Week
+											67 text 0h 00m
+											68 heading Pay Period, Value: 6
+												69 text Pay Period
+											70 text 0h 00m
+											71 button Schedule
+											72 link Timesheet, Value: aiconfirmed.bamboohr.com/employees/timesheet/?id=35
+											73 container micro-container6
+										74 container
+											75 heading Time Off, Value: 5
+												76 text Time Off
+											77 button Next
+											78 container Time Off
+												79 link Vacation 120 hours available, Value: aiconfirmed.bamboohr.com/employees/pto/?id=35
+											80 button Request Time Off
+											81 button Calculate Time Off
+										82 container
+											83 heading My Stuff, Value: 5
+												84 text My Stuff
+											85 container Start Open Enrollment
+												86 text Ready to enroll in benefits?
+											87 text Elections are due Jan 21 (83 days).
+											88 button (disabled) Start Enrollment
+										89 container
+											90 container
+												91 text What's happening at ai confirmed solutions
+												92 link Announcements (1), Value: aiconfirmed.bamboohr.com/app/announcements
+											93 content list
+												94 container
+													95 link Take a few minutes to complete your Self Assessment., Value: aiconfirmed.bamboohr.com/performance/35/assessments
+													96 container
+														97 text Please complete your assessment by Jul 21 (101 days ago) . PAST DUE
+													98 button Close Notification
+												99 container
+													100 Unlabeled image /photo_person_160x160.png
+													101 link Emily Howe posted an Announcement Remote Work Update Update, Value: aiconfirmed.bamboohr.com/dashboard/announcement.php?id=23
+													102 text In 3 days
+													103 button Close Notification
+												104 container
+													105 link You have 4 documents waiting for your signature., Value: aiconfirmed.bamboohr.com/inbox/esignature_instances/
+													106 text 3 months ago
+													107 button Close Notification
+										108 container micro-container12
+										109 container micro-container10
+											110 button profile picture for Yun Xu Yun Xu October 30 - Happy Birthday! profile picture for Daniel Vance Daniel Vance November 2 - Happy Birthday! profile picture for Anthony Larsen Anthony Larsen November 3 - Happy Birthday! profile picture for Aaron Eckerly Aaron Eckerly November 4 - 1st Anniversary
+											111 button 1 Person Is Out Today 0 People from my circle neal armstrong Calendar - opens in a new tab
+												112 container
+													113 heading Who's Out, Value: 5
+														114 text Who's Out
+													115 text 1 Person Is Out Today 0 People from my circle
+													116 image neal armstrong
+													117 link Calendar - opens in a new tab, Value: aiconfirmed.bamboohr.com/calendar
+											118 button Company Company website - opens in a new tab Benefits 401k - opens in a new tab Health - opens in a new tab Vision - opens in a new tab Dental - opens in a new tab COVID-19 12 more links...
+												119 container
+													120 heading Company Links, Value: 5
+														121 text Company Links
+													122 text Company
+													123 content list
+														124 link Company website - opens in a new tab, Value: bamboohr.com/
+													125 text Benefits
+													126 content list
+														127 link 401k - opens in a new tab, Value: bamboohr.com/blog/how-to-set-up-a-retirement-plan-for-your-small-business/
+														128 link Health - opens in a new tab, Value: bamboohr.com/blog/find-right-hr-tools/
+														129 link Vision - opens in a new tab, Value: bamboohr.com/blog/the-beginners-guide-to-human-resources/
+														130 link Dental - opens in a new tab, Value: https//www.bamboohr.com/blog/find-right-hr-tools/
+													131 text COVID-19
+													132 text 12 more links...
+											133 button Welcome 1 New Team Member! Started Monday, Oct 26 Holly Hartley
+											134 button Veterans Day Wednesday, Nov 11 Thanksgiving Day Thursday, Nov 26 Christmas Day Friday, Dec 25
+											135 button Give 50 Redeem 100 Let's get this party started! Give Recognition
+												136 container
+													137 heading Recognition, Value: 5
+														138 text Recognition
+													139 button Give
+													140 heading 50, Value: 2
+														141 text 50
+													142 button Redeem
+													143 heading 100, Value: 2
+														144 text 100
+													145 container Let's get this party started!
+														146 heading Let's get this party started!, Value: 5
+															147 text Let's get this party started!
+														148 text You can give recognition to your teammates for just about anything – going the extra mile, being a team player, or being kind, just to name a few.
+													149 button Give Recognition
+									150 container micro-container16
+			151 container Infobar Container
+				152 container Infobar
+					153 container
+						154 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						155 link Settings, opens in new tab.
+					156 button Close
+			157 pop up button Tab search
+			158 container
+				159 tab group
+					160 tab (settable, boolean) BambooHR, Value: off
+						161 button Close
+					162 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						163 button Close
+					164 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						165 button Close
+					166 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						167 button Close
+					168 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						169 button Close
+					170 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						171 button Close
+					172 tab (selected, settable, boolean) Home - Memory usage - 444 MB, Value: on
+						173 button Close
+			174 button New Tab
+	175 close button
+	176 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	177 minimize button
+178 menu bar
+	179 Chrome
+	180 File
+	181 Edit
+	182 View
+	183 History
+	184 Bookmarks
+	185 Profiles
+	186 Tab
+	187 Window
+	188 Help
+
+The focused UI element is 16 HTML content Home, URL: aiconfirmed.bamboohr.com/home/

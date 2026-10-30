@@ -1,0 +1,202 @@
+Window: "New Hire Packet Templates", App: Google Chrome.
+0 standard window New Hire Packet Templates - Google Chrome, URL: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/2, Secondary Actions: Raise
+	1 container New Hire Packet Templates - Google Chrome, URL: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/2
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/2, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button You
+				12 pop up button Chrome
+			13 container
+				14 scroll area
+					15 HTML content New Hire Packet Templates, URL: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/2
+						16 container
+							17 link Skip to content, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template/edit/2#js-PageCapsule
+							18 container
+								19 text 7
+								20 text  days left in your free trial. Call 1-801-724-6601 to sign up! Viewing sample data.
+							21 container
+								22 content list
+									23 link Home, Value: aiconfirmed.bamboohr.com/home
+									24 link My Info, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=8&clearLooping=true
+									25 link People, Value: aiconfirmed.bamboohr.com/employees/?redirect
+									26 link Hiring, Value: aiconfirmed.bamboohr.com/hiring
+									27 link Reports, Value: aiconfirmed.bamboohr.com/app/reports/
+									28 link Files, Value: aiconfirmed.bamboohr.com/files/
+									29 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+									30 link Compensation, Value: aiconfirmed.bamboohr.com/app/compensation
+									31 link Time & Attendance, Value: aiconfirmed.bamboohr.com/app/time-and-attendance
+									32 link Benefits, Value: aiconfirmed.bamboohr.com/app/benefits
+									33 link Recognition, Value: aiconfirmed.bamboohr.com/app/recognition
+									34 link Ecosystem, Value: aiconfirmed.bamboohr.com/app/ecosystem
+									35 link Global Employment
+										36 text Global Employment
+								37 content list
+									38 link Resources
+										39 text Resources
+									40 link Settings, Value: aiconfirmed.bamboohr.com/settings/
+									41 link neal My Account
+										42 image neal
+										43 text My Account
+									44 button Collapse
+							45 container
+								46 container
+									47 link Logo, Value: aiconfirmed.bamboohr.com/
+									48 container
+										49 text field (settable) Search, Placeholder: Search...
+									50 pop up button Inbox Header Button
+										51 text 24
+									52 container micro-container2
+										53 button Ask chat icon Ask
+								54 container
+									55 container
+										56 link Onboarding, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template
+										57 heading New Hire Packet Template, Value: 2
+											58 text New Hire Packet Template
+									59 container
+										60 container
+											61 text Template Name
+											62 text field (settable) Template Name, Value: California, USA
+										63 heading Welcome Message & Video, Value: 3
+											64 text Welcome Message & Video
+										65 container
+											66 text Welcome Message Title
+											67 text field (settable) Welcome Message Title, Value: Welcome to ai confirmed solutions !
+										68 container
+											69 text Message
+											70 text entry area (settable) Message, Value: We are excited that you are joining us here at ai confirmed solutions . We can't wait for you to start. We've included some helpful information and ask that you complete this new employee packet so you can hit the ground running on your first day. If you have any questions, please don't hesitate to ask.
+											71 text 304/500 characters
+										72 container
+											73 text Video URL
+											74 button
+											75 text field (settable) Video URL
+											76 text Do you happen to have a video you'd like new hires to see? Add a link to it here.
+										77 heading When, Where, and Other Info, Value: 3
+											78 text When, Where, and Other Info
+										79 container
+											80 text Please Arrive by...
+											81 container
+												82 pop up button Please Arrive by... 8:00 AM
+													83 text 8:00 AM
+												84 button Clear Selection
+										85 container
+											86 text Location
+											87 text field (settable) Location, Value: 123 Main St, Placeholder: Enter Address (Leave blank for remote employee)
+										88 container
+											89 text Who to Contact
+											90 container
+												91 pop up button Who to Contact Aaron Eckerly
+													92 text Aaron Eckerly
+												93 button Clear Selection
+										94 container
+											95 text Other Instructions
+											96 text entry area (settable) Other Instructions, Value: - Please bring two forms of photo ID.
+- Your manager will treat you to lunch on your first day.
+										97 heading Introduce the New Employee to the Team, Value: 3
+											98 text Introduce the New Employee to the Team
+										99 text Add a few Get to Know You questions to help the team get to know the New Employee a little better.
+										100 container
+											101 checkbox Send a "Get to Know You" email on the morning of their first day, Value: 1
+											102 text Send a "Get to Know You" email on the morning of their first day
+										103 text Send to
+										104 pop up button  All Employees
+											105 text All Employees
+										106 button Preview Email
+										107 container
+											108 text field (settable) Value: Where is your hometown?, Placeholder: Enter Question
+											109 container
+												110 switch Required Employee Personal Question Toggle - 0, Value: off
+												111 text Required Employee Personal Question Toggle - 0
+											112 button
+										113 container
+											114 text field (settable) Value: What city do you live in now?, Placeholder: Enter Question
+											115 container
+												116 switch Required Employee Personal Question Toggle - 1, Value: off
+												117 text Required Employee Personal Question Toggle - 1
+											118 button
+										119 container
+											120 text field (settable) Value: What is your favorite candy?, Placeholder: Enter Question
+											121 container
+												122 switch Required Employee Personal Question Toggle - 2, Value: off
+												123 text Required Employee Personal Question Toggle - 2
+											124 button
+										125 container
+											126 text field (settable) Value: What's one thing on your bucket list?, Placeholder: Enter Question
+											127 container
+												128 switch Required Employee Personal Question Toggle - 3, Value: off
+												129 text Required Employee Personal Question Toggle - 3
+											130 button
+										131 container
+											132 text field (settable) Value: What's the craziest thing you've ever done?, Placeholder: Enter Question
+											133 container
+												134 switch Required Employee Personal Question Toggle - 4, Value: off
+												135 text Required Employee Personal Question Toggle - 4
+											136 button
+										137 container
+											138 text field (settable) Value: Where is your favorite vacation spot?, Placeholder: Enter Question
+											139 container
+												140 switch Required Employee Personal Question Toggle - 5, Value: off
+												141 text Required Employee Personal Question Toggle - 5
+											142 button
+										143 button Add Question
+										144 heading Tasks to Complete, Value: 4
+											145 heading Tasks to Complete, Value: 3
+												146 text Tasks to Complete
+										147 container Onboarding tasks can be added when the New Hire Packet is being created.
+											148 heading Onboarding tasks can be added when the New Hire Packet is being created., Value: 3
+												149 text Onboarding tasks can be added when the New Hire Packet is being created.
+										150 heading First Day Schedule, Value: 3
+											151 text First Day Schedule
+										152 text Help new hires know what to expect on their first day. Add events like welcome meetings, onboarding sessions, or team lunches.
+										153 container
+											154 checkbox Include a first day schedule for the employee, Value: 0
+											155 text Include a first day schedule for the employee
+									156 container
+										157 button Save Template
+										158 button Preview Template
+										159 button Cancel
+			160 container Infobar Container
+				161 container Infobar
+					162 container
+						163 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						164 link Settings, opens in new tab.
+					165 button Close
+			166 pop up button Tab search
+			167 container
+				168 tab group
+					169 tab (settable, boolean) BambooHR, Value: off
+						170 button Close
+					171 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						172 button Close
+					173 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						174 button Close
+					175 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						176 button Close
+					177 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						178 button Close
+					179 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						180 button Close
+					181 tab (selected, settable, boolean) New Hire Packet Templates - Memory usage - 404 MB, Value: on
+						182 button Close
+			183 button New Tab
+	184 close button
+	185 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	186 minimize button
+187 menu bar
+	188 Chrome
+	189 File
+	190 Edit
+	191 View
+	192 History
+	193 Bookmarks
+	194 Profiles
+	195 Tab
+	196 Window
+	197 Help
+
+The focused UI element is 62 text field (settable) Template Name, Value: California, USA

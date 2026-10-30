@@ -1,0 +1,387 @@
+Window: "Aaron Eckerly - Job", App: Google Chrome.
+0 standard window Aaron Eckerly - Job - Google Chrome, URL: aiconfirmed.bamboohr.com/employees/employee.php?id=35&page=2078, Secondary Actions: Raise
+	1 container Aaron Eckerly - Job - Google Chrome, URL: aiconfirmed.bamboohr.com/employees/employee.php?id=35&page=2078
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=35&page=2078, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button You
+				12 pop up button Chrome
+			13 container
+				14 scroll area
+					15 HTML content Aaron Eckerly - Job, URL: aiconfirmed.bamboohr.com/employees/employee.php?id=35&page=2078
+						16 container
+							17 link Skip to content, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=35&page=2078#js-PageCapsule
+							18 container
+								19 text 7
+								20 text  days left in your free trial. Call 1-801-724-6601 to sign up! Viewing sample data.
+							21 container
+								22 content list
+									23 link Home, Value: aiconfirmed.bamboohr.com/home
+									24 link My Info, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=8&clearLooping=true
+									25 link People, Value: aiconfirmed.bamboohr.com/employees/?redirect
+									26 link Hiring, Value: aiconfirmed.bamboohr.com/hiring
+									27 link Reports, Value: aiconfirmed.bamboohr.com/app/reports/
+									28 link Files, Value: aiconfirmed.bamboohr.com/files/
+									29 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+									30 link Compensation, Value: aiconfirmed.bamboohr.com/app/compensation
+									31 link Time & Attendance, Value: aiconfirmed.bamboohr.com/app/time-and-attendance
+									32 link Benefits, Value: aiconfirmed.bamboohr.com/app/benefits
+									33 link Recognition, Value: aiconfirmed.bamboohr.com/app/recognition
+									34 link Ecosystem, Value: aiconfirmed.bamboohr.com/app/ecosystem
+									35 link Global Employment
+										36 text Global Employment
+								37 content list
+									38 link Resources
+										39 text Resources
+									40 link Settings, Value: aiconfirmed.bamboohr.com/settings/
+									41 link neal My Account
+										42 image neal
+										43 text My Account
+									44 button Collapse
+							45 container
+								46 container
+									47 link Logo, Value: aiconfirmed.bamboohr.com/
+									48 container
+										49 text field (settable) Search, Placeholder: Search...
+									50 pop up button Inbox Header Button
+										51 text 24
+									52 container micro-container2
+										53 button Ask chat icon Ask
+								54 container
+									55 container
+										56 image Aaron Eckerly
+										57 heading Aaron Eckerly, Value: 4
+											58 text Aaron Eckerly
+										59 container
+											60 link Personal, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=35&page=2077
+											61 link Job, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=35&page=2078
+											62 link Time Off, Value: aiconfirmed.bamboohr.com/employees/pto/?id=35
+											63 link Documents, Value: aiconfirmed.bamboohr.com/employees/files/employeeFilesPage?id=35
+											64 link Performance, Value: aiconfirmed.bamboohr.com/employees/performance/index.php?id=35&page=2090
+											65 link Recognition, Value: aiconfirmed.bamboohr.com/employees/recognition?id=35
+											66 link Timesheet, Value: aiconfirmed.bamboohr.com/employees/timesheet/?id=35
+											67 link Benefits, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=35&page=2086
+											68 link Training, Value: aiconfirmed.bamboohr.com/employees/training/?id=35&page=2087
+											69 pop up button More
+									70 container
+										71 heading Aaron Eckerly, Value: 1
+											72 text Aaron Eckerly
+										73 heading Customer Success Advocate, Value: 4
+											74 text Customer Success Advocate
+										75 container micro-container4
+										76 pop up button Request a Change
+										77 pop up button Employee Menu
+									78 container
+										79 button Edit profile photo
+											80 image Profile Photo for Aaron Eckerly
+											81 button
+										82 heading Vitals, Value: 2
+											83 text Vitals
+										84 content list
+											85 container Work #
+												86 text 801-724-6600 x 1296
+											87 container Mobile #
+												88 text 385-228-4167
+											89 link aaron@efficientoffice.com, Value: mailto:aaron@efficientoffice.com
+											90 link LinkedIn, Value: linkedin.com/
+											91 container Local Time
+												92 container
+													93 text 4:25 PM  local time
+											94 container Location
+												95 text Salt Lake City, Utah
+											96 container Job Title
+												97 text Customer Success Advocate
+											98 container Status
+												99 text Full-Time
+											100 container Department
+												101 text Customer Success
+											102 container Division
+												103 text North America
+											104 container Employee #
+												105 text 32
+										106 heading Hire Date, Value: 2
+											107 text Hire Date
+										108 content list
+											109 container
+												110 text Nov 4, 2025 11m - 26d
+										111 heading Manager (Inactive), Value: 2
+											112 text Manager (Inactive)
+										113 content list
+											114 container
+												115 link Melany Olsen, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=36
+												116 text Customer Retention Manager
+										117 content list
+											118 container
+												119 link View in org chart, Value: aiconfirmed.bamboohr.com/employees/orgchart.php?pin&ee-id=35
+										120 heading Job, Value: 3
+											121 text Job
+										122 pop up button Customize Layout
+										123 container
+											124 container
+												125 container
+													126 text Hire Date
+													127 container
+														128 text field (settable) Hire Date, Value: 11/04/2025, Placeholder: mm/dd/yyyy
+														129 pop up button Pick a date. The current value is 11/04/2025.
+												130 container
+													131 text Ethnicity
+													132 container
+														133 pop up button Ethnicity White
+															134 text White
+												135 container
+													136 text EEO Job Category
+													137 pop up button (disabled) EEO Job Category Technicians
+														138 text Technicians
+												139 container Veteran Status
+													140 text Veteran Status
+													141 container
+														142 checkbox Active Duty Wartime or Campaign Badge Veteran, Value: 0
+														143 text Active Duty Wartime or Campaign Badge Veteran
+													144 container
+														145 checkbox Armed Forces Service Medal Veteran, Value: 0
+														146 text Armed Forces Service Medal Veteran
+													147 container
+														148 checkbox Disabled Veteran, Value: 0
+														149 text Disabled Veteran
+													150 container
+														151 checkbox Recently Separated Veteran, Value: 0
+														152 text Recently Separated Veteran
+												153 text Direct Reports
+												154 text No Direct Reports
+											155 container
+												156 text Employment Status
+												157 container micro-container30
+													158 container
+														159 button Add Entry
+														160 table Employment Status
+															161 text Employment Status
+															162 row
+																163 column header
+																	164 text Effective Date
+																165 column header
+																	166 text Employment Status
+																167 column header
+																	168 text Comment
+																169 column header Actions
+																	170 text Actions
+															171 row
+																172 cell
+																	173 container
+																		174 text 11/04/2025
+																175 cell
+																	176 text Full-Time
+																177 cell
+																	178 container
+																		179 button Edit
+																		180 button Delete
+											181 container
+												182 text Job Information
+												183 container micro-container32
+													184 container
+														185 button Add Entry
+														186 table Job Information
+															187 text Job Information
+															188 row
+																189 column header
+																	190 text Effective Date
+																191 column header
+																	192 text Location
+																193 column header
+																	194 text Division
+																195 column header
+																	196 text Department
+																197 column header
+																	198 text Teams
+																199 column header
+																	200 text Job Title
+																201 column header
+																	202 text Reports To
+																203 column header Actions
+																	204 text Actions
+															205 row
+																206 cell
+																	207 container
+																		208 text 11/04/2025
+																209 cell
+																	210 text Salt Lake City, Utah
+																211 cell
+																	212 text North America
+																213 cell
+																	214 text Customer Success
+																215 cell
+																	216 text Customer Success Advocate
+																217 cell
+																	218 link Melany Olsen, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=36
+																219 cell
+																	220 container
+																		221 button Edit
+																		222 button Delete
+											223 container
+												224 text Compensation
+												225 container micro-container34
+													226 container
+														227 button Add Entry
+														228 table Compensation
+															229 text Compensation
+															230 row
+																231 column header
+																	232 text Effective Date
+																233 column header
+																	234 text Pay Schedule
+																235 column header
+																	236 text Pay Type
+																237 column header
+																	238 text Pay Rate
+																239 column header
+																	240 text Overtime
+																241 column header
+																	242 text Change Reason
+																243 column header
+																	244 text Comment
+																245 column header Actions
+																	246 text Actions
+															247 row
+																248 cell
+																	249 container
+																		250 text 11/04/2025
+																251 cell
+																	252 text Every other week
+																253 cell
+																	254 text Hourly
+																255 cell
+																	256 text $18.00 / Hour
+																257 cell
+																	258 text Non-exempt
+																259 cell
+																	260 container
+																		261 button Edit
+																		262 button Delete
+											263 container
+												264 text Potential Bonus
+												265 container
+													266 text Annual Percentage
+													267 text field (settable) Annual Percentage
+													268 text %
+												269 container
+													270 text Annual Amount
+													271 container
+														272 text $
+														273 text field (settable) Annual Amount
+														274 pop up button USD
+											275 container
+												276 text Bonus
+												277 container micro-container36
+													278 container
+														279 button Add Entry
+														280 table Bonus
+															281 text Bonus
+															282 row
+																283 column header
+																	284 text Date
+																285 column header
+																	286 text Amount
+																287 column header
+																	288 text Reason
+																289 column header
+																	290 text Comment
+																291 column header Actions
+																	292 text Actions
+															293 row
+																294 cell
+																	295 text No bonus entries have been added.
+											296 container
+												297 text Commission
+												298 container micro-container38
+													299 container
+														300 button Add Entry
+														301 table Commission
+															302 text Commission
+															303 row
+																304 column header
+																	305 text Date
+																306 column header
+																	307 text Amount
+																308 column header
+																	309 text Comment
+																310 column header Actions
+																	311 text Actions
+															312 row
+																313 cell
+																	314 text No commission entries have been added.
+											315 container
+												316 text Equity
+												317 container micro-container40
+													318 container
+														319 button Add Entry
+														320 table Equity
+															321 text Equity
+															322 row
+																323 column header
+																	324 text Grant Type
+																325 column header
+																	326 text Custom Grant Type Name
+																327 column header
+																	328 text Grant Date
+																329 column header
+																	330 text Vesting Start Date
+																331 column header
+																	332 text # of Equity Granted
+																333 column header
+																	334 text Strike Price
+																335 column header
+																	336 text Vesting Schedule
+																337 column header
+																	338 text Vesting Months
+																339 column header
+																	340 text Cliff Months
+																341 column header Actions
+																	342 text Actions
+															343 row
+																344 cell
+																	345 text No equity entries have been added.
+			346 container Infobar Container
+				347 container Infobar
+					348 container
+						349 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						350 link Settings, opens in new tab.
+					351 button Close
+			352 pop up button Tab search
+			353 container
+				354 tab group
+					355 tab (settable, boolean) BambooHR, Value: off
+						356 button Close
+					357 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						358 button Close
+					359 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						360 button Close
+					361 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						362 button Close
+					363 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						364 button Close
+					365 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						366 button Close
+					367 tab (selected, settable, boolean) Aaron Eckerly - Job - Memory usage - 291 MB, Value: on
+						368 button Close
+			369 button New Tab
+	370 close button
+	371 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	372 minimize button
+373 menu bar
+	374 Chrome
+	375 File
+	376 Edit
+	377 View
+	378 History
+	379 Bookmarks
+	380 Profiles
+	381 Tab
+	382 Window
+	383 Help
+
+The focused UI element is 15 HTML content Aaron Eckerly - Job, URL: aiconfirmed.bamboohr.com/employees/employee.php?id=35&page=2078

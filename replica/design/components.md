@@ -667,3 +667,11 @@ RouteNotFound (S07/S20/S24/S29 attempted destinations)
   tokens    danger/on-accent for alert, bg/trial-surface/text for panel; original art.
   a11y      error heading + alert text and real home link; do not conflate404 with403
             or claim entitlement/role denial. Recovery navigation untested.
+
+## Audit 7 current-trial component evidence
+
+See design-audit-7.md. Current permission editor: grouped Personal-field grants with mixed Access Varies, Edit, Edit - Approval Required, No Access; Self/Home sections and all-No-Access hides-tab hint. Named preview banner/Done Previewing and reduced employee navigation are observed. No field enforcement claim.
+
+Current task administration: collapsible groups with counts; Name/Assigned To/Due Date; Add Task modal with assignee/list/relative date/description/file/import audience. Cancel leaves draft unsaved. Packet template editor covers welcome/video, arrival/contact, introduction questions/required toggles and first-day schedule. Preview has four steps but explicitly withholds actual employee fields/tasks; retain placeholder semantics rather than inventing fields.
+
+eNPS setup has explicit trial-disabled copy, intro email controls, survey timing/cadence and preview controls. Treat trial gate separately from role denial or route errors. Goals settings are observed; goal cards and complete review editor remain separate unverified variants.

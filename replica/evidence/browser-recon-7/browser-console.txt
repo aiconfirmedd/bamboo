@@ -1,0 +1,284 @@
+Window: "Account Info", App: Google Chrome.
+0 standard window Account Info - Google Chrome, URL: aiconfirmed.bamboohr.com/app/settings/account, Secondary Actions: Raise
+	1 container Account Info - Google Chrome, URL: aiconfirmed.bamboohr.com/app/settings/account
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/app/settings/account, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button Control your music, videos, and more
+				12 button You
+				13 pop up button Chrome
+			14 container
+				15 scroll area
+					16 HTML content DevTools, URL: devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@d331de35ca8ab1358c7a17e4bd41627d55eaef51/&targetType=tab&can_dock=true&panel=console
+						17 container
+							18 container
+								19 container
+									20 container Main toolbar
+										21 toolbar
+											22 container Select an element in the page to inspect it, Help: Select an element in the page to inspect it - ⌘ ⇧ C
+												23 toggle button Select an element in the page to inspect it - ⌘ ⇧ C, Value: 0
+											24 container Toggle device toolbar, Help: Toggle device toolbar - ⌘ ⇧ M
+												25 toggle button Toggle device toolbar - ⌘ ⇧ M, Value: 0
+										26 container
+											27 tab group Panels
+												28 tab (settable, integer) Elements, Value: 0
+												29 tab (selected) Console, Value: 1
+												30 tab (settable, integer) Sources, Value: 0
+											31 pop up button More tabs
+										32 toolbar
+											33 container
+												34 container Open Console to view 1 error, 5 warnings
+													35 button Open Console to view 1 error, 5 warnings
+												36 container Open Issues to view 2 issues: 1 breaking change, 1 possible improvement
+													37 button Open Issues to view 2 issues: 1 breaking change, 1 possible improvement
+											38 button  AI assistance, Help: Open AI assistance panel
+											39 container Settings, Help: Settings - F1 - ⇧ ?
+												40 button Settings - F1 - ⇧ ?
+											41 pop up button Customize and control DevTools
+												42 button Customize and control DevTools
+											43 container Close
+												44 button Close
+									45 container Console panel
+										46 container console
+											47 container
+												48 toolbar
+													49 container Show Console sidebar
+														50 button Show Console sidebar
+													51 container Clear console, Help: Clear console - Ctrl L - ⌘ K
+														52 button Clear console - Ctrl L - ⌘ K
+													53 container Expand all
+														54 button Expand all
+													55 button JavaScript context: top
+													56 container Create live expression
+														57 button Create live expression
+													58 text entry area (settable) Filter
+														59 text Filter
+													60 pop up button Log level: Default levels
+														61 text Default levels
+													62 container Some problems no longer generate console messages, but are surfaced in the Issues tab Click to view 1 breaking change, 1 possible improvement
+														63 button Some problems no longer generate console messages, but are surfaced in the Issues tab Click to view 1 breaking change, 1 possible improvement
+													64 container Console settings
+														65 toggle button Console settings, Value: 0
+													66 container 5 messages in console
+												67 container
+													68 container
+														69 container Datadog Browser SDK:
+															70 container Warning, Repeated 2 times
+																71 text 2
+															72 container  Datadog Browser SDK: SDK is loaded more than once. This is unsupported and might have unexpected behavior. Stack table collapsed
+																73 container
+																	74 button rollbar.min.js:1, Help: https://staticfe.bamboohr.com/fe-main/prod/js/rollbar.js/rollbar.min.js:1
+																	75 text Datadog Browser SDK:
+																	76 text SDK is loaded more than once. This is unsupported and might have unexpected behavior.
+														77 container 🌐 i18next is made possible by our own product, Locize — consider powering your project with managed localization (AI, CDN, integrations): https://locize.com 💙
+															78 container  🌐 i18next is made possible by our own product, Locize — consider powering your project with managed localization (AI, CDN, integrations): https://locize.com 💙 Stack table collapsed
+																79 container
+																	80 button rollbar.min.js:1, Help: https://staticfe.bamboohr.com/fe-main/prod/js/rollbar.js/rollbar.min.js:1
+																	81 text 🌐 i18next is made possible by our own product, Locize — consider powering your project with managed localization (AI, CDN, integrations): 
+																	82 link https://locize.com
+																		83 text https://locize.com
+																	84 text  💙
+														85 container Datadog Browser SDK:
+															86 container Warning, Repeated 2 times
+																87 text 2
+															88 container  Datadog Browser SDK: SDK is loaded more than once. This is unsupported and might have unexpected behavior. Stack table collapsed
+																89 container
+																	90 button rollbar.min.js:1, Help: https://staticfe.bamboohr.com/fe-main/prod/js/rollbar.js/rollbar.min.js:1
+																	91 text Datadog Browser SDK:
+																	92 text SDK is loaded more than once. This is unsupported and might have unexpected behavior.
+														93 container Failed to load resource: the server responded with a status of 403 ()
+															94 container
+																95 container Error
+																96 container /api/v1/expansion/pa…-summit-challenge:1 Failed to load resource: the server responded with a status of 403 () Stack table collapsed
+																	97 container
+																		98 link /api/v1/expansion/pa…-summit-challenge:1, Help: https://aiconfirmed.bamboohr.com/api/v1/expansion/payroll-summit-challenge
+																			99 text /api/v1/expansion/pa
+																			100 text …
+																			101 text -summit-challenge:1
+																		102 button Request unavailable in the Network panel. Try reloading the inspected page.
+																		103 text Failed to load resource: the server responded with a status of 403 ()
+														104 container [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.fetch
+															105 container
+																106 container Warning
+																107 container  [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.fetch Stack table collapsed
+																	108 container
+																		109 link rollbar.min.js:1, Help: https://staticfe.bamboohr.com/fe-main/prod/js/rollbar.js/rollbar.min.js:1
+																			110 text rollbar.min.js:1
+																		111 text [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.fetch
+													112 container
+														113 container
+															114 text entry area (settable) Console prompt, Value: 
+
+							115 text DevTools is docked to right 
+				116 scroll area
+					117 HTML content Account Info, URL: aiconfirmed.bamboohr.com/app/settings/account
+						118 container
+							119 container micro-container2
+								120 link Skip to content, Value: aiconfirmed.bamboohr.com/app/settings/account#js-PageCapsule
+								121 container
+									122 text 7
+									123 text  days left in your free trial. Call 1-801-724-6601 to sign up! Viewing sample data.
+								124 container
+									125 content list
+										126 link Home, Value: aiconfirmed.bamboohr.com/home
+										127 link My Info, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=8&clearLooping=true
+										128 link People, Value: aiconfirmed.bamboohr.com/employees/?redirect
+										129 link Hiring, Value: aiconfirmed.bamboohr.com/hiring
+										130 link Reports, Value: aiconfirmed.bamboohr.com/app/reports/
+										131 link Files, Value: aiconfirmed.bamboohr.com/files/
+										132 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+										133 link Compensation, Value: aiconfirmed.bamboohr.com/app/compensation
+										134 link Time & Attendance, Value: aiconfirmed.bamboohr.com/app/time-and-attendance
+										135 link Benefits, Value: aiconfirmed.bamboohr.com/app/benefits
+										136 link Recognition, Value: aiconfirmed.bamboohr.com/app/recognition
+										137 link Ecosystem, Value: aiconfirmed.bamboohr.com/app/ecosystem
+										138 link Global Employment
+											139 text Global Employment
+									140 content list
+										141 link Resources
+											142 text Resources
+										143 link Settings, Value: aiconfirmed.bamboohr.com/settings/
+										144 link neal My Account
+											145 image neal
+											146 text My Account
+										147 button Collapse
+								148 container
+									149 link Logo, Value: aiconfirmed.bamboohr.com/
+									150 container
+										151 text field (settable) Search, Placeholder: Search...
+									152 pop up button Inbox Header Button
+										153 text 24
+									154 button Ask chat icon Ask
+								155 container
+									156 heading Settings, Value: 1
+										157 text Settings
+									158 container Settings
+										159 link Account, Value: aiconfirmed.bamboohr.com/app/settings/account
+										160 link Access Levels, Value: aiconfirmed.bamboohr.com/app/settings/access_levels/all
+										161 link Employee Fields, Value: aiconfirmed.bamboohr.com/settings/list.php?id=3458
+										162 link Approvals, Value: aiconfirmed.bamboohr.com/settings/workflows
+										163 link Apps, Value: aiconfirmed.bamboohr.com/settings/apps
+										164 link Ask BambooHR, Value: aiconfirmed.bamboohr.com/app/settings/answers
+										165 link Background Checks, Value: aiconfirmed.bamboohr.com/app/settings/background-checks
+										166 link Benefits, Value: aiconfirmed.bamboohr.com/settings/benefits/plans
+										167 link Company Directory, Value: aiconfirmed.bamboohr.com/app/settings/directory
+										168 link Compensation, Value: aiconfirmed.bamboohr.com/app/settings/compensation
+										169 link Core Values, Value: aiconfirmed.bamboohr.com/app/settings/core-values
+										170 link Custom Fields & Tables, Value: aiconfirmed.bamboohr.com/app/settings/custom_fields
+										171 link Email Alerts, Value: aiconfirmed.bamboohr.com/settings/alerts.php
+										172 link Employee Community, Value: aiconfirmed.bamboohr.com/app/settings/employee_community
+										173 link Employee Satisfaction, Value: aiconfirmed.bamboohr.com/app/settings/enps
+										174 link Employee Wellbeing, Value: aiconfirmed.bamboohr.com/app/settings/employee-wellbeing
+										175 link Global Employment, Value: aiconfirmed.bamboohr.com/app/settings/global_employment
+										176 link Hiring, Value: aiconfirmed.bamboohr.com/app/settings/hiring
+										177 link Holidays, Value: aiconfirmed.bamboohr.com/app/settings/holidays
+										178 link HR Consulting, Value: aiconfirmed.bamboohr.com/app/settings/hr-consulting
+										179 link Job Organization, Value: aiconfirmed.bamboohr.com/app/settings/job-organization
+										180 link Logo & Color, Value: aiconfirmed.bamboohr.com/app/settings/logo
+										181 link Managed Payroll, Value: aiconfirmed.bamboohr.com/app/settings/managed-payroll
+										182 link Offboarding, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=offboarding
+										183 link Onboarding, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding
+										184 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+										185 link Performance, Value: aiconfirmed.bamboohr.com/app/settings/performance
+										186 link Recognition, Value: aiconfirmed.bamboohr.com/app/settings/recognition
+										187 link Retirement Savings, Value: aiconfirmed.bamboohr.com/app/settings/retirement-savings
+										188 link Time Off, Value: aiconfirmed.bamboohr.com/app/settings/time-off
+										189 link Time & Attendance, Value: aiconfirmed.bamboohr.com/settings/time_tracking
+										190 link Total Rewards, Value: aiconfirmed.bamboohr.com/app/settings/total_rewards/overview
+										191 link Training, Value: aiconfirmed.bamboohr.com/settings/training/list
+									192 container
+										193 heading Account, Value: 3
+											194 text Account
+										195 container Account Settings
+											196 link Account Info, Value: aiconfirmed.bamboohr.com/app/settings/account/
+											197 link Billing, Value: aiconfirmed.bamboohr.com/app/settings/account/billing
+											198 link ACA Settings, Value: aiconfirmed.bamboohr.com/app/settings/account/aca
+											199 link General Settings, Value: aiconfirmed.bamboohr.com/app/settings/account/general
+											200 link iCalendar Feeds, Value: aiconfirmed.bamboohr.com/app/settings/account/calendar_feeds
+											201 link Webhooks, Value: aiconfirmed.bamboohr.com/app/settings/account/webhooks
+											202 link Import Hours, Value: aiconfirmed.bamboohr.com/settings/account/time_tracking/
+											203 link Login Settings, Value: aiconfirmed.bamboohr.com/settings/account/two_step_login/
+											204 link API & App Access, Value: aiconfirmed.bamboohr.com/app/settings/account/api_keys_manager
+										205 container
+											206 heading Account Info, Value: 1
+												207 text Account Info
+											208 heading ai confirmed solutions, Value: 2
+												209 text ai confirmed solutions
+											210 text Account #822438 aiconfirmed.bamboohr.com neal armstrong Account Owner
+											211 pop up button Account Owner Actions
+										212 container
+											213 text Your Free Trial ends  Nov 6, 2026  ( 7  days)
+										214 container
+											215 text Reach out to your product specialist or give us a call at  +1-801-724-6601  to sign up.
+										216 heading My Subscription, Value: 3
+											217 text My Subscription
+										218 link Manage Subscription, Value: aiconfirmed.bamboohr.com/app/billing/manage-subscription
+										219 heading Elite, Value: 4
+											220 text Elite
+										221 text New
+										222 text HR Package
+										223 text 91 Employees
+										224 text Add-Ons
+										225 text Benefits Administration
+										226 text 60 Employees
+										227 text Time & Attendance
+										228 text 8 Employees
+										229 text Job Postings
+										230 text 5 of 50
+										231 text File Storage
+										232 text 0 GB of 93.2 GB
+										233 heading Available Upgrades, Value: 3
+											234 text Available Upgrades
+										235 text Global Employment
+										236 text Powered by Remote
+										237 button Learn More
+										238 heading Data, Value: 3
+											239 text Data
+										240 text Data Center Location
+										241 text Ohio
+			242 container Infobar Container
+				243 container Infobar
+					244 container
+						245 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						246 link Settings, opens in new tab.
+					247 button Close
+			248 pop up button Tab search
+			249 container
+				250 tab group
+					251 tab (settable, boolean) BambooHR, Value: off
+						252 button Close
+					253 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						254 button Close
+					255 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						256 button Close
+					257 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						258 button Close
+					259 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						260 button Close
+					261 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						262 button Close
+					263 tab (selected, settable, boolean) Account Info - Memory usage - 284 MB, Value: on
+						264 button Close
+			265 button New Tab
+	266 close button
+	267 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	268 minimize button
+269 menu bar
+	270 Chrome
+	271 File
+	272 Edit
+	273 View
+	274 History
+	275 Bookmarks
+	276 Profiles
+	277 Tab
+	278 Window
+	279 Help
+
+The focused UI element is 114 text entry area (settable) Console prompt, Value: 

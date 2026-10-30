@@ -1,0 +1,95 @@
+{
+ "base": "https://aiconfirmed.bamboohr.com",
+ "url": "https://aiconfirmed.bamboohr.com/home/",
+ "title": "Home",
+ "links": [
+  [
+   "Home",
+   "/home"
+  ],
+  [
+   "My Info",
+   "/employees/employee.php?id=8&clearLooping=true"
+  ],
+  [
+   "People",
+   "/employees/?redirect"
+  ],
+  [
+   "Hiring",
+   "/hiring"
+  ],
+  [
+   "Reports",
+   "/app/reports/"
+  ],
+  [
+   "Files",
+   "/files/"
+  ],
+  [
+   "Payroll",
+   "/app/settings/payroll"
+  ],
+  [
+   "Compensation",
+   "/app/compensation"
+  ],
+  [
+   "Time & Attendance",
+   "/app/time-and-attendance"
+  ],
+  [
+   "Benefits",
+   "/app/benefits"
+  ],
+  [
+   "Recognition",
+   "/app/recognition"
+  ],
+  [
+   "Ecosystem",
+   "/app/ecosystem"
+  ],
+  [
+   "Global Employment",
+   null
+  ],
+  [
+   "Resources6",
+   null
+  ],
+  [
+   "Settings",
+   "/settings/"
+  ],
+  [
+   "My Account",
+   null
+  ],
+  [
+   "",
+   "/"
+  ],
+  [
+   "Hi, nealSr. HR Administrator",
+   "/employees/employee.php?id=8"
+  ],
+  [
+   "New Employee",
+   "/employees/new.php"
+  ],
+  [
+   "New Report",
+   "/reports/wizard2.php"
+  ],
+  [
+   "Announcements (1)",
+   "/app/announcements"
+  ],
+  [
+   "Manage",
+   "/dashboard/links"
+  ]
+ ]
+}

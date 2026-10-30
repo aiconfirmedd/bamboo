@@ -1,0 +1,168 @@
+Window: "eNPS Setup", App: Google Chrome.
+0 standard window eNPS Setup - Google Chrome, URL: aiconfirmed.bamboohr.com/app/settings/enps, Secondary Actions: Raise
+	1 container eNPS Setup - Google Chrome, URL: aiconfirmed.bamboohr.com/app/settings/enps
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/app/settings/enps, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button Control your music, videos, and more
+				12 button You
+				13 pop up button Chrome
+			14 container
+				15 scroll area
+					16 HTML content eNPS Setup, URL: aiconfirmed.bamboohr.com/app/settings/enps
+						17 container
+							18 container micro-container2
+								19 link Skip to content, Value: aiconfirmed.bamboohr.com/app/settings/enps#js-PageCapsule
+								20 container
+									21 text 7
+									22 text  days left in your free trial. Call 1-801-724-6601 to sign up! Viewing sample data.
+								23 container
+									24 content list
+										25 link Home, Value: aiconfirmed.bamboohr.com/home
+										26 link My Info, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=8&clearLooping=true
+										27 link People, Value: aiconfirmed.bamboohr.com/employees/?redirect
+										28 link Hiring, Value: aiconfirmed.bamboohr.com/hiring
+										29 link Reports, Value: aiconfirmed.bamboohr.com/app/reports/
+										30 link Files, Value: aiconfirmed.bamboohr.com/files/
+										31 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+										32 link Compensation, Value: aiconfirmed.bamboohr.com/app/compensation
+										33 link Time & Attendance, Value: aiconfirmed.bamboohr.com/app/time-and-attendance
+										34 link Benefits, Value: aiconfirmed.bamboohr.com/app/benefits
+										35 link Recognition, Value: aiconfirmed.bamboohr.com/app/recognition
+										36 link Ecosystem, Value: aiconfirmed.bamboohr.com/app/ecosystem
+										37 link Global Employment
+											38 text Global Employment
+									39 content list
+										40 link Resources
+											41 text Resources
+										42 link Settings, Value: aiconfirmed.bamboohr.com/settings/
+										43 link neal My Account
+											44 image neal
+											45 text My Account
+										46 button Collapse
+								47 container
+									48 link Logo, Value: aiconfirmed.bamboohr.com/
+									49 container
+										50 text field (settable) Search, Placeholder: Search...
+									51 pop up button Inbox Header Button
+										52 text 24
+									53 button Ask chat icon Ask
+								54 container
+									55 heading Settings, Value: 1
+										56 text Settings
+									57 container Settings
+										58 link Account, Value: aiconfirmed.bamboohr.com/app/settings/account
+										59 link Access Levels, Value: aiconfirmed.bamboohr.com/app/settings/access_levels/all
+										60 link Employee Fields, Value: aiconfirmed.bamboohr.com/settings/list.php?id=3458
+										61 link Approvals, Value: aiconfirmed.bamboohr.com/settings/workflows
+										62 link Apps, Value: aiconfirmed.bamboohr.com/settings/apps
+										63 link Ask BambooHR, Value: aiconfirmed.bamboohr.com/app/settings/answers
+										64 link Background Checks, Value: aiconfirmed.bamboohr.com/app/settings/background-checks
+										65 link Benefits, Value: aiconfirmed.bamboohr.com/settings/benefits/plans
+										66 link Company Directory, Value: aiconfirmed.bamboohr.com/app/settings/directory
+										67 link Compensation, Value: aiconfirmed.bamboohr.com/app/settings/compensation
+										68 link Core Values, Value: aiconfirmed.bamboohr.com/app/settings/core-values
+										69 link Custom Fields & Tables, Value: aiconfirmed.bamboohr.com/app/settings/custom_fields
+										70 link Email Alerts, Value: aiconfirmed.bamboohr.com/settings/alerts.php
+										71 link Employee Community, Value: aiconfirmed.bamboohr.com/app/settings/employee_community
+										72 link Employee Satisfaction, Value: aiconfirmed.bamboohr.com/app/settings/enps
+										73 link Employee Wellbeing, Value: aiconfirmed.bamboohr.com/app/settings/employee-wellbeing
+										74 link Global Employment, Value: aiconfirmed.bamboohr.com/app/settings/global_employment
+										75 link Hiring, Value: aiconfirmed.bamboohr.com/app/settings/hiring
+										76 link Holidays, Value: aiconfirmed.bamboohr.com/app/settings/holidays
+										77 link HR Consulting, Value: aiconfirmed.bamboohr.com/app/settings/hr-consulting
+										78 link Job Organization, Value: aiconfirmed.bamboohr.com/app/settings/job-organization
+										79 link Logo & Color, Value: aiconfirmed.bamboohr.com/app/settings/logo
+										80 link Managed Payroll, Value: aiconfirmed.bamboohr.com/app/settings/managed-payroll
+										81 link Offboarding, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=offboarding
+										82 link Onboarding, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding
+										83 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+										84 link Performance, Value: aiconfirmed.bamboohr.com/app/settings/performance
+										85 link Recognition, Value: aiconfirmed.bamboohr.com/app/settings/recognition
+										86 link Retirement Savings, Value: aiconfirmed.bamboohr.com/app/settings/retirement-savings
+										87 link Time Off, Value: aiconfirmed.bamboohr.com/app/settings/time-off
+										88 link Time & Attendance, Value: aiconfirmed.bamboohr.com/settings/time_tracking
+										89 link Total Rewards, Value: aiconfirmed.bamboohr.com/app/settings/total_rewards/overview
+										90 link Training, Value: aiconfirmed.bamboohr.com/settings/training/list
+									91 container
+										92 container Promo Video
+											93 HTML content eNPS- In Product Video (Features Overview), URL: fast.wistia.net/embed/iframe/g03otpk2nm?videoFoam=true
+												94 container
+													95 container
+														96 container eNPS- In Product Video (Features Overview)
+														97 container
+															98 container
+																99 button Play Video: eNPS- In Product Video (Features Overview)
+																100 text Press O for more options
+															101 container
+																102 image Video Thumbnail
+															103 container
+																104 button Play Video: eNPS- In Product Video (Features Overview)
+															105 container Video controls: eNPS- In Product Video (Features Overview)
+																106 container
+																	107 button Play Video
+																	108 container
+																		109 text 2:53
+																		110 slider Seek, Value: 0, Details: 0 seconds, Secondary Actions: Increment, Decrement
+																	111 container
+																		112 button Show captions menu
+																		113 toggle button Mute, Value: 0
+																		114 button Show settings menu
+																		115 button Fullscreen
+										116 text Employee Net Promoter Score
+										117 text SM
+										118 text  (eNPS) is a standard method companies use to measure employee satisfaction and engagement. BambooHR will automate the survey process for you to make it easy as pie. Watch the short video above to learn more, or 
+										119 link read more about it, Value: bamboohr.com/blog/ask-an-hr-expert-measuring-employee-satisfaction-with-bamboohr/
+										120 text .
+										121 button Preview Sample Survey
+										122 text |
+										123 link Preview Report (Demo Data), Value: aiconfirmed.bamboohr.com/reports/enps
+										124 button Let's Get Started
+										125 text Net Promoter, NPS, and the NPS-related emoticons are registered U.S. trademarks, and NetPromoter Score and Net Promoter System are service marks, of Bain & Company, Inc., NICE Systems, Inc. and Fred Reichheld.
+			126 container Infobar Container
+				127 container Infobar
+					128 container
+						129 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						130 link Settings, opens in new tab.
+					131 button Close
+			132 pop up button Tab search
+			133 container
+				134 tab group
+					135 tab (settable, boolean) BambooHR, Value: off
+						136 button Close
+					137 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						138 button Close
+					139 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						140 button Close
+					141 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						142 button Close
+					143 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						144 button Close
+					145 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						146 button Close
+					147 tab (selected, settable, boolean) eNPS Setup - Memory usage - 452 MB, Value: on
+						148 button Close
+			149 button New Tab
+		150 text https://aiconfirmed.bamboohr.com/app/settings/enps
+	151 close button
+	152 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	153 minimize button
+154 menu bar
+	155 Chrome
+	156 File
+	157 Edit
+	158 View
+	159 History
+	160 Bookmarks
+	161 Profiles
+	162 Tab
+	163 Window
+	164 Help
+
+The focused UI element is 72 link Employee Satisfaction, Value: aiconfirmed.bamboohr.com/app/settings/enps

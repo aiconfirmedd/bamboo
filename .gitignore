@@ -2,7 +2,14 @@
 node_modules/
 .env
 .env.*
+!.env.example
 dist/
 build/
 .next/
 *.log
+__pycache__/
+work/
+
+# Completed setup responses remain private.
+bamboo-setup-submission*.json
+bamboo-setup-draft*.json

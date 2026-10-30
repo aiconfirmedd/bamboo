@@ -1,0 +1,162 @@
+Window: "Onboarding", App: Google Chrome.
+0 standard window Onboarding - Google Chrome, URL: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding, Secondary Actions: Raise
+	1 container Onboarding - Google Chrome, URL: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 container
+					8 pop up button View site information
+					9 text field (settable) Address and search bar, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding, Placeholder: Ask Google or type a URL
+					10 button Bookmark this tab
+				11 button Control your music, videos, and more
+				12 button You
+				13 pop up button Chrome
+			14 container
+				15 scroll area
+					16 HTML content Onboarding, URL: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding
+						17 container
+							18 link Skip to content, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding#js-PageCapsule
+							19 container
+								20 text 7
+								21 text  days left in your free trial. Call 1-801-724-6601 to sign up! Viewing sample data.
+							22 container
+								23 content list
+									24 link Home, Value: aiconfirmed.bamboohr.com/home
+									25 link My Info, Value: aiconfirmed.bamboohr.com/employees/employee.php?id=8&clearLooping=true
+									26 link People, Value: aiconfirmed.bamboohr.com/employees/?redirect
+									27 link Hiring, Value: aiconfirmed.bamboohr.com/hiring
+									28 link Reports, Value: aiconfirmed.bamboohr.com/app/reports/
+									29 link Files, Value: aiconfirmed.bamboohr.com/files/
+									30 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+									31 link Compensation, Value: aiconfirmed.bamboohr.com/app/compensation
+									32 link Time & Attendance, Value: aiconfirmed.bamboohr.com/app/time-and-attendance
+									33 link Benefits, Value: aiconfirmed.bamboohr.com/app/benefits
+									34 link Recognition, Value: aiconfirmed.bamboohr.com/app/recognition
+									35 link Ecosystem, Value: aiconfirmed.bamboohr.com/app/ecosystem
+									36 link Global Employment
+										37 text Global Employment
+								38 content list
+									39 link Resources
+										40 text Resources
+									41 link Settings, Value: aiconfirmed.bamboohr.com/settings/
+									42 link neal My Account
+										43 image neal
+										44 text My Account
+									45 button Collapse
+							46 container
+								47 container
+									48 link Logo, Value: aiconfirmed.bamboohr.com/
+									49 container
+										50 text field (settable) Search, Placeholder: Search...
+									51 pop up button Inbox Header Button
+										52 text 24
+									53 container micro-container2
+										54 button Ask chat icon Ask
+								55 container
+									56 heading Settings, Value: 2
+										57 text Settings
+									58 container
+										59 container Settings
+											60 content list
+												61 link Account, Value: aiconfirmed.bamboohr.com/app/settings/account
+												62 link Access Levels, Value: aiconfirmed.bamboohr.com/app/settings/access_levels/all
+												63 link Employee Fields, Value: aiconfirmed.bamboohr.com/settings/list.php?id=3458
+												64 link Approvals, Value: aiconfirmed.bamboohr.com/settings/workflows/
+												65 link Apps, Value: aiconfirmed.bamboohr.com/settings/apps
+												66 link Ask BambooHR, Value: aiconfirmed.bamboohr.com/app/settings/answers
+												67 link Benefits, Value: aiconfirmed.bamboohr.com/settings/benefits/plans
+												68 link Company Directory, Value: aiconfirmed.bamboohr.com/app/settings/directory
+												69 link Compensation, Value: aiconfirmed.bamboohr.com/app/settings/compensation
+												70 link Core Values, Value: aiconfirmed.bamboohr.com/app/settings/core-values
+												71 link Custom Fields & Tables, Value: aiconfirmed.bamboohr.com/app/settings/custom_fields
+												72 link Email Alerts, Value: aiconfirmed.bamboohr.com/settings/alerts.php
+												73 link Employee Community, Value: aiconfirmed.bamboohr.com/app/settings/employee_community
+												74 link Employee Satisfaction, Value: aiconfirmed.bamboohr.com/app/settings/enps
+												75 link Employee Wellbeing, Value: aiconfirmed.bamboohr.com/app/settings/employee-wellbeing
+												76 link Global Employment, Value: aiconfirmed.bamboohr.com/app/settings/global_employment
+												77 link Hiring, Value: aiconfirmed.bamboohr.com/app/settings/hiring/
+												78 link Holidays, Value: aiconfirmed.bamboohr.com/app/settings/holidays
+												79 link Job Organization, Value: aiconfirmed.bamboohr.com/app/settings/job-organization
+												80 link Logo & Color, Value: aiconfirmed.bamboohr.com/app/settings/logo
+												81 link Offboarding, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=offboarding
+												82 link Onboarding, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding
+												83 link Payroll, Value: aiconfirmed.bamboohr.com/app/settings/payroll
+												84 link Performance, Value: aiconfirmed.bamboohr.com/app/settings/performance
+												85 link Recognition, Value: aiconfirmed.bamboohr.com/app/settings/recognition
+												86 link Retirement Savings, Value: aiconfirmed.bamboohr.com/app/settings/retirement-savings
+												87 link Time Off, Value: aiconfirmed.bamboohr.com/app/settings/time-off
+												88 link Time & Attendance, Value: aiconfirmed.bamboohr.com/settings/time_tracking/
+												89 link Total Rewards, Value: aiconfirmed.bamboohr.com/app/settings/total_rewards/overview
+												90 link Training, Value: aiconfirmed.bamboohr.com/settings/training/list
+										91 heading Onboarding, Value: 3
+											92 text Onboarding
+										93 container Onboarding Settings
+											94 content list
+												95 link Onboarding Tasks, Value: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding
+												96 link New Hire Packet Templates, Value: aiconfirmed.bamboohr.com/settings/onboarding/new_hire_packet_template
+										97 container micro-container4
+											98 container
+												99 heading Onboarding Tasks, Value: 4
+													100 text Onboarding Tasks
+												101 text Task lists allow you to have specific onboarding tasks for different offices, locations, or roles.
+												102 button New Task
+												103 button New Task List
+												104 pop up button
+											105 container
+												106 heading HR Tasks 7 tasks, Value: 3
+													107 button HR Tasks 7 tasks
+												108 container HR Tasks 7 tasks
+												109 heading Miscellaneous 0 tasks, Value: 3
+													110 button Miscellaneous 0 tasks
+												111 container Miscellaneous 0 tasks
+												112 heading IT Setup 4 tasks, Value: 3
+													113 button IT Setup 4 tasks
+												114 container IT Setup 4 tasks
+												115 heading Manager Tasks 2 tasks, Value: 3
+													116 button Manager Tasks 2 tasks
+												117 container Manager Tasks 2 tasks
+												118 heading New Employee Paperwork 9 tasks, Value: 3
+													119 button New Employee Paperwork 9 tasks
+												120 container New Employee Paperwork 9 tasks
+			121 container Infobar Container
+				122 container Infobar
+					123 container
+						124 text Continue where you left off: Chrome can restore your tabs every time you restart. To turn this on, go to
+						125 link Settings, opens in new tab.
+					126 button Close
+			127 pop up button Tab search
+			128 container
+				129 tab group
+					130 tab (settable, boolean) BambooHR, Value: off
+						131 button Close
+					132 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 186 MB, Value: off
+						133 button Close
+					134 tab (settable, boolean) BambooHR Interactive Demo - Memory usage - 401 MB, Value: off
+						135 button Close
+					136 tab (settable, boolean) Sign Up for a BambooHR Free Trial - Memory usage - 214 MB, Value: off
+						137 button Close
+					138 tab (settable, boolean) TOP 50 — Health Insurance Lead Engine - Memory usage - 51.2 MB, Value: off
+						139 button Close
+					140 tab (settable, boolean) Add Employee - Memory usage - 285 MB, Value: off
+						141 button Close
+					142 tab (selected, settable, boolean) Onboarding, Value: on
+						143 button Close
+			144 button New Tab
+	145 close button
+	146 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	147 minimize button
+148 menu bar
+	149 Chrome
+	150 File
+	151 Edit
+	152 View
+	153 History
+	154 Bookmarks
+	155 Profiles
+	156 Tab
+	157 Window
+	158 Help
+
+The focused UI element is 16 HTML content Onboarding, URL: aiconfirmed.bamboohr.com/settings/tasklists/edit.php?type=onboarding

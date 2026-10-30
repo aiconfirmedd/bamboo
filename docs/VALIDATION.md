@@ -21,3 +21,11 @@ The seven-connection manifest passes the offline contract checker. Checking .env
 ## Setup intake form
 
 Standalone HTML form and its43-field schema pass template validation and JavaScript syntax checks. Four input/configuration tests pass: normalized config with secret placeholders/deferred flags off; invalid/missing keys; token/credential URL rejection; choice/time-zone/budget validation. Preparation is offline and refuses existing output directories. Actual account provisioning remains outside this test.
+
+## Standalone online intake
+
+The separate [intake backend](../intake/README.md) has HTTP/authentication tests and
+real PostgreSQL integration coverage for RLS isolation, idempotent submission,
+operator export/review, deletion, expiry cleanup and rate limiting. Its two tables
+are separate from the 92 proposed HR tables. CI runs an isolated PostgreSQL service.
+No live identity-provider or hosted Neon connection is claimed verified.

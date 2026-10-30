@@ -1,18 +1,23 @@
 [
   {
+    "file": ".dockerignore",
+    "bytes": 116,
+    "sha256": "4752f8852b290be669f00c5918bbbe8d6d04b43efdf02bce46770af4a3e78cf6"
+  },
+  {
     "file": ".env.example",
     "bytes": 1100,
     "sha256": "bd0f74ad973b7b66843e5272f9d44dace120f1a24ddcd0008902fa090417e99b"
   },
   {
     "file": ".github/workflows/reference-checks.yml",
-    "bytes": 470,
-    "sha256": "7f14490c19823f1a3d452082ae3db3169aa9cd632c3254b427aad1af3581d457"
+    "bytes": 1781,
+    "sha256": "0346796433c94b71bfac5f644a215b55f6aa51592a105461696d844d2f6d2dd7"
   },
   {
     "file": ".gitignore",
-    "bytes": 195,
-    "sha256": "2b561a8ecaeb0419f117d3585a8e7e5df15b956d3b5499c4b22f69d611797209"
+    "bytes": 216,
+    "sha256": "02990100932cf74c03670113fc69108ff018213d965372f98aa76274e6ed2a89"
   },
   {
     "file": "LICENSE",
@@ -26,13 +31,13 @@
   },
   {
     "file": "README.md",
-    "bytes": 3231,
-    "sha256": "8cd09323b0389ff6558beb774702cdd60cac4e10f239ef361a29a46cdcd70f8d"
+    "bytes": 3665,
+    "sha256": "65bfe0852b940de71c3edb3c49423c4c75a83a797270d9e1262d56c13e02d906"
   },
   {
     "file": "START_HERE.md",
-    "bytes": 7844,
-    "sha256": "5149ea6cc53ca39a0139340e1621d738e261473c1c25dc4082b79ebe96bb6225"
+    "bytes": 7988,
+    "sha256": "18a616b38838fa89723f3e3847808cfda22291117b941c67c8ca41710138d455"
   },
   {
     "file": "UPLOAD.md",
@@ -81,8 +86,8 @@
   },
   {
     "file": "docs/GIT_HANDOFF.md",
-    "bytes": 4512,
-    "sha256": "9c2e9db1b723fb0b2dee313a385491f8321595703d5901b37b7c3e787e413a90"
+    "bytes": 4619,
+    "sha256": "01c19f495402b34229d383f988869c3af7b8cb645da1b57c98698564f2ab0390"
   },
   {
     "file": "docs/IMPLEMENTATION.md",
@@ -106,8 +111,8 @@
   },
   {
     "file": "docs/SETUP_STORAGE.md",
-    "bytes": 3697,
-    "sha256": "14d7c720f02a098694b7ca26096cc3cb6031d07427e1b82a4fc290ebbdcde354"
+    "bytes": 1362,
+    "sha256": "233aafac5a494fb4a1aac03606a3c44f308c4f4ab1c2b158d6c94b08c2e84d73"
   },
   {
     "file": "docs/STATE_COVERAGE.csv",
@@ -116,8 +121,8 @@
   },
   {
     "file": "docs/VALIDATION.md",
-    "bytes": 1698,
-    "sha256": "15bf99d186e2515f86241d955b2a80270607a375cecfd499ee13214341730a75"
+    "bytes": 2133,
+    "sha256": "eff373d5b870dc203f1569b0de1002ef0c333beed77d1a79fbbba7ef9083beb1"
   },
   {
     "file": "docs/architecture/STACK.md",
@@ -180,14 +185,74 @@
     "sha256": "b26f72e4d64a46e8e953a92071cebc7f63cf40b84f2aba499f2747d6d91a5fc2"
   },
   {
+    "file": "intake/.env.example",
+    "bytes": 585,
+    "sha256": "4f4258d99b40e4283f5cf9348c9405fcb3346a273537d11dfcd03f7b5377474d"
+  },
+  {
+    "file": "intake/Dockerfile",
+    "bytes": 540,
+    "sha256": "d1e5aadac7be33ee666f31bafe18d8ee250989e8dea6472ee48ab24a31ad759b"
+  },
+  {
+    "file": "intake/README.md",
+    "bytes": 10136,
+    "sha256": "7b2e38af25db38a28b48864c0d58dae75ffb78a6e59d89ef6e94169dd86512a6"
+  },
+  {
+    "file": "intake/app.py",
+    "bytes": 9209,
+    "sha256": "2df536c0137398cb0c9c2c8de0c59f1c8eabd65d5fadddd368b0e47771d261c9"
+  },
+  {
+    "file": "intake/migration.sql",
+    "bytes": 2979,
+    "sha256": "e1cee718bc17a41529eaee4f2a099eda676b60eeac467384e4e30575b0d738c2"
+  },
+  {
+    "file": "intake/requirements.in",
+    "bytes": 100,
+    "sha256": "306b79c09fe2a10fecbdcd9a1f6d243471653188489a8ab2b9b2e7f2c5773447"
+  },
+  {
+    "file": "intake/requirements.txt",
+    "bytes": 50404,
+    "sha256": "96c0c89a5e60df353854e40f29f154a5ea350c3ab1c21037de52b2d2b0d59820"
+  },
+  {
+    "file": "intake/static/intake.css",
+    "bytes": 380,
+    "sha256": "d5e1d70423264327a30f8e4eb86407d6d2208599028573a638e61a1224018d4a"
+  },
+  {
+    "file": "intake/static/online.js",
+    "bytes": 3892,
+    "sha256": "b9a9e5984797bb2fc134a3827376c277c0ee2bd354594e4df53b5d7f5f3978f8"
+  },
+  {
+    "file": "intake/store.py",
+    "bytes": 4304,
+    "sha256": "0b53421855814e1afb6004f5e946350e0b92a60a8af218421fe524c035fd523f"
+  },
+  {
+    "file": "intake/templates/home.jinja",
+    "bytes": 617,
+    "sha256": "caa683f75ee7807b1fc2b3abe0afdfeeb69118571f38d6aab06c90e032c6df36"
+  },
+  {
+    "file": "intake/templates/operator.jinja",
+    "bytes": 1272,
+    "sha256": "edb46273ef4c0890adfdaed4a671a5ed3baed0bb7d71c2f9c8776ce9cad21f39"
+  },
+  {
     "file": "package-lock.json",
     "bytes": 656,
     "sha256": "d2536a7a3a17d61fcae86aef1b3e378fb4295dd4987155ac2a17b5ba22b7fd38"
   },
   {
     "file": "package.json",
-    "bytes": 666,
-    "sha256": "6526ddd1e1f9a7d749c0dfe3ee2086a74f499e20205094e438c6ca93807ca5f5"
+    "bytes": 667,
+    "sha256": "c4c5ed9606e50ae129aef5fa972a91bab2cc5d638b48512ef42321103b85b4ce"
   },
   {
     "file": "replica/design/components.md",
@@ -1066,8 +1131,8 @@
   },
   {
     "file": "scripts/prepare_setup.py",
-    "bytes": 9542,
-    "sha256": "b940c56409f8222fb3a77b86743eeb45e78d74453e84488c78e72bea73d9f819"
+    "bytes": 9557,
+    "sha256": "6e386bb94e1d17bff8e40cd37696ca1a8d62510a9497f8b38c7c7faf32c69cb6"
   },
   {
     "file": "scripts/verify_reference.py",
@@ -1076,8 +1141,8 @@
   },
   {
     "file": "setup/README.md",
-    "bytes": 2626,
-    "sha256": "bf8023765e203989520934be27929431a03a1e27bcd54ae21326da0a98ec7b27"
+    "bytes": 2781,
+    "sha256": "0076b6f5c199d110a3965bee7e25374ef2f665b8096d0e24a7bdfc8e2d84fb92"
   },
   {
     "file": "setup/form.html",
@@ -1088,6 +1153,11 @@
     "file": "tasks/todo.md",
     "bytes": 1844,
     "sha256": "d37fb482b9f8089e8a3c796a847e2f585f661829c2f03f70f4a97337e750b1d3"
+  },
+  {
+    "file": "tests/test_online_intake.py",
+    "bytes": 12358,
+    "sha256": "32f55e24c3d303cfe0f3c5fb18e5e22f454da4cb69682796e0a64917608a6c2c"
   },
   {
     "file": "tests/test_setup_intake.py",

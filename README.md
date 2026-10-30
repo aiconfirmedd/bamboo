@@ -1,7 +1,8 @@
 # Bamboo — HR portal reference
 
 A self-contained AI Confirmed reference package for an independent agency HR
-portal. **Specifications, evidence and schema checks; the application is not built.**
+portal. **HR specifications, evidence and schema checks; the HR application is not built.**
+A standalone online setup intake backend is included and ready for recipient deployment.
 
 [Start here: setup takeover, no rebuild](START_HERE.md) · [Gallery](index.html) · [Upload instructions](UPLOAD.md)
 
@@ -53,3 +54,10 @@ Byte-identical images are stored once. [Original-name alias map](docs/inventory/
 [Git handoff](docs/GIT_HANDOFF.md) pins publisher/recipient steps to a commit. [Connections](docs/CONNECTIONS.md) defines recipient-owned service setup; [connection manifest](config/connections.json) and offline checker are executable configuration contracts. [Rebuild runbook](docs/REBUILD_RUNBOOK.md) gives exit gates through staging and operations. Services remain planned until the app and actual integration tests exist.
 
 [Fill out the setup form](setup/form.html), then upload its exported JSON for configuration preparation. See [the submission workflow](setup/README.md).
+
+## Deploy only the setup intake
+
+Follow [the online intake deployment guide](intake/README.md) for the working
+Flask/Gunicorn backend, Neon migration, OIDC configuration, private exports and
+retention scheduler. This service reuses the annotated form without building the HR
+app. Hosting and credentials are not configured automatically.

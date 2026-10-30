@@ -40,5 +40,7 @@ To validate the shipped form itself: `python3 scripts/prepare_setup.py --check-t
 
 Every field includes entry instructions and examples. Examples are illustrative,
 not configured accounts. Required unresolved decisions offer a defer/operator choice.
-For private online intake, follow the proposed [storage backend and implementation
-handoff](../docs/SETUP_STORAGE.md). No online endpoint is deployed in this package.
+For private online intake, deploy the implemented [standalone intake backend](../intake/README.md).
+After deployment, users sign in and submit at /form; operators export JSON at
+/operator and run the same preparation commands above. No live deployment is
+configured in this repository. The HR application remains unbuilt.

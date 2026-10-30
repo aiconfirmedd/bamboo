@@ -13,3 +13,4 @@ work/
 # Completed setup responses remain private.
 bamboo-setup-submission*.json
 bamboo-setup-draft*.json
+!intake/.env.example

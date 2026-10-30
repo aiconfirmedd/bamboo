@@ -48,8 +48,9 @@ npm run check:schema
 
 Replace TRANSFERRED_COMMIT_SHA with the publisher’s actual full commit SHA.
 Compare the SHA with the publisher's record. Confirm START_HERE.md, config/connections.json,
-OWNER_DECISIONS.csv and the current gap/state registers exist. Confirm this remains
-reference-only and all feature clone flags are no. Read START_HERE.md, CONNECTIONS.md,
+OWNER_DECISIONS.csv and the current gap/state registers exist. Confirm the HR app remains
+reference-only and all HR feature clone flags are no. The separate intake service
+can be deployed using intake/README.md without starting the HR build. Read START_HERE.md, CONNECTIONS.md,
 REBUILD_RUNBOOK.md and the acceptance cases. Accept/defer each gap explicitly; do not
 silently reclassify missing evidence as proven UI behavior.
 

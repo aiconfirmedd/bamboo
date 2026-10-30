@@ -1,6 +1,6 @@
 # Start here
 
-**This is a complete reference package, not a running HR application.**
+**HR reference package plus a standalone setup intake service. The HR application is not built.**
 Scope: Home, People, Hiring/ATS, Onboarding, Performance/Retention for an internal
 agency portal. Payroll, benefits, attendance, proprietary AI, licensed content,
 partner rails and native apps remain outside the implementation slice.
@@ -27,8 +27,9 @@ python3 scripts/prepare_setup.py /private/path/bamboo-setup-submission.json --ou
    and [owner decisions](docs/OWNER_DECISIONS.csv). Transfer credentials through the
    recipient's secret manager; examples/placeholders are not working credentials.
 6. If online intake is wanted, hand the implementer [the private backend design](docs/SETUP_STORAGE.md).
-   It specifies Neon storage, access boundaries, retention and acceptance checks.
-   This is a proposed backend; the current form remains offline.
+   The standalone backend is implemented. Follow [online intake deployment](intake/README.md)
+   to deploy just the intake service, including its migration, OIDC client, secrets
+   and scheduled cleanup. No HR app rebuild is needed. Local form use remains offline.
 7. Run `npm ci --ignore-scripts`, `npm run check` and `npm run check:schema`.
    Record results and unresolved decisions against the reference commit.
 

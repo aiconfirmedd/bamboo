@@ -1,0 +1,10 @@
+.git
+node_modules
+work
+outputs
+__pycache__
+*.pyc
+.env
+.env.*
+bamboo-setup-submission*.json
+bamboo-setup-draft*.json

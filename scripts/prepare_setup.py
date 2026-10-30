@@ -46,7 +46,7 @@ def validate(data,spec):
             if isinstance(v,bool) or not isinstance(v,(int,float)) or not math.isfinite(v) or v<f.get('min',0) or k=='retention_days' and isinstance(v,float) and not v.is_integer():errors.append('Invalid numeric value: '+k)
             continue
         if not isinstance(v,str):errors.append('Expected text: '+k);continue
-        if len(v)>f.get('maxlength',500) or f['type']!='textarea' and any(c in v for c in '\r\n\x00'):errors.append('Invalid text length/characters: '+k)
+        if '\x00' in v or len(v)>f.get('maxlength',500) or f['type']!='textarea' and any(c in v for c in '\r\n\x00'):errors.append('Invalid text length/characters: '+k)
         if f['type']=='select' and v not in f['options']:errors.append('Invalid choice: '+k)
         if f.get('pattern') and not re.fullmatch(f['pattern'],v):errors.append('Invalid format: '+k)
         if f['type']=='email' and not re.fullmatch(r'[^\s@]+@[^\s@]+\.[^\s@]+',v):errors.append('Invalid email: '+k)

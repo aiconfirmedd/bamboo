@@ -1,0 +1,81 @@
+feature,area,priority,original,clone,notes
+Role-based top nav (Home/My Info/Recognition/People/Files/Community/Reports/Settings/My Account),home,must,yes,no,help.bamboohr.com/s/article/2086908; gear for admins only
+Widget-based employee Home (Welcome/Celebrations/Company Links/Who's Out/My Stuff/What's Happening),home,must,yes,no,help 639584; admin-configured per widget
+Admin can enable/rearrange Home widgets,home,must,yes,no,help 587797
+Announcements via What's Happening widget,home,must,yes,no,new hires don't see past announcements (help 2001089)
+"Admin Insights Dashboard (16 metric widgets, role-based visibility)",home,should,yes,no,Elite-gated in original; product-updates 2025
+Global search with Employee Snapshot popup,home,must,yes,no,help 2007786; record preview without leaving page
+Notification center + email alerts for tasks,home,must,yes,no,system-generated notifications not customizable (glossary 2002837)
+Company theming (logo/colors across app),home,must,yes,no,owner needs rebrand; mobile app theming confirmed in store listing
+Employee directory (search/filter/export),people,must,yes,no,help 587751; standard filters: dept/division/status/title/location/teams (587753)
+Org chart view + quick link,people,must,yes,no,product-updates Nov 2025 org-chart-quick-link
+Employee profile with tabs (Personal/Job/Time Off/Documents/Benefits/Pay Info/Performance/Emergency/Notes/Training/Onboarding),people,must,yes,no,help 587295
+Custom fields/tabs/tables per company,people,must,yes,no,unlimited custom fields; API /meta/fields /hris/custom-fields
+Field-level self-service edits (My Info grants),people,must,yes,no,help 587803/641328; per-field permission
+Employee Documents tab + Employee Uploads folder + per-doc share checkbox,people,must,yes,no,help 640097
+Company Files area with categories,people,must,yes,no,help 587287; API /files/view
+Audit trail on record changes,people,must,yes,no,employee-records page claims audit trail
+Terminated employee records: read-only controls + former-employee self-service,people,could,yes,no,product-updates 2026-02/2026-04
+2FA + SAML SSO + passkeys,people,should,yes,no,passkeys product-update Nov 2025; SSO in store listing
+Ask-BambooHR-style AI Q&A over HR data,people,could,yes,no,replace with own AI later; Bamboo AI is their layer
+Bookmarkable public-style directory quick link (30-day re-auth),people,could,yes,no,help 587751
+Job openings list with search (title/dept/location/hiring lead),hiring,must,yes,no,help 875031; product-updates job-opening search
+"Create/edit job opening (intake form: title/dept/location/type/description/hiring lead)",hiring,must,yes,no,"help 587638; NOTE: original has NO formal requisition-approval flow (gap, inferred)"
+Candidate pipeline with custom statuses + stage counts,hiring,must,yes,no,help 875031; custom statuses video
+Candidate profile (Info/Emails/Notes/Interviews tabs),hiring,must,yes,no,help 587645
+Application form: resume upload + custom questions,hiring,must,yes,no,API POST /applicant_tracking/application; candidate record shows Q&A
+Automated personalized stage emails from templates,hiring,must,yes,no,ATS product page
+Interview scheduling + candidate self-scheduling booking page + calendar buffer,hiring,should,yes,no,help 1976009; needs calendar integration (Cronofy-class)
+Interview scorecards,hiring,should,yes,no,press release only; no help article found (mark as design choice)
+Offer letter templates auto-populated + email preview + e-sign acceptance + status tracking,hiring,must,yes,no,help 960688; additional offer letters update
+Hiring Lead / collaborator sharing with scoped permissions,hiring,must,yes,no,help 587848/587659; fixed Hiring Lead notifications
+In-system candidate messaging + alerts,hiring,must,yes,no,ATS product page
+Job Boards tab: post/manage external postings (Indeed/ZipRecruiter/SEEK),hiring,should,yes,no,help 1070282; board deals are partner integrations - clone does own careers page + manual/redirect posts
+Native background checks in-system,hiring,could,yes,no,Checkr partner; first 3 free; partner API later
+Candidate Sources + Applicant Funnel reports,hiring,should,yes,no,help 587875
+Hire -> auto-create employee record -> trigger New Hire Packet,hiring,must,yes,no,help 587653; the ATS->HRIS handoff is the core loop
+Searchable talent pools,hiring,could,yes,no,ATS product page
+Public careers page listing open jobs,hiring,could,yes,no,not confirmed in evidence; inferred from job-board posting flow - design choice for clone
+Add Employee form with optional auto-send New Hire Packet,onboarding,must,yes,no,help 588009; ATS data pre-populates
+"New Hire Packet: info fields + e-sign docs + tasks, self-paced pre-start",onboarding,must,yes,no,help 588009; enhanced packets Sep 2026
+Reusable New Hire Packet templates,onboarding,must,yes,no,help 1376515
+Onboarding task lists (IT Setup/Manager) + per-employee customization + reminders,onboarding,must,yes,no,help 587617/587627; sample checklists 1467415
+e-signature requests work pre-access; signed docs auto-file to designated Documents folder,onboarding,must,yes,no,help 1492921
+Onboarding progress dashboard/progress bar,onboarding,should,yes,no,onboarding product page
+Access-before-hire-date rules tied to packet completion,onboarding,should,yes,no,help 712129
+Welcome email + Get To Know You questions,onboarding,should,yes,no,help 1492609; Welcome widget 639584
+Offboarding task lists + access revocation on termination date,onboarding,must,yes,no,help 587611; task design update
+Rehire via packet,onboarding,could,yes,no,product-updates Sep 2026 rehire packets
+I-9 & E-Verify automation,onboarding,skip,yes,no,US-regulated; original uses Mitratech partner - out of clone scope
+"Review cycles (scheduled window, segment by dept/location/title, duplicate)",performance,must,yes,no,help 588033
+360 reviews (self/manager/peer/skip-level) + double-blind option,performance,must,yes,no,help 1810421; double-blind update 2026-06
+Review question templates + Employee View sharing of selected answers,performance,must,yes,no,help 675027
+Peer feedback anonymity + autosave drafts,performance,must,yes,no,help 1820551; autosave update 2026-02
+"Goals: private individual + shared, milestones (max 10), progress, comments",performance,must,yes,no,help 588034; API goals CRUD
+Cascading goal tree (company->dept->individual),performance,should,yes,no,product-updates Nov 2025; API alignmentOptions
+AI SMART-goal suggestions,performance,could,yes,no,product-updates 2026-04; own AI later
+"1:1s (scheduling, agendas, shared notes)",performance,should,yes,no,help 1898823
+Goals Status report + review completion reminders,performance,must,yes,no,help 588034
+Performance data in custom report builder,performance,should,yes,no,product-updates Dec 2025
+"Recognition & Rewards feed (posts, core-value tags, points, gift cards)",retention,should,yes,no,help 2082447; launched 2026-06; Slack integration
+Core Values config in Settings,retention,should,yes,no,product-updates 2026-04
+"eNPS survey (company-wide, truly anonymous, auto-reminders, admins see % complete only)",retention,must,yes,no,help 2005406/925445; anonymity design must be copied
+Wellbeing survey + heatmap report,retention,could,yes,no,help 1534121/1536452; research-validated questions
+Turnover/separations report,retention,should,yes,no,help 691371
+"Employee Community feed (posts, discussions)",retention,could,yes,no,Pro/Elite module; network feature - lite clone possible
+Settings hub (gear; admins/custom only),platform,must,yes,no,help 2086908
+Access levels: Employee/Manager/Full Admin/Payroll Admin/Custom,platform,must,yes,no,help 587374
+Permission sections: See About Themselves / See About Other Employees / See on Home,platform,must,yes,no,help 587374; per-field grants
+Preview-as-user (impersonation preview),platform,must,yes,no,help 925390
+Multiple access levels per user + non-employee users (external recruiter),platform,should,yes,no,help 1975476/1976637
+Workflow/approval automation builder,platform,should,yes,no,platform page; Core plan includes workflows/approvals
+Standard + custom report builder with datasets,platform,must,yes,no,API /custom-reports /datasets
+API keys + webhooks (employee.created/updated/deleted),platform,should,yes,no,API docs /webhooks
+SaaS packaging tiers (job openings 5/25/50 gating),platform,skip,yes,no,their business model not product; single-tenant clone needs no gating
+"Mobile apps (directory, time off, approvals, SSO, theming)",mobile,could,yes,no,iOS 4.66 stars; responsive web first; native later
+Payroll module,payroll,skip,yes,no,excluded from slice per scope; US tax filing is a regulated standalone product
+Benefits administration (carrier connections),benefits,skip,yes,no,excluded from slice
+Time & attendance (tracking/scheduling/PTO),time,skip,yes,no,excluded from slice; Who's Out widget covers PTO visibility only
+HR Benchmarks (turnover/demographics industry data),analytics,skip,yes,no,licensed Mercer-class data; cannot clone dataset
+Bamboo AI + AI Connectors (agent layer),ai,skip,yes,no,their proprietary layer; replace with own AI in phase 2
+Integration marketplace (261 partners),integrations,skip,yes,no,partner network not part of the rebuildable product

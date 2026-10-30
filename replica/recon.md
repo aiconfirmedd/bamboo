@@ -3,9 +3,9 @@
 Scope: HR portal slice — Home/Dashboard, People, Hiring/ATS (job intake → pipeline), Onboarding (packets, tasks, e-sign), Performance & Retention (reviews, goals, 1:1s, recognition, eNPS/wellbeing). Payroll, benefits, time & attendance excluded.
 For: owner's own agency — internal recruiting/retention portal, rebrandable, own content. Clone target is 1:1 features + layout, then customize.
 Date: 2026-10-29
-Method: clean-room, public sources only (marketing, pricing, help center, product updates, public API docs, app store listings). No logins, no JS-bundle reads, no traffic capture. Live audits use supplied public simulator and OICR careers PNGs only.
+Method: clean-room, public sources only (marketing, pricing, help center, product updates, public API docs, app store listings). No logins, no JS-bundle reads, no traffic capture. Live audits use supplied public simulator, OICR careers and prospect-funnel PNGs only.
 
-Legend: **(O)** = observed on a public page; **(I)** = inferred. Evidence: 48 older images, 21 older live captures, and 38 new live-tour captures (2026-10-30). Audit 3 governs older live-demo gate files; design/design-audit-4.md governs the new tour and establishes internal horizontal shell, records, hiring, offers and packet setup. Blank fields are not empty screens; help-center files are icons. One scripted persona does not establish role visibility.
+Legend: **(O)** = observed on a public page; **(I)** = inferred. Evidence: 48 older images, 21 older live captures, 38 new live-tour captures, and six prospect-funnel captures (2026-10-30). design/design-audit-5.md maps S37/S38 and corrects misleading funnel filenames. Audit 3 governs older live-demo gate files; design/design-audit-4.md governs the new tour and establishes internal horizontal shell, records, hiring, offers and packet setup. Blank fields are not empty screens; help-center files are icons. One scripted persona does not establish role visibility.
 
 ## Sources
 
@@ -72,6 +72,20 @@ A company runs its whole people lifecycle in one place: it opens a job, tracks a
 | S34 | Public job description | public /careers/464 (observed link) | candidate reads role; S13-adjacent, not internal detail | article, back link, apply/share rail, metadata | live-tour ats45: filled public role article, apply/share/metadata rail, organization header; older live-careers-detail independently confirms newer public theme; no internal nav. |
 | S35 | Public application | apply action on S34; exact URL unproven | candidate intake, upstream of S15; not S17 offer | identity fields, file choosers, screening radios/text, footer actions | blank inputs/unselected radios/no-file; required text/group/resume errors and inline pink messages (live-careers-apply, live-careers-apply-validation); no summary or successful submit |
 | S36 | New Hire Packet administrator setup | profile Onboarding > Create New Hire Packet | select template, configure packet and preview/send | employee/email header, template select, arrival fields, introduction questions, task/document sections | live-tour onboard3/7/10: template unset prompt, dropdown open, filled arrival/contact/instructions, checked introduction send option and audience, question rows with handles/remove/required controls; payroll unchecked reference only; full editor footer/save and custom-field editor unproven |
+
+| S37 | Public demo request | prospect request-a-demo entry; exact URL unproven | qualify a demo prospect | three-node stepper, six checkbox tiles, employee-count select, Next; promotional rail | live-demo-request: six unchecked tiles; validation and filled files are pixel-identical step 2 with Employee Count 76-150, first node complete/second current; no errors, required markers, country, consent, contact fields or final submit/confirmation visible |
+| S38 | Public trial signup / Create Account | prospect free-trial entry; exact URL unproven | collect trial details and show preparation | centered two-column form card, required fields, employee-count/country selects, consent prose/privacy link, Create Account, preparation tracker | live-signup: all eight fields filled, Country United States; validation: Creating your account active; filled: Account created complete, Generating demo data active, final touches pending; no empty/error state or fully ready account |
+
+## Prospect funnel evidence (audit 5)
+
+S37/S38 are two new public prospect screens, separate from S01 login, S33–S35
+candidate intake and the simulator personalization gate. Capture suffixes describe
+capture attempts, not reliable UI states. Exact URLs and navigation between S37
+and S38 are not established. Demo category selection → employee-count step is
+observed; signup form → preparation → partial progress is observed separately.
+No demo contact form or sales confirmation is visible. Signup displays an account-
+created milestone, but a ready account, redirect or completed provisioning is unproven.
+Field order, consent, geometry and six-file ledger: design/design-audit-5.md.
 
 ## Flows
 
@@ -160,6 +174,7 @@ F12 Manage company files
 | Avatar + photo upload | initials fallback, photo | default, uploaded | S06, S08 |
 | Toast / alert | success, error, info | auto-dismiss | all |
 | Public careers | job row, description, apply form, file chooser, inline errors | filled list/detail, blank and validation observed; summary/success unproven | S33–S35 |
+| Prospect forms / preparation | demo qualification, trial signup, preparation tracker | unchecked tiles, count selected; filled signup, preparing, account-created milestone; no validation error | S37–S38 |
 | Heatmap | wellbeing report | empty, populated | S30 |
 | Goal card + milestone list | private, shared, cascading | in-progress, done, aligned | S26 |
 
@@ -287,7 +302,7 @@ See `features.csv`. Must: 43, should: 18, could: 11, skip: 8 (80 rows).
 
 - Audit 4 adds 38 real product captures and S36 packet administrator setup. Remaining unproven: admin settings, access levels, review-cycle setup, eNPS admin/form, report builder, org chart, snapshot popup, offer-template management, announcements, permission-denied. Full mapping and scope in design/design-audit-4.md.
 
-- Public application validation errors are now observed (S35); internal candidate filtered-result, Notes/Emails and onboarding task empty states now observed; permission-denied and loading remain unobserved. Blank fields, unchecked tasks, selected controls and drawn signatures have older evidence; see design/design-audit.md and design/design-audit-4.md. Help-center files show only repeated plus/minus icons.
+- Public application validation errors are now observed (S35); internal candidate filtered-result, Notes/Emails and onboarding task empty states now observed; permission-denied and internal loading remain unobserved; S38 prospect preparation/loading is observed (audit 5). Blank fields, unchecked tasks, selected controls and drawn signatures have older evidence; see design/design-audit.md and design/design-audit-4.md. Help-center files show only repeated plus/minus icons.
 - Demo videos (Wistia embeds) not watched.
 - Play screenshots play-01..08 and iOS ios-01..06 are saved and visually audited; these native themes do not establish responsive web behaviour.
 - Original has **no formal requisition-approval workflow** (I) — the clone should add intake → approval as a deliberate improvement.
@@ -296,4 +311,4 @@ See `features.csv`. Must: 43, should: 18, could: 11, skip: 8 (80 rows).
 
 ## Size
 
-Screens 36, flows 12, entities 27. Hard parts: field-level permission engine with preview-as-user, e-signature + auto-filing, candidate self-scheduling with calendar sync, automated stage emails/workflows, anonymous survey integrity, document management with audit trail, report builder + datasets. Size: **L** for the full slice. Recommended: M-sized vertical slice first (Home + People + Hiring pipeline + packet onboarding), then reviews/eNPS, then the rest.
+Screens 38 (including two public prospect screens), flows 12 core-product flows, entities 27. Hard parts: field-level permission engine with preview-as-user, e-signature + auto-filing, candidate self-scheduling with calendar sync, automated stage emails/workflows, anonymous survey integrity, document management with audit trail, report builder + datasets. Size: **L** for the full slice. Recommended: M-sized vertical slice first (Home + People + Hiring pipeline + packet onboarding), then reviews/eNPS, then the rest.

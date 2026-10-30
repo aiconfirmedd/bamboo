@@ -1,7 +1,7 @@
 # Bamboo component specs
 
 Every component from the recon list, plus the primitives they are built from.
-Tokens refer to `tokens.json` roles — never raw hex. Observed evidence is enumerated in design-audit.md and design-audit-2.md; design-audit-4.md governs live-tour assets; audit 3 governs the older live-demo gate files. Required states are implementation requirements, not screenshot proof. Keyboard and screen-reader behaviour is part of each spec.
+Tokens refer to `tokens.json` roles — never raw hex. Observed evidence is enumerated in design-audit.md and design-audit-2.md; design-audit-4.md governs live-tour assets; audit 3 governs the older live-demo gate files; design-audit-5.md governs public prospect S37/S38. Required states are implementation requirements, not screenshot proof. Keyboard and screen-reader behaviour is part of each spec.
 
 ## Primitives
 
@@ -451,3 +451,63 @@ internal-completed #e3ebd9, internal-heading #486f00; panels white. Source light
 rule #e0e0e0 decorative only. Source gradient endpoints, stars' exact gold, text
 antialiasing and source control boundary contrast not recovered. See audit 4 for
 measurement provenance; geometry and font defaults elsewhere are not source CSS.
+
+
+## Audit 5 — public prospect funnel (S37–S38)
+
+Separate from the internal shell, careers intake and simulator gate. Geometry below
+is native capture raster at width1440, not recovered CSS or responsive rules.
+Use existing neutral accent/text/boundary roles; source green is observational.
+
+ProspectDemoWizard (S37)
+  White left pane width560, green promotional right pane; logo above three-node
+  stepper and serif question. Step1: six unchecked tiles in three columns/two rows,
+  row-major Hiring & Onboarding, HR Data & Reporting, Payroll & Time, Benefits
+  Administration, Employee Experience, Performance Management. Each tile has a
+  checkbox top-left, illustration and centered label. No required marker visible.
+  Step2 replaces tiles with one floating-label Employee Count select, 76-150 shown;
+  first node checked, second current, third pending. Options/open select unobserved.
+  Full-width pill Next below content (x54–506); not a final submit. No country,
+  consent, contact fields or validation messages visible in either step. Bright
+  rectangular question outline in step2 is visible but does not establish an error
+  or keyboard-focus state. No checked tile state captured.
+  tokens: layout demo-pane-width, demo-action-height; accent/on-accent; radius pill.
+  a11y requirements: labelled native checkboxes/fieldset, select label, ordered
+  steps with aria-current; no invented required rule or error message as evidence.
+
+ProspectSignupForm (S38)
+  Centered white card width600 over blurred promotional app image under a white
+  logo strip. Not proof of an authenticated dashboard or dismissible modal. No
+  close/back action visible. Three-node stepper and green serif heading above.
+  Four paired rows, left→right then top→bottom: First Name*, Last Name*; Work
+  Email*, Job Title*; Company Name*, Phone Number*; Employee Count*, Country*.
+  All eight filled in live-signup.png; count76-150 and United States selected.
+  Floating labels interrupt thin field borders. Closed selects have right chevrons;
+  options, country search, defaults and country-dependent behaviour unobserved.
+  Consent is prose authorizing product/service/event email and phone contact with
+  an inline Privacy Policy link; no checkbox or separate opt-in control visible.
+  Full-width Create Account below consent; no-credit-card/automatic-trial-end note
+  beneath. No password, password confirmation, terms checkbox or error visible.
+  tokens: signup-card-width, prospect-input-height, signup-action-height; existing
+  bg/text/text-muted/border-input/accent/on-accent/link, serif heading/sans controls.
+  a11y requirements: associated labels, required semantics, email/tel autocomplete,
+  native selects; error association/preserve values and focus handling if invalid.
+  Empty, invalid, focus, disabled and retry states required if implemented, unobserved.
+
+TrialPreparationTracker (S38 variant)
+  Same page/card location replaces form with preparation heading and short wait
+  text. Vertical three-item tracker: Creating your account active, Generating demo
+  data pending, Adding the final touches pending. Later frame: Account created
+  checked, Generating demo data active, final touches still pending. Top stepper
+  first node complete, second current, third pending. No submit/retry action visible.
+  This is partial progress, not a final ready-account confirmation. A marketing
+  trust line below is not a status message. No determinate percentage observed.
+  a11y requirements: aria-busy during preparation, polite live text for changed
+  milestones, ordered steps; check + status text prevents colour-only completion.
+
+ProspectMarketingShell (S38)
+  Below hero: feature accordion with Integrations & Compatibility expanded, other
+  categories collapsed, integration image; trial checklist laptop image; dark green
+  CTA band and legal footer. Accordion interaction and CTA destination unproven.
+  Images of app/checklist are promotional, not additional observed product screens.
+  Use original assets/copy. No mobile layout or sticky/fixed behaviour established.

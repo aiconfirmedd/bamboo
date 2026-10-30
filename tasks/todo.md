@@ -8,9 +8,9 @@ Reference repo: https://github.com/aiconfirmedd/bamboohr-clone-reference
 - [x] Feature matrix (80 rows)
 - [x] 24 reference screenshots
 - [x] Public reference repo + workflow docs
+- [x] Architecture: stack, schema.sql (92 tables, RLS), 215-route API plan, build order
 
 ## Next
-- [ ] Architecture: stack, schema.sql (indexes + access rules), route list, vertical-slice order
 - [ ] Design tokens + component specs
 - [ ] Vertical slice: Home + People + Hiring pipeline + packet onboarding
 - [ ] Reviews / goals / eNPS
